@@ -1,0 +1,22 @@
+@import "./variables";
+
+
+// responsive
+@mixin responsive($range)
+{
+	// TODO: 사이즈표가 만들어져야함
+	//@if $range == desktop
+	//{
+	//	@media (min-width: #{$size-desktop}) { @content; }
+	//}
+	//@else if $range == desktop-large
+	//{
+	//	@media (min-width: #{$size-desktop-large}) { @content; }
+	//}
+}
+
+// retina display
+@mixin retina()
+{
+	@media (-webkit-min-device-pixel-ratio: 2) { @content; }
+}

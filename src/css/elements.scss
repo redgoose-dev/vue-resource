@@ -1,0 +1,9 @@
+@import "./variables";
+
+body {
+	min-width: $size-min;
+}
+
+a {
+	color: $color-sub;
+}

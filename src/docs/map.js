@@ -31,11 +31,11 @@ export default [
 			{ link: '/components/card', title: 'Card' },
 			{ link: '/components/nav-paginate', title: 'Nav / Paginate' },
 			{ link: '/components/nav-tab', title: 'Nav / Tab' },
+			{ link: '/components/nav-dropdown', title: 'Nav / Dropdown' },
 			{ link: '/components/loading', title: 'Loading' },
 			{ link: '/components/error-content', title: 'Error / Content' },
 			{ link: '/components/error-page', title: 'Error / Page' },
 			{ link: '/components/modal', title: 'Modal' },
-			{ link: '/components/dropdown', title: 'Dropdown' },
 		],
 	},
 	{

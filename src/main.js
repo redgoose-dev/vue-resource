@@ -6,7 +6,8 @@ import Layout from './docs/layout.vue';
 Vue.config.productionTip = false;
 
 // import base css
-import './css/app.scss';
+import './css/normalize.css';
+import './docs/app.scss';
 
 // TODO: initial custom event
 // util.initCustomEvent();
