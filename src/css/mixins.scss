@@ -1,22 +1,142 @@
 @import "./variables";
 
 
+// === Screen size
+
 // responsive
 @mixin responsive($range)
 {
-	// TODO: 사이즈표가 만들어져야함
-	//@if $range == desktop
-	//{
-	//	@media (min-width: #{$size-desktop}) { @content; }
-	//}
-	//@else if $range == desktop-large
-	//{
-	//	@media (min-width: #{$size-desktop-large}) { @content; }
-	//}
+	@if $range == tablet
+	{
+		@media (min-width: #{$size-tablet}) { @content; }
+	}
+	@if $range == desktop
+	{
+		@media (min-width: #{$size-desktop}) { @content; }
+	}
+	@else if $range == desktop-1280
+	{
+		@media (min-width: #{$size-desktop-1280}) { @content; }
+	}
+	@else if $range == desktop-1440
+	{
+		@media (min-width: #{$size-desktop-1440}) { @content; }
+	}
+	@else if $range == desktop-1920
+	{
+		@media (min-width: #{$size-desktop-1920}) { @content; }
+	}
 }
-
-// retina display
+// for retina
 @mixin retina()
 {
 	@media (-webkit-min-device-pixel-ratio: 2) { @content; }
+}
+
+
+// === Color
+
+// gradient
+@mixin color-linear-gradient($matt-color, $start, $end, $direction:'vertical')
+{
+	background: $matt-color;
+
+	@if $direction == 'horizontal'
+	{
+		background: linear-gradient(to right, $start, $end);
+	}
+	@else
+	{
+		background: linear-gradient(to bottom, $start, $end);
+	}
+}
+
+
+// === Image
+
+// background image
+@mixin image-background()
+{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+// make sprite image
+@mixin image-sprite($src, $width, $height) {
+	display: block;
+	text-align: left;
+	text-indent: -9999px;
+	overflow: hidden;
+	font-size: 0;
+	background: transparent url('#{$src}.png') no-repeat;
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.33dppx) {
+		background-image: url('#{$src}@2x.png');
+		background-size: $width $height;
+	}
+}
+
+
+// === Text
+
+// single line text
+@mixin text-single-line()
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// multi line text
+@mixin text-multi-line($height: 1rem, $row: 3)
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: $height;
+	max-height: $height * $row;
+	display: -webkit-box;
+	-webkit-line-clamp: $row;
+	-webkit-box-orient: vertical;
+}
+
+
+// === Button
+
+// button touch options
+@mixin button-touch-options($opacity:false) {
+	outline: none;
+	user-select: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	@if ($opacity) {
+		&:active {
+			opacity: .6;
+		}
+	}
+}
+
+
+// === Etc
+
+// blind
+@mixin blind()
+{
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+
+// horizontal scroll for mobile
+@mixin horizontal-scroll($side-margin:16px)
+{
+	margin: 0 -#{$side-margin};
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	scroll-snap-type: mandatory;
+	-webkit-scroll-snap-type: mandatory;
 }
