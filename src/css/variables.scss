@@ -1,4 +1,4 @@
-// * variables
+// * Variables
 
 
 // === color
@@ -23,16 +23,20 @@ $color-theme-set-5: #AD2724;
 // === size
 
 // screen
-$size-min: 320px;
+$size-min: 320px; // min
 $size-tablet: 768px; // tablet
 $size-desktop: 1024px; // desktop
 $size-desktop-1280: 1280px; // desktop large
-$size-desktop-1440: 1440px; // max
-$size-desktop-1920: 1920px; // extra
-$size-desktop-2560: 2560px; // extra
+$size-desktop-1440: 1440px; // extra large
+$size-desktop-1920: 1920px; // fhd
+$size-desktop-2560: 2560px; // qhd
 
 // border
 $size-border-radius: 2px;
+
+// grid
+$size-grid-col-gutter: 8px;
+
 
 
 // === font
