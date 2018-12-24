@@ -9,12 +9,12 @@ const baseMap = [
 	{
 		path: '*',
 		name: '404',
-		component: () => import('./pages/404'),
+		component: () => import('./docs/404'),
 	},
 	{
 		path: '/',
 		name: 'home',
-		component: () => import('./pages'),
+		component: () => import('./docs/home'),
 	},
 ];
 
@@ -28,7 +28,7 @@ const contentMap = function(src) {
 				map.push({
 					path: item.link,
 					name: item.name ? item.name : item.link,
-					component: item.component || (() => import(`@/pages${item.link}`)),
+					component: item.component || (() => import(`@/docs${item.link}`)),
 				});
 			});
 		}
