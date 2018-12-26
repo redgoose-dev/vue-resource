@@ -1,0 +1,52 @@
+@import "../../css/variables";
+
+.sidebar {
+	&__nav {
+		padding: 20px 0 30px;
+		box-sizing: border-box;
+		ul {
+			margin: 0;
+			padding: 0 0 0 1rem;
+			list-style: none;
+			ul {
+				margin: 0 0 20px;
+				ul {
+					margin: 0 0 10px;
+				}
+			}
+		}
+		a {
+			display: block;
+			margin: 0;
+			padding: 4px 0;
+			font-size: 15px;
+			color: $color-base;
+			font-weight: 400;
+			text-decoration: none;
+			&:hover {
+				color: $color-key;
+			}
+			&.router-link-exact-active {
+				color: $color-key;
+				text-decoration: underline;
+			}
+		}
+		span {
+			display: block;
+			margin: 0;
+			padding: 5px 0;
+			font-size: 1rem;
+			color: $color-base;
+		}
+		.head--dep-1 {
+			margin: 15px 0 3px;
+			font-size: 1.15rem;
+			font-weight: 600;
+		}
+		.head--dep-2 {
+			margin: 10px 0 3px;
+			font-weight: 600;
+			font-size: 1rem;
+		}
+	}
+}

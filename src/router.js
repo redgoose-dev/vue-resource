@@ -9,12 +9,7 @@ const baseMap = [
 	{
 		path: '*',
 		name: '404',
-		component: () => import('./docs/404'),
-	},
-	{
-		path: '/',
-		name: 'home',
-		component: () => import('./docs/home'),
+		component: () => import(`@/docs/pages/404`),
 	},
 ];
 
@@ -22,17 +17,39 @@ const baseMap = [
 const contentMap = function(src) {
 	let map = [];
 	src.forEach((group) => {
-		if (group.items && group.items.length)
+		if (group.link)
+		{
+			map.push({
+				path: group.link,
+				name: group.name ? group.name : group.link,
+				component: group.component || (() => import(`@/docs/pages${group.link}`)),
+			});
+		}
+		else if (group.items && group.items.length)
 		{
 			group.items.forEach((item) => {
-				map.push({
-					path: item.link,
-					name: item.name ? item.name : item.link,
-					component: item.component || (() => import(`@/docs${item.link}`)),
-				});
+				if (item.link)
+				{
+					map.push({
+						path: item.link,
+						name: item.name ? item.name : item.link,
+						component: item.component || (() => import(`@/docs/pages${item.link}`)),
+					});
+				}
+				else if (item.items)
+				{
+					item.items.forEach((item2) => {
+						map.push({
+							path: item2.link,
+							name: item2.name ? item2.name : item2.link,
+							component: item2.component || (() => import(`@/docs/pages${item2.link}`)),
+						});
+					});
+				}
 			});
 		}
 	});
+	console.log(map);
 	return map;
 }(map);
 

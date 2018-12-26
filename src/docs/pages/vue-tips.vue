@@ -1,3 +1,3 @@
 <template>
-	<div>stylesheet</div>
+	<div>vue tips</div>
 </template>

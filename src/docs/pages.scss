@@ -1,0 +1,43 @@
+@import "../css/variables";
+
+.page {
+	font-size: .9375rem;
+
+	h2 {
+		margin: 3rem 0 1rem;
+	}
+	h3 {
+		margin: 2rem 0 1rem;
+	}
+
+	code {
+		margin: 0 2px;
+		white-space: nowrap;
+		padding: 3px 5px;
+		border-radius: 2px;
+		background: #eeeff0;
+		font-size: .875rem;
+		color: $color-sub;
+		font-family: $font-console;
+	}
+	pre {
+		margin: 1rem 0;
+		padding: 1rem;
+		background: #eeeff0;
+		font-size: 0;
+		line-height: 1.5;
+		overflow: auto;
+		> code {
+			margin: 0;
+			padding: 0;
+			background: none;
+			white-space: pre;
+			border-radius: 0;
+			color: $color-sub;
+		}
+	}
+
+	> *:first-child {
+		margin-top: 0;
+	}
+}
