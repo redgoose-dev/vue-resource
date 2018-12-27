@@ -33,6 +33,8 @@ h3.title {
 	line-height: 1.5;
 }
 h4.title {
-	border: 1px solid blue;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.5;
 }
 </style>

@@ -4,7 +4,13 @@
 
 export default [
 	{ link: '/', title: 'Introduce' },
-	{ link: '/vue-tips', title: 'vue.js tips' },
+	{
+		title: 'Framework',
+		items: [
+			{ link: '/framework/vue', title: 'Vue.js notes' },
+			{ link: '/framework/nuxt', title: 'Nuxt.js notes' },
+		],
+	},
 	{
 		title: 'Stylesheet',
 		items: [

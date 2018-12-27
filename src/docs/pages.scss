@@ -2,6 +2,7 @@
 
 .page {
 	font-size: .9375rem;
+	line-height: 1.6;
 
 	h2 {
 		margin: 3rem 0 1rem;
@@ -9,21 +10,28 @@
 	h3 {
 		margin: 2rem 0 1rem;
 	}
-
+	h4 {
+		margin: 1.5rem 0 -.5rem;
+	}
+	ul,
+	ol {
+		margin: 1.5rem 0;
+		padding-left: 22px;
+	}
 	code {
 		margin: 0 2px;
 		white-space: nowrap;
 		padding: 3px 5px;
 		border-radius: 2px;
-		background: #eeeff0;
-		font-size: .875rem;
+		background: #f3f4f5;
+		font-size: 85%;
 		color: $color-sub;
 		font-family: $font-console;
 	}
 	pre {
-		margin: 1rem 0;
+		margin: 1.25rem 0;
 		padding: 1rem;
-		background: #eeeff0;
+		background: #F3F4F5;
 		font-size: 0;
 		line-height: 1.5;
 		overflow: auto;
@@ -34,7 +42,53 @@
 			white-space: pre;
 			border-radius: 0;
 			color: $color-sub;
+			font-size: .8125rem;
 		}
+	}
+	blockquote {
+		position: relative;
+		margin: 1.5rem 0;
+		padding: 1rem;
+		background: $color-sub;
+		color: #fff;
+		font-size: 13px;
+		* {
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 1.5rem 0;
+		font-size: .875rem;
+		caption {
+			padding: 0 0 6px;
+			text-align: left;
+			font-size: .875rem;
+			font-weight: 600;
+		}
+		th,
+		td {
+			border: 1px solid mix($color-gray-light, #fff, 60%);
+			padding: 8px 10px;
+		}
+		thead {
+			th {
+				padding: 8px 0;
+				background: mix($color-gray-light, #fff, 20%);
+			}
+		}
+		tbody {
+			th {
+				font-weight: 400;
+			}
+		}
+
 	}
 
 	> *:first-child {

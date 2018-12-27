@@ -21,7 +21,7 @@ $size-side-width: 240px;
 	top: 0;
 	height: var(--header-height);
 	border-bottom: 1px solid #eee;
-	background: rgba(#fff, .85);
+	background: #fff;
 	box-sizing: border-box;
 	&__wrap {
 		display: flex;
@@ -60,8 +60,8 @@ $size-side-width: 240px;
 		}
 		.title {
 			margin: 0;
-			padding: 0 0 0 10px;
-			font-size: 1.125rem;
+			padding: 0 0 0 8px;
+			font-size: 1rem;
 			line-height: 1.25;
 			font-family: $font-eng;
 			font-weight: 600;
@@ -86,6 +86,7 @@ $size-side-width: 240px;
 			}
 			.title {
 				padding-left: 15px;
+				font-size: 1.25rem;
 			}
 		}
 		&__side {
@@ -134,8 +135,7 @@ $size-side-width: 240px;
 		box-sizing: border-box;
 		padding-top: var(--header-height);
 		border-right: 1px solid #eee;
-		transform: translateX(-100vw);
-		transition: transform 300ms ease-out;
+		display: none;
 	}
 
 	@include responsive(tablet) {
@@ -169,16 +169,13 @@ $size-side-width: 240px;
 			display: block;
 		}
 		&__sidebar {
-			transform: translateX(0);
+			display: block;
 		}
 	}
 	@include responsive(tablet) {
 		.container {
 			&__sidebar-mask {
 				display: none;
-			}
-			&__sidebar {
-				transform: none;
 			}
 		}
 	}

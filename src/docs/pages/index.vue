@@ -1,32 +1,43 @@
 <template>
-	<div class="home">
+<div class="home">
+	<p>
 		homesdmogpsdm homesdmogpsdm homesdmogpsdm homesdmogpsdmhomesdmogpsdm homesdmogpsdmhomesdmogpsdmhomesdm ogpsdmhomesdmogpsdmhomesdmogpsdm homesdmogpsdmhomesdmogpsdm homesdmogpsdm
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-		<p>=======</p>
-	</div>
+	</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+	<p>=======</p>
+</div>
 </template>
 
 <script>
@@ -35,9 +46,3 @@ export default {
 	components: {}
 }
 </script>
-
-<style lang="scss" scoped>
-.home {
-	border: 1px solid #000;
-}
-</style>

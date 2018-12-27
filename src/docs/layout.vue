@@ -11,7 +11,7 @@
 					</button>
 				</nav>
 				<h2 class="title">
-					<router-link to="/">rg-resource</router-link>
+					<router-link to="/">vue-redgoose-resource</router-link>
 				</h2>
 			</div>
 			<div class="layout-header__side">

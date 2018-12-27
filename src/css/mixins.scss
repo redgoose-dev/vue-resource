@@ -66,15 +66,15 @@
 }
 
 // make sprite image
-@mixin image-sprite($src, $width, $height) {
+@mixin image-sprite($src-1x, $src-2x, $width:'320px', $height:'240px') {
 	display: block;
 	text-align: left;
 	text-indent: -9999px;
 	overflow: hidden;
 	font-size: 0;
-	background: transparent url('#{$src}.png') no-repeat;
+	background: transparent url('#{$src-1x}') no-repeat;
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.33dppx) {
-		background-image: url('#{$src}@2x.png');
+		background-image: url('#{$src-2x}');
 		background-size: $width $height;
 	}
 }

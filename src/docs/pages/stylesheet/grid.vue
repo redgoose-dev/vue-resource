@@ -1,0 +1,16 @@
+<template>
+<article class="page">
+	<head-title type="h2" title="grid"/>
+
+	<p>그리드 레이아수</p>
+</article>
+</template>
+
+<script>
+export default {
+	name: 'page',
+	components: {
+		'head-title': () => import('@/docs/component/title'),
+	},
+}
+</script>
