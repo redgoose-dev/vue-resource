@@ -11,7 +11,7 @@
 		스타일시트를 작성하는데 많이 도움이 되는 툴들이 들어있다.
 	</p>
 	<pre>
-		<code>@include mixin-name();</code>
+		<code>@include text-single-line();</code>
 	</pre>
 	<p>자세한 파라메터나 스타일 속성들은 다음 섹션을 참고하거나 소스 URL을 참고하는것을 권장한다.</p>
 

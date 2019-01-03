@@ -23,7 +23,7 @@
 		white-space: nowrap;
 		padding: 3px 5px;
 		border-radius: 2px;
-		background: #f3f4f5;
+		background: #eeeff0;
 		font-size: 85%;
 		color: $color-sub;
 		font-family: $font-console;
@@ -31,10 +31,11 @@
 	pre {
 		margin: 1.25rem 0;
 		padding: 1rem;
-		background: #F3F4F5;
+		background: #eeeff0;
 		font-size: 0;
 		line-height: 1.5;
 		overflow: auto;
+		box-shadow: inset 2px 3px 5px rgba(0,0,0,.03);
 		> code {
 			margin: 0;
 			padding: 0;
@@ -49,7 +50,7 @@
 		position: relative;
 		margin: 1.5rem 0;
 		padding: 1rem;
-		background: $color-sub;
+		background: $color-theme-set-5;
 		color: #fff;
 		font-size: 13px;
 		* {
@@ -93,5 +94,32 @@
 
 	> *:first-child {
 		margin-top: 0;
+	}
+
+	.example {
+		position: relative;
+		background: #fff;
+		padding: 20px;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+	.example-grid {
+		border: 1px solid #eee;
+		padding: 10px;
+		.row {
+			> * {
+				padding: 8px 0;
+				text-align: center;
+				background: rgba($color-key, .12);
+				border: 1px solid $color-key;
+				border-radius: 3px;
+				font-weight: 600;
+			}
+		}
 	}
 }

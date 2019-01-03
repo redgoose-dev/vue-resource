@@ -1,11 +1,5 @@
 ## grid.scss
 
-그리드 레이아웃 시스템에 대한 스타일시트. 이 그리드의 컬럼은 총 12개로 되어있으며 ![flexbox](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Flexbox의_기본_개념)를 이용하여 그리드 레이아웃을 만들고 있다.
-
-Documentation url: (url)
-
-> TODO: grid 섹션의 설명은 html 페이지로 만드는게 좋을거 같아서 나중에 옮길예정
-
 ### basic
 
 기초적인 사용법은 다음과 같다.

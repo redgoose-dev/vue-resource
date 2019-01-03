@@ -20,9 +20,9 @@ $size-side-width: 240px;
 	right: 0;
 	top: 0;
 	height: var(--header-height);
-	border-bottom: 1px solid #eee;
-	background: #fff;
+	background: $color-key;
 	box-sizing: border-box;
+	//box-shadow: 0 2px 15px rgba(0,0,0,.08);
 	&__wrap {
 		display: flex;
 		align-items: center;
@@ -51,10 +51,10 @@ $size-side-width: 240px;
 					margin: 0 auto;
 					width: 16px;
 					height: 16px;
-					color: $color-base;
+					color: #fff;
 				}
 				&:active {
-					background: #f4f4f4;
+					background: rgba(0,0,0,.1);
 				}
 			}
 		}
@@ -64,12 +64,12 @@ $size-side-width: 240px;
 			font-size: 1rem;
 			line-height: 1.25;
 			font-family: $font-eng;
-			font-weight: 600;
+			font-weight: 400;
 			a {
 				display: block;
 				padding: 8px 0;
 				text-decoration: none;
-				color: $color-key;
+				color: #fff;
 			}
 		}
 	}
@@ -86,7 +86,7 @@ $size-side-width: 240px;
 			}
 			.title {
 				padding-left: 15px;
-				font-size: 1.25rem;
+				font-size: 1rem;
 			}
 		}
 		&__side {
@@ -99,8 +99,8 @@ $size-side-width: 240px;
 					padding: 0 8px;
 					font-size: .75rem;
 					text-decoration: none;
-					font-weight: 600;
-					color: $color-base;
+					font-weight: 500;
+					color: #fff;
 				}
 			}
 		}
@@ -127,7 +127,7 @@ $size-side-width: 240px;
 		left: 0;
 		top: 0;
 		bottom: 0;
-		background: #fff;
+		background: $color-bg;
 		width: 75vw;
 		min-width: $size-side-width;
 		overflow-x: hidden;
@@ -159,8 +159,14 @@ $size-side-width: 240px;
 		&__body {
 			.toggle-sidebar {
 				button {
-					background: #f4f4f4;
+					background: $color-bg;
+					svg {
+						color: $color-base;
+					}
 				}
+			}
+			.title {
+				padding-left: 20px;
 			}
 		}
 	}
