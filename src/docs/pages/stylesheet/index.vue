@@ -1,18 +1,23 @@
 <template>
 <article class="page">
 	<head-title type="h2" title="guide"/>
+
+	<blockquote>
+		<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/tree/master/src/css" target="_blank">css</a></strong>
+	</blockquote>
+
 	<p>
 		공통적으로 사용하는 css library 영역에서 사용하는 리소스들이다.<br/>
 		프로젝트에 기본적으로 자주, 반복적으로 사용되는 요소들을 모아두어 여기 소스들을 활용하여 만드려는 프로그램에 좀더 도움이 될것이다.
 	</p>
 	<p>
-		여기서 사용되는 `css`는 전부 <a href="https://sass-lang.com" target="_blank">Sass: Syntactically Awesome Style Sheets</a>로 작성되었다.
+		여기서 사용되는 <code>css</code>는 전부 <a href="https://sass-lang.com" target="_blank">Sass: Syntactically Awesome Style Sheets</a>로 작성되었다.
 	</p>
 
 	<head-title type="h3" title="Using"/>
 	<p>
-		서비스를 위한 공통적인 스타일시트를 만들때 scss 에서는 `app.scss` 파일 하나를 만들어서 다른 scss 파일들을 import 해올것이다.<br/>
-		여기에서 필요한 `scss`들을 다음과 같은 방법으로 불러와서 사용할 수 있다.
+		서비스를 위한 공통적인 스타일시트를 만들때 scss 에서는 <code>app.scss</code> 파일 하나를 만들어서 다른 scss 파일들을 import 해올것이다.<br/>
+		여기에서 필요한 <code>scss</code>들을 다음과 같은 방법으로 불러와서 사용할 수 있다.
 	</p>
 	<pre>
 <code>@import "./fonts";

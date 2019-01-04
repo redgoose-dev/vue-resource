@@ -80,15 +80,36 @@ ul.row {
 }
 // row - gutter
 .row-gutter {
+	margin: -#{$grid-col-gutter};
+	> * {
+		padding: $grid-col-gutter;
+	}
+	> .col-clear {
+		padding: 0;
+	}
+}
+.row-gutter-h {
 	margin-left: -#{$grid-col-gutter};
 	margin-right: -#{$grid-col-gutter};
-	> .col {
+	> * {
 		padding-left: $grid-col-gutter;
 		padding-right: $grid-col-gutter;
 	}
 	> .col-clear {
 		padding-left: 0;
 		padding-right: 0;
+	}
+}
+.row-gutter-v {
+	margin-top: -#{$grid-col-gutter};
+	margin-bottom: -#{$grid-col-gutter};
+	> * {
+		padding-top: $grid-col-gutter;
+		padding-bottom: $grid-col-gutter;
+	}
+	> .col-clear {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
 // row - vertical

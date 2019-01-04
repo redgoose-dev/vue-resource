@@ -139,7 +139,7 @@ $size-side-width: 240px;
 	}
 
 	@include responsive(tablet) {
-		padding: 30px 20px 30px $size-side-width + 20px;
+		padding: 30px 30px 30px $size-side-width + 30px;
 		&__sidebar-mask {
 			display: none;
 		}

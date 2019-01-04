@@ -2,14 +2,16 @@
 <article class="page">
 	<head-title type="h2" title="normalize"/>
 
-	<ul>
-		<li>
-			<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/blob/master/src/css/normalize.css" target="_blank">normalize.css</a></strong>
-		</li>
-		<li>
-			normalize.css: <a href="https://necolas.github.io/normalize.css" target="_blank">https://necolas.github.io/normalize.css</a>
-		</li>
-	</ul>
+	<blockquote>
+		<ul>
+			<li>
+				<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/blob/master/src/css/normalize.css" target="_blank">normalize.css</a></strong>
+			</li>
+			<li>
+				normalize.css: <a href="https://necolas.github.io/normalize.css" target="_blank">https://necolas.github.io/normalize.css</a>
+			</li>
+		</ul>
+	</blockquote>
 
 	<p>
 		css 리셋 라이브러리인 <code>normalize.css</code>를 사용한다.<br/>

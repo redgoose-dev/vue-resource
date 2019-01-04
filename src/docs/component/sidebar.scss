@@ -19,8 +19,8 @@
 			display: block;
 			margin: 0;
 			padding: 4px 0;
-			font-size: 15px;
-			color: $color-base;
+			font-size: .8125rem;
+			color: mix($color-base, #fff, 75%);
 			font-weight: 400;
 			text-decoration: none;
 			&:hover {
@@ -46,7 +46,7 @@
 		.head--dep-2 {
 			margin: 10px 0 3px;
 			font-weight: 600;
-			font-size: 1rem;
+			font-size: .9375rem;
 		}
 	}
 }

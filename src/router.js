@@ -49,7 +49,6 @@ const contentMap = function(src) {
 			});
 		}
 	});
-	console.log(map);
 	return map;
 }(map);
 

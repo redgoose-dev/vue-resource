@@ -1,14 +1,13 @@
 @import "../css/variables";
 
 .page {
-	font-size: .9375rem;
-	line-height: 1.6;
-
+	font-size: .875rem;
 	h2 {
-		margin: 3rem 0 1rem;
+		margin: 4rem 0 2rem;
+		border-bottom: 1px solid #ddd;
 	}
 	h3 {
-		margin: 2rem 0 1rem;
+		margin: 3rem 0 1rem;
 	}
 	h4 {
 		margin: 1.5rem 0 -.5rem;
@@ -35,7 +34,8 @@
 		font-size: 0;
 		line-height: 1.5;
 		overflow: auto;
-		box-shadow: inset 2px 3px 5px rgba(0,0,0,.03);
+		box-shadow: inset 0 3px 5px rgba(0,0,0,.03);
+		tab-size: 4;
 		> code {
 			margin: 0;
 			padding: 0;
@@ -50,9 +50,9 @@
 		position: relative;
 		margin: 1.5rem 0;
 		padding: 1rem;
-		background: $color-theme-set-5;
+		background: $color-sub;
 		color: #fff;
-		font-size: 13px;
+		font-size: .875rem;
 		* {
 			&:first-child {
 				margin-top: 0;
@@ -61,16 +61,23 @@
 				margin-bottom: 0;
 			}
 		}
+		a {
+			color: #fff;
+		}
+		ul {
+			padding-left: 20px;
+		}
 	}
 	table {
 		width: 100%;
 		border-collapse: collapse;
 		margin: 1.5rem 0;
 		font-size: .875rem;
+		background: #fff;
 		caption {
 			padding: 0 0 6px;
 			text-align: left;
-			font-size: .875rem;
+			font-size: .8125rem;
 			font-weight: 600;
 		}
 		th,
@@ -81,7 +88,7 @@
 		thead {
 			th {
 				padding: 8px 0;
-				background: mix($color-gray-light, #fff, 20%);
+				background: mix($color-gray-light, #fff, 30%);
 			}
 		}
 		tbody {
@@ -99,27 +106,59 @@
 	.example {
 		position: relative;
 		background: #fff;
-		padding: 20px;
+		padding: 35px 20px 30px;
+		border: 1px solid #ddd;
+		box-sizing: border-box;
 		&:after {
-			content: '';
+			content: 'example';
 			display: block;
 			position: absolute;
-			right: 0;
-			top: 0;
+			right: -1px;
+			top: -1px;
+			padding: 2px 8px;
+			text-transform: uppercase;
+			border-bottom: 1px solid #eee;
+			border-left: 1px solid #eee;
+			background: $color-sub;
+			font-family: $font-eng;
+			font-size: .625rem;
+			color: #fff;
+			font-weight: 600;
+		}
+		> hr {
+			display: block;
+			margin: 15px 0;
+			height: 1px;
+			border: none;
+			background: #eee;
+		}
+		> * {
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.example-grid {
-		border: 1px solid #eee;
-		padding: 10px;
 		.row {
-			> * {
-				padding: 8px 0;
+			span {
+				display: block;
+				padding: 8px 12px;
 				text-align: center;
 				background: rgba($color-key, .12);
 				border: 1px solid $color-key;
 				border-radius: 3px;
 				font-weight: 600;
+				color: $color-key;
+				font-size: .75rem;
+				box-sizing: border-box;
 			}
 		}
+	}
+	.example-code {
+		margin-top: -1px;
+		position: relative;
 	}
 }

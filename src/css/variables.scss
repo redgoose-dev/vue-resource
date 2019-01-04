@@ -4,16 +4,16 @@
 // === color
 
 // theme set
-$color-theme-set-1: #A540E3;
-$color-theme-set-2: #7E43ED;
-$color-theme-set-3: #5247D6;
-$color-theme-set-4: #4363ED;
-$color-theme-set-5: #408AE3;
+$color-theme-set-1: #393E46;
+$color-theme-set-2: #00ADB5;
+$color-theme-set-3: #FFF4E0;
+$color-theme-set-4: #F8B500;
+$color-theme-set-5: #FC3C3C;
 
 // base
 $color-base: #2a2a2a;
-$color-key: $color-theme-set-3;
-$color-sub: $color-theme-set-5;
+$color-key: $color-theme-set-5;
+$color-sub: $color-theme-set-2;
 $color-bg: #fafafa;
 
 // gray
@@ -24,13 +24,13 @@ $color-gray-light: #ccc;
 // === size
 
 // screen
-$size-min: 320px; // min
-$size-tablet: 768px; // tablet
-$size-desktop: 1024px; // desktop
-$size-desktop-1280: 1280px; // desktop large
-$size-desktop-1440: 1440px; // extra large
-$size-desktop-1920: 1920px; // fhd
-$size-desktop-2560: 2560px; // qhd
+$size-screen-min: 320px; // min
+$size-screen-tablet: 768px; // tablet
+$size-screen-desktop: 1024px; // desktop
+$size-screen-desktop-1280: 1280px; // desktop large
+$size-screen-desktop-1440: 1440px; // extra large
+$size-screen-desktop-1920: 1920px; // fhd
+$size-screen-desktop-2560: 2560px; // qhd
 
 // border
 $size-border-radius: 2px;

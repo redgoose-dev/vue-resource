@@ -2,9 +2,9 @@
 <article class="page">
 	<head-title type="h2" title="mixins"/>
 
-	<ul>
-		<li><strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/blob/master/src/css/mixins.scss" target="_blank">mixins.scss</a></strong></li>
-	</ul>
+	<blockquote>
+		<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/blob/master/src/css/mixins.scss" target="_blank">mixins.scss</a></strong>
+	</blockquote>
 
 	<p>
 		<a href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html#mixins" target="_blank">mixin</a>은 <code>scss</code>의 함수라고 볼 수 있다.<br/>
@@ -201,10 +201,13 @@
 	</section>
 
 	<section>
-		<head-title type="h3" title="horizontal-scroll"/>
+		<head-title type="h3" title="horizontal scroll"/>
 		<p>가로 스크롤을 표현한다. 주로 모바일에서 유용하다.</p>
+
+		<head-title type="h4" title="horizontal-scroll-wrap"/>
+		<p>아이템들을 감싸는 목록에서 적용해줘야한다.</p>
 		<pre>
-			<code>@include horizontal-scroll($side-margin);</code>
+			<code>@include horizontal-scroll-wrap($padding-side, $padding-bottom);</code>
 		</pre>
 		<table>
 			<caption>Parameters</caption>
@@ -217,12 +220,70 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th><code>$side-margin</code></th>
+				<th><code>$padding-side</code></th>
 				<th>16px</th>
-				<td>사이드 영역의 마진 사이즈</td>
+				<td>사이드 여백 사이즈</td>
+			</tr>
+			<tr>
+				<th><code>$padding-bottom</code></th>
+				<th>16px</th>
+				<td>아래쪽 여백 사이즈. 아래쪽에 스크롤이 나오기때문에 여백이 필요하다.</td>
 			</tr>
 			</tbody>
 		</table>
+		<head-title type="h4" title="horizontal-scroll-item"/>
+		<p>아이템에서 적용해줘야한다.</p>
+		<pre>
+			<code>@include horizontal-scroll-item($padding-side);</code>
+		</pre>
+		<table>
+			<caption>Parameters</caption>
+			<thead>
+			<tr>
+				<th>name</th>
+				<th>value</th>
+				<th>comment</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th><code>$padding-side</code></th>
+				<th>16px</th>
+				<td>사이드 여백 사이즈</td>
+			</tr>
+			<tr>
+				<th><code>$padding-side-outer</code></th>
+				<th>16px</th>
+				<td>사이드 외곽영역 여백 사이즈.<br/>이 값이 없으면 <code>$padding-side</code>값으로 사용한다.</td>
+			</tr>
+			</tbody>
+		</table>
+		<head-title type="h4" title="example"/>
+		<p>이것을 적용하면 다음과 같이 표현된다.</p>
+		<div class="example">
+			<ul class="horizontal-scroll-demo">
+				<li v-for="o in Array(10)"><span>item</span></li>
+			</ul>
+		</div>
+		<pre class="example-code">
+			<code>ul {
+	padding: 15px 0 0;
+	@include horizontal-scroll-wrap(16px, 15px);
+	margin: 0 -20px;
+	list-style: none;
+	box-sizing: border-box;
+	background: #f4f4f4;
+	li {
+		@include horizontal-scroll-item(8px, 16px);
+		span {
+			display: block;
+			width: 100px;
+			height: 100px;
+			background: $color-key;
+		}
+	}
+}</code>
+		</pre>
 	</section>
 </article>
 </template>
@@ -235,3 +296,41 @@ export default {
 	},
 }
 </script>
+
+<style lang="scss" scoped>
+@import "../../../css/variables";
+@import "../../../css/mixins";
+
+.horizontal-scroll-demo {
+	padding: 15px 0 0;
+	@include horizontal-scroll-wrap(16px, 15px);
+	margin: 0 -20px;
+	list-style: none;
+	box-sizing: border-box;
+	background: #f4f4f4;
+	li {
+		@include horizontal-scroll-item(8px, 16px);
+		span {
+			position: relative;
+			display: block;
+			width: 100px;
+			height: 100px;
+			background: $color-key;
+			font-size: 0;
+			&:after {
+				content: 'item';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 12px;
+				color: #fff;
+			}
+		}
+	}
+}
+</style>

@@ -11,23 +11,23 @@
 {
 	@if $range == tablet
 	{
-		@media (min-width: #{$size-tablet}) { @content; }
+		@media (min-width: #{$size-screen-tablet}) { @content; }
 	}
 	@if $range == desktop
 	{
-		@media (min-width: #{$size-desktop}) { @content; }
+		@media (min-width: #{$size-screen-desktop}) { @content; }
 	}
 	@else if $range == desktop-1280
 	{
-		@media (min-width: #{$size-desktop-1280}) { @content; }
+		@media (min-width: #{$size-screen-desktop-1280}) { @content; }
 	}
 	@else if $range == desktop-1440
 	{
-		@media (min-width: #{$size-desktop-1440}) { @content; }
+		@media (min-width: #{$size-screen-desktop-1440}) { @content; }
 	}
 	@else if $range == desktop-1920
 	{
-		@media (min-width: #{$size-desktop-1920}) { @content; }
+		@media (min-width: #{$size-screen-desktop-1920}) { @content; }
 	}
 }
 // for retina
@@ -134,12 +134,43 @@
 }
 
 // horizontal scroll for mobile
-@mixin horizontal-scroll($side-margin:16px)
+@mixin horizontal-scroll-wrap($padding-side:16px, $padding-bottom:16px)
 {
-	margin: 0 -#{$side-margin};
+	display: block;
+	padding-bottom: $padding-bottom;
+	margin: 0;
+	white-space: nowrap;
+	font-size: 0;
+	line-height: 0;
 	overflow-x: auto;
 	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch;
-	scroll-snap-type: mandatory;
-	-webkit-scroll-snap-type: mandatory;
+	-webkit-scroll-snap-type: x mandatory;
+	scroll-snap-type: x mandatory;
+	-webkit-scroll-padding-left: $padding-side;
+	scroll-padding-left: $padding-side;
+}
+@mixin horizontal-scroll-item($padding-side:16px, $padding-side-outer:null)
+{
+	@if $padding-side-outer == null
+	{
+		$padding-side-outer: $padding-side;
+	}
+
+	position: relative;
+	display: inline-block;
+	margin-left: $padding-side;
+	padding: 0;
+	-webkit-scroll-snap-align: start;
+	scroll-snap-align: start;
+	vertical-align: top;
+	white-space: normal;
+	line-height: normal;
+	font-size: initial;
+	&:first-child {
+		margin-left: $padding-side-outer;
+	}
+	&:last-child {
+		margin-right: $padding-side-outer;
+	}
 }
