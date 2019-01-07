@@ -190,7 +190,7 @@
 				</div>
 			</div>
 		</div>
-		<pre>
+		<pre class="example-code">
 			<code>&lt;div class="row row-gutter-h">
 	&lt;div class="col col-6">col-6&lt;/div>
 	&lt;div class="col col-6">col-6&lt;/div>
@@ -206,6 +206,130 @@
 &lt;/div></code>
 		</pre>
 		<p>가로나 세로 한쪽 축으로만 여백을 넣을 수 있다.</p>
+	</section>
+
+	<section>
+		<head-title type="h3" title="alignment vertical"/>
+		<p>
+			<code>row</code> 높이가 특정 사이즈로 설정되어있다면 높이의 기준으로 정렬한다. <code>align-items</code> 속성을 이용한다.
+		</p>
+		<div class="example">
+			<div class="example-grid">
+				<div class="row row-v-start fixed-v">
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+				</div>
+			</div>
+			<hr>
+			<div class="example-grid">
+				<div class="row row-v-center fixed-v">
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+				</div>
+			</div>
+			<hr>
+			<div class="example-grid">
+				<div class="row row-v-end fixed-v">
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+				</div>
+			</div>
+		</div>
+		<pre class="example-code">
+			<code>&lt;div class="row row-v-start"/>
+&lt;div class="row row-v-center"/>
+&lt;div class="row row-v-end"/></code>
+		</pre>
+	</section>
+
+	<section>
+		<head-title type="h3" title="alignment horizontal"/>
+		<p>컬럼들을 가로를 기준으로 정렬한다. <code>justify-context</code> 속성을 이용한다.</p>
+		<div class="example">
+			<div class="example-grid">
+				<div class="row row-h-start fixed-h">
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+				</div>
+			</div>
+			<hr>
+			<div class="example-grid">
+				<div class="row row-h-center fixed-h">
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+				</div>
+			</div>
+			<hr>
+			<div class="example-grid">
+				<div class="row row-h-end fixed-h">
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+				</div>
+			</div>
+			<hr>
+			<div class="example-grid">
+				<div class="row row-h-around fixed-h">
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+				</div>
+			</div>
+			<hr>
+			<div class="example-grid">
+				<div class="row row-h-between fixed-h">
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+					<div><span>item</span></div>
+				</div>
+			</div>
+		</div>
+		<pre class="example-code">
+			<code>&lt;div class="row row-h-start"/>
+&lt;div class="row row-h-center"/>
+&lt;div class="row row-h-end"/>
+&lt;div class="row row-h-around"/>
+&lt;div class="row row-h-between"/></code>
+		</pre>
+	</section>
+
+	<section>
+		<head-title type="h3" title="order"/>
+		<p>
+			컬럼의 순서를 변경할때 사용된다. 여기서 추가로 반응형으로 스크린 사이즈에 따라 순서를 바꿀 수 있다.<br/>
+			최대 12까지 지정할 수 있으며 더 높은숫자나 특별한 숫자를 사용하고 싶다면 직접 스타일을 넣어라.
+		</p>
+		<div class="example">
+			<div class="example-grid">
+				<div class="row row-gutter">
+					<div class="col order-1 order-md-2"><span>order-1 order-md-2</span></div>
+					<div class="col order-2 order-md-1"><span>order-2 order-md-1</span></div>
+				</div>
+			</div>
+		</div>
+		<pre class="example-code">
+			<code>&lt;div class="row row-gutter">
+	&lt;div class="order-1 order-md-2">col&lt;/div>
+	&lt;div class="order-2 order-md-1">col&lt;/div>
+&lt;/div></code>
+		</pre>
+	</section>
+
+	<section>
+		<head-title type="h3" title="wrapper"/>
+		<p>
+			<code>.row-gutter</code>가 적용된 그리드 레이아웃을 감싸기 위한 용도로 만들어졌다. <code>.row-gutter</code>를 적용하면 사이드가 돌출되는 부분을 <code>overflow: hidden;</code>속성을 가리기 위한 용도로 사용할 수 있다.
+		</p>
+		<pre class="example-code">
+			<code>&lt;div class="row-wrap">
+	&lt;div class="col">&lt;/div>
+&lt;/div></code>
+		</pre>
+		<p>
+			만약 <code>.row-wrap</code> 엘리먼트의 영역을 벗어나는 자식 요소가 있다면 <code>overflow: hidden;</code> 속성 때문에 요소가 잘려서 안보이기 때문에 <code>.row-wrap</code> 클래스를 사용하지 않는것이 좋다.
+		</p>
 	</section>
 </article>
 </template>

@@ -156,6 +156,15 @@
 				box-sizing: border-box;
 			}
 		}
+		.fixed-v {
+			padding: 10px;
+			height: 80px;
+			border: 2px solid $color-key;
+		}
+		.fixed-h {
+			padding: 10px;
+			border: 2px solid $color-key;
+		}
 	}
 	.example-code {
 		margin-top: -1px;
