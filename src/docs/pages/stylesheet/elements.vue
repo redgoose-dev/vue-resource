@@ -23,6 +23,10 @@
 
 a {
 	color: $color-key;
+}
+body {
+	margin: 0;
+	font-size: 16px;
 }</code>
 	</pre>
 </article>
