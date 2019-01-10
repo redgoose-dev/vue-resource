@@ -1,1 +1,23 @@
 // * Forms
+
+
+@import "./variables";
+@import "./mixins";
+
+
+// fieldset
+.form-fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+	> legend {
+		position: absolute;
+		font-size: 0;
+		visibility: hidden;
+	}
+}
+
+// fields
+.form-field {
+	//
+}
