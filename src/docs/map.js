@@ -36,13 +36,13 @@ export default [
 			{ link: '/components/modal', title: 'modal' },
 			{ link: '/components/loading', title: 'loading' },
 			{
-				title: 'Forms',
+				title: 'Form',
 				items: [
-					{ link: '/components/form-text', title: 'text' },
-					{ link: '/components/form-radio', title: 'radio' },
-					{ link: '/components/form-checkbox', title: 'checkbox' },
-					{ link: '/components/form-select', title: 'select' },
-					{ link: '/components/form-switch', title: 'switch' },
+					{ link: '/components/form/text', title: 'text' },
+					{ link: '/components/form/radio', title: 'radio' },
+					{ link: '/components/form/checkbox', title: 'checkbox' },
+					{ link: '/components/form/select', title: 'select' },
+					{ link: '/components/form/switch', title: 'switch' },
 				],
 			},
 			{

@@ -1,0 +1,28 @@
+@import "../../css/variables";
+@import "../../css/mixins";
+
+$size-padding-side: 15px;
+$size-height-basic: 40px;
+$size-height-small: 40px;
+$size-height-large: 40px;
+$color-border: #ff0000;
+
+.form-text {
+	display: block;
+	padding: 0 $size-padding-side;
+	width: 100%;
+	height: $size-height-basic;
+	box-sizing: border-box;
+	border: 1px solid $color-border;
+	border-radius: 0;
+	box-shadow: 0 0 0;
+	background: #fff;
+	font-size: 15px;
+	line-height: normal;
+	font-weight: 300;
+	color: $color-base;
+	-webkit-tap-highlight-color: transparent;
+	transition: box-shadow 300ms ease-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
