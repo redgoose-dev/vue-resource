@@ -14,7 +14,8 @@
 	class="form-text"
 	:class="[
 		'form-text--textarea',
-		error && 'form-text--error',
+		size && `form-text--size-${size}`,
+		state && `form-text--state-${state}`,
 	]"
 	@click="onChangePosition"
 	@keyup="onChangePosition"
@@ -36,7 +37,7 @@
 	:class="[
 		inline && `form-text--inline`,
 		size && `form-text--size-${size}`,
-		error && `form-text--error`,
+		state && `form-text--state-${state}`,
 	]"
 	@click="onChangePosition"
 	@keyup="onChangePosition"
@@ -58,7 +59,8 @@ export default {
 		readonly: { type: Boolean, default: false },
 		inline: { type: Boolean, default: false },
 		nativeSize: { type: [String,Number] },
-		error: { type: Boolean, default: false },
+		rows: { type: Number, default: 5 },
+		state: { type: String, default: null },
 		size: { type: String },
 	},
 	model: {

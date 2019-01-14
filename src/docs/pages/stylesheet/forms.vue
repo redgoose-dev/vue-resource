@@ -29,23 +29,34 @@
 				<fieldset class="forms-fieldset">
 					<legend>입력 폼 그룹</legend>
 					<div class="forms-field">
-						<div class="row">
+						<div class="row row-v-center">
 							<div class="col-12 col-sm-3">
-								<label for="example1" class="forms-label">Label name</label>
+								<label for="example1" class="forms-label">E-Mail</label>
 							</div>
 							<div class="col-12 col-sm">
-								<input type="text" id="example1" placeholder="please input text">
+								<form-text type="email" id="example1" placeholder="please input text"/>
+							</div>
+						</div>
+					</div>
+					<div class="forms-field">
+						<div class="row row-v-center">
+							<div class="col-12 col-sm-3">
+								<label for="example2" class="forms-label">Password</label>
+							</div>
+							<div class="col-12 col-sm">
+								<form-text type="password" id="example2" placeholder="please input text"/>
 								<p class="forms-help">forms-help message</p>
 							</div>
 						</div>
 					</div>
 					<div class="forms-field">
-						<div class="row">
+						<div class="row row-v-center">
 							<div class="col-12 col-sm-3">
-								<label for="example2" class="forms-label">Label name</label>
+								<label for="example3" class="forms-label">Phone number</label>
 							</div>
 							<div class="col-12 col-sm">
-								<input type="text" id="example2" placeholder="please input text">
+								<form-text type="text" id="example3" placeholder="please input text"/>
+								<button type="button">// TODO</button>
 							</div>
 						</div>
 					</div>
@@ -130,6 +141,7 @@ export default {
 	name: 'page',
 	components: {
 		'head-title': () => import('@/docs/component/title'),
+		'form-text': () => import('@/components/forms/text'),
 	},
 }
 </script>

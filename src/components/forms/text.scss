@@ -1,28 +1,81 @@
 @import "../../css/variables";
 @import "../../css/mixins";
 
-$size-padding-side: 15px;
-$size-height-basic: 40px;
-$size-height-small: 40px;
-$size-height-large: 40px;
-$color-border: #ff0000;
-
 .form-text {
+	$self: '.form-text';
+
 	display: block;
-	padding: 0 $size-padding-side;
+	padding-left: $form-size-side-padding;
+	padding-right: $form-size-side-padding;
 	width: 100%;
-	height: $size-height-basic;
+	height: $form-size-height-basic;
 	box-sizing: border-box;
-	border: 1px solid $color-border;
-	border-radius: 0;
-	box-shadow: 0 0 0;
+	border: 1px solid $form-color-border;
 	background: #fff;
-	font-size: 15px;
+	font-size: .875rem;
 	line-height: normal;
-	font-weight: 300;
+	font-weight: 400;
 	color: $color-base;
-	-webkit-tap-highlight-color: transparent;
-	transition: box-shadow 300ms ease-out;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	border-radius: 2px;
+	box-shadow: $form-color-shadow;
+	-webkit-tap-highlight-color: transparent;
+
+	&::-webkit-input-placeholder {
+		color: $color-gray-light;
+	}
+	&:read-only {
+		background: mix(#000, #fff, 4%);
+	}
+	&:disabled {
+		opacity: .5;
+		background: mix(#000, #fff, 4%);
+		cursor: not-allowed;
+	}
+	&:focus {
+		border-color: $form-color-border-focus;
+		outline: 0;
+	}
+
+	&--textarea {
+		height: auto;
+		min-height: 120px;
+		line-height: 1.8;
+		padding-top: $form-size-side-padding;
+		padding-bottom: $form-size-side-padding;
+		resize: vertical;
+	}
+
+	&--error {
+		border-color: $color-error;
+	}
+	&--inline {
+		display: inline-block;
+		width: auto;
+	}
+	&--size {
+		&-small {
+			height: $form-size-height-small;
+			font-size: .75rem;
+			&#{$self}--textarea {
+				font-size: .75rem;
+			}
+		}
+		&-large {
+			height: $form-size-height-large;
+			font-size: 1.125rem;
+		}
+	}
+	&--state {
+		&-primary {
+			border-color: $color-sub;
+		}
+		&-success {
+			border-color: $color-success;
+		}
+		&-error {
+			border-color: $color-error;
+		}
+	}
 }

@@ -15,20 +15,16 @@
 		font-size: 0;
 		visibility: hidden;
 	}
+	&:disabled {}
 }
 
 // fields
 .forms-field {
 	box-sizing: border-box;
-	&:nth-child(n+2) {
-		margin-top: 10px;
-	}
-	&:first-child,
-	legend + &:nth-child(n+2) {
-		margin-top: 0;
-	}
+	border-top: 1px solid mix($color-gray-light, #fff, 50%);
+	padding: 15px 0;
 	&:last-child {
-		margin-bottom: 0;
+		border-bottom: 1px solid mix($color-gray-light, #fff, 50%);
 	}
 }
 

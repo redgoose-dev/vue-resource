@@ -49,6 +49,19 @@ $font-eng: Helvetica, Arial, sans-serif;
 $font-console: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 
+// === form
+
+// color
+$form-color-border: mix($color-gray, #fff, 50%);
+$form-color-border-focus: $color-key;
+$form-color-shadow: inset 0 1px 3px rgba(#000, .15);
+// size
+$form-size-height-small: 32px;
+$form-size-height-basic: 40px;
+$form-size-height-large: 46px;
+$form-size-side-padding: 12px;
+
+
 // === etc
 
 // shadow
