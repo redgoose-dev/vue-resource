@@ -40,7 +40,7 @@
 
 	&--textarea {
 		height: auto;
-		min-height: 120px;
+		min-height: $form-size-height-basic;
 		line-height: 1.8;
 		padding-top: $form-size-side-padding;
 		padding-bottom: $form-size-side-padding;
