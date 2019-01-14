@@ -2,7 +2,8 @@
 <article class="page">
 	<head-title type="h2" title="form - text"/>
 	<p>
-		<code>&lt;form-text/></code>컴포넌트는 텍스트 입력폼을 위한 
+		<code>&lt;form-text/></code>컴포넌트는 텍스트 입력폼으로 사용되는 컴포넌트다.<br/>
+		기능성보다 컴포넌트의 통일성에 더욱 촛점에 맞춰져있는 용도로 사용할 수 있다.
 	</p>
 
 	<p>basic</p>
