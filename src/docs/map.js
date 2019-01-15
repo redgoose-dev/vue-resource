@@ -39,9 +39,9 @@ export default [
 				title: 'Form',
 				items: [
 					{ link: '/components/form/text', title: 'text' },
+					{ link: '/components/form/select', title: 'select' },
 					{ link: '/components/form/radio', title: 'radio' },
 					{ link: '/components/form/checkbox', title: 'checkbox' },
-					{ link: '/components/form/select', title: 'select' },
 					{ link: '/components/form/switch', title: 'switch' },
 				],
 			},

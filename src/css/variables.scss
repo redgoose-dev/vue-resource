@@ -54,12 +54,16 @@ $font-console: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, mo
 // color
 $form-color-border: mix($color-gray, #fff, 50%);
 $form-color-border-focus: $color-key;
-$form-color-shadow: inset 0 1px 3px rgba(#000, .15);
+$form-color-shadow-focus: 0 0 0 3px rgba($color-key, .2);
 // size
+$form-size-font-small: .875rem;
+$form-size-font-basic: 1rem;
+$form-size-font-large: 1.125rem;
 $form-size-height-small: 32px;
-$form-size-height-basic: 40px;
+$form-size-height-basic: 42px;
 $form-size-height-large: 46px;
-$form-size-side-padding: 12px;
+$form-size-side-padding: 15px;
+$form-size-radius: 3px;
 
 
 // === etc

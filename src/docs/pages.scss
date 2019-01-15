@@ -68,7 +68,7 @@
 			padding-left: 20px;
 		}
 	}
-	table {
+	table:not(.table) {
 		width: 100%;
 		border-collapse: collapse;
 		margin: 1.5rem 0;
@@ -96,7 +96,6 @@
 				font-weight: 400;
 			}
 		}
-
 	}
 
 	> *:first-child {
@@ -114,7 +113,7 @@
 			display: block;
 			position: absolute;
 			right: -1px;
-			top: -5px;
+			top: -9px;
 			padding: 1px 6px;
 			text-transform: uppercase;
 			border-bottom: 1px solid #eee;
