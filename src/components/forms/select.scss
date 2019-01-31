@@ -3,13 +3,15 @@
 
 .form-select {
 	$self: '.form-select';
+	$size-padding: 12px;
 
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
 	height: $form-size-height-basic;
 	margin: 0;
-	text-indent: $form-size-side-padding - 12px;
+	padding: 0 $size-padding;
+	text-indent: $form-size-side-padding - $size-padding;
 	border: 1px solid $form-color-border;
 	border-radius: $form-size-radius;
 	font-size: $form-size-font-basic;
@@ -64,6 +66,8 @@
 	&--multiple {
 		height: auto;
 		min-height: $form-size-height-basic;
+		padding-top: $size-padding;
+		padding-bottom: $size-padding;
 		&#{$self}--size {
 			&-small {
 				min-height: $form-size-height-small;
@@ -72,5 +76,9 @@
 				min-height: $form-size-height-large;
 			}
 		}
+	}
+	&--not-native {
+		appearance: none;
+		text-indent: 0;
 	}
 }

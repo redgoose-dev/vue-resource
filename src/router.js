@@ -62,7 +62,18 @@ const router = new Router({
 			...baseMap,
 			...contentMap,
 		]
-	}()
+	}(),
+	scrollBehavior(to, from, savedPosition)
+	{
+		if (savedPosition)
+		{
+			return savedPosition;
+		}
+		else
+		{
+			return { x: 0, y: 0 };
+		}
+	},
 });
 
 // 페이지 이동에 대한 후크

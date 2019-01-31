@@ -11,9 +11,9 @@
 		inline && 'form-select--inline',
 		size && `form-select--size-${size}`,
 		state && `form-select--state-${state}`,
-		error && 'form-select--error',
 		selected && `form-select--selected`,
 		multiple && `form-select--multiple`,
+		!native && `form-select--not-native`,
 	]"
 	@input="onChange">
 		<option
@@ -37,9 +37,10 @@ export default {
 		disabled: { type: Boolean, default: false },
 		inline: { type: Boolean, default: false },
 		multiple: { type: Boolean, default: false },
+		native: { type: Boolean, default: true }, // use native component
 		placeholder: { type: String, default: '선택하기' },
-		size: { type: String },
-		state: { type: String },
+		size: { type: String }, // small, large
+		state: { type: String }, // primary, success, error
 	},
 	model: {
 		prop: 'selected',

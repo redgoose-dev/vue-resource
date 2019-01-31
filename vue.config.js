@@ -1,6 +1,6 @@
 // https://cli.vuejs.org/config/
 
 module.exports = {
-	baseUrl: './',
+	publicPath: './',
 	outputDir: 'docs/',
 };

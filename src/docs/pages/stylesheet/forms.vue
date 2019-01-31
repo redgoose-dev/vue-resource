@@ -129,8 +129,11 @@
 		<head-title type="h3" title="Form components"/>
 		<p>다음은 입력폼에서 사용하는 컴포넌트들이다.</p>
 		<ul>
-			<li><router-link to="/">text</router-link></li>
-			<li><router-link to="/">textarea</router-link></li>
+			<li><router-link to="/components/form/text">text</router-link></li>
+			<li><router-link to="/components/form/select">select</router-link></li>
+			<li><router-link to="/components/form/radio">radio</router-link></li>
+			<li><router-link to="/components/form/checkbox">checkbox</router-link></li>
+			<li><router-link to="/components/form/switch">switch</router-link></li>
 		</ul>
 	</section>
 </article>

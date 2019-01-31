@@ -103,49 +103,65 @@
 			<thead>
 			<tr>
 				<th>name</th>
+				<th>type</th>
 				<th>description</th>
 			</tr>
 			</thead>
 			<tbody>
 			<tr>
 				<th>name</th>
+				<th>string</th>
 				<td>`name` attribute 로 사용된다.</td>
 			</tr>
 			<tr>
 				<th>id</th>
+				<th>string</th>
 				<td>`id` attribute 로 사용된다.</td>
 			</tr>
 			<tr>
 				<th>selected</th>
+				<th>string, number</th>
 				<td>선택된 value 값</td>
 			</tr>
 			<tr>
 				<th>required</th>
+				<th>boolean</th>
 				<td>필수값인지에 대한 여부</td>
 			</tr>
 			<tr>
 				<th>disabled</th>
+				<th>boolean</th>
 				<td>비활성화</td>
 			</tr>
 			<tr>
 				<th>inline</th>
+				<th>boolean</th>
 				<td>인라인 형식으로 사용</td>
 			</tr>
 			<tr>
 				<th>multiple</th>
+				<th>boolean</th>
 				<td>여러항목 사용</td>
 			</tr>
 			<tr>
 				<th>placeholder</th>
+				<th>string</th>
 				<td>컴포넌트를 설명하는 글을 넣는다. 이것을 사용하면 값이없는 `option`이 첫번째로 만들어진다.</td>
 			</tr>
 			<tr>
 				<th>size</th>
-				<td>컴포넌트의 사이즈</td>
+				<th>string</th>
+				<td>컴포넌트의 사이즈 <code>small, large</code></td>
 			</tr>
 			<tr>
 				<th>state</th>
-				<td>컴포넌트의 상태</td>
+				<th>string</th>
+				<td>컴포넌트의 상태 <code>primary, success, error</code></td>
+			</tr>
+			<tr>
+				<th>native</th>
+				<th>boolean</th>
+				<td>네이티브 형태의 모습으로 사용한다.</td>
 			</tr>
 			</tbody>
 		</table>

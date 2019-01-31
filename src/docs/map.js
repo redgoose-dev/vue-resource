@@ -30,11 +30,16 @@ export default [
 	{
 		title: 'Components',
 		items: [
-			{ link: '/components/button-basic', title: 'button-basic' },
 			{ link: '/components/icon', title: 'icon' },
 			{ link: '/components/card', title: 'card' },
 			{ link: '/components/modal', title: 'modal' },
 			{ link: '/components/loading', title: 'loading' },
+			{
+				title: 'Button',
+				items: [
+					{ link: '/components/button/basic', title: 'basic' },
+				],
+			},
 			{
 				title: 'Form',
 				items: [
@@ -48,16 +53,16 @@ export default [
 			{
 				title: 'Navigation',
 				items: [
-					{ link: '/components/nav-paginate', title: 'paginate' },
-					{ link: '/components/nav-tab', title: 'tab' },
-					{ link: '/components/nav-dropdown', title: 'dropdown' },
+					{ link: '/components/navigation/pagination', title: 'pagination' },
+					{ link: '/components/navigation/tab', title: 'tab' },
+					{ link: '/components/navigation/dropdown', title: 'dropdown' },
 				],
 			},
 			{
 				title: 'Error',
 				items: [
-					{ link: '/components/error-content', title: 'content' },
-					{ link: '/components/error-page', title: 'page' },
+					{ link: '/components/error/content', title: 'content' },
+					{ link: '/components/error/page', title: 'page' },
 				],
 			},
 		],
@@ -65,9 +70,9 @@ export default [
 	{
 		title: 'Script library',
 		items: [
-			{ link: '/libs/sleep', title: 'sleep' },
-			{ link: '/libs/custom-event', title: 'custom event' },
-			{ link: '/libs/api', title: 'support axios api' },
+			{ link: '/scripts/sleep', title: 'sleep' },
+			{ link: '/scripts/custom-event', title: 'custom event' },
+			{ link: '/scripts/api', title: 'support axios api' },
 		],
 	},
 ];

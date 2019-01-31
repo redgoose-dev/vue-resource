@@ -58,7 +58,7 @@
 	&--size {
 		&-small {
 			height: $form-size-height-small;
-			font-size: .75rem;
+			font-size: $form-size-font-small;
 			&#{$self}--textarea {
 				font-size: $form-size-font-small;
 			}
