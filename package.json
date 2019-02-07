@@ -8,7 +8,7 @@
     "email": "scripter@me.com",
     "url": "https://redgoose.me"
   },
-  "homepage": "https://github.com/redgoose-dev/vue-source",
+  "homepage": "https://github.com/redgoose-dev/vue-resource",
   "license": "MIT",
   "scripts": {
     "dev": "HOST=0.0.0.0 PORT=3000 vue-cli-service serve",

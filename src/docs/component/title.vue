@@ -22,12 +22,15 @@ export default {
 	justify-content: flex-start;
 }
 h2.title {
+	margin: 0 0 2rem;
+	border-bottom: 1px solid #ddd;
 	font-size: 1.75rem;
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: -.1rem;
 }
 h3.title {
+	margin: 3rem 0 1rem;
 	font-size: 1.25rem;
 	font-weight: 600;
 	line-height: 1.5;
