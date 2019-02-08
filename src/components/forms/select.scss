@@ -11,7 +11,7 @@
 	height: $form-size-height-basic;
 	margin: 0;
 	padding: 0 $size-padding;
-	text-indent: $form-size-side-padding - $size-padding;
+	text-indent: 6px;
 	border: 1px solid $form-color-border;
 	border-radius: $form-size-radius;
 	font-size: $form-size-font-basic;
@@ -49,7 +49,6 @@
 	&--inline {
 		width: auto;
 		display: inline-block;
-		text-indent: 0;
 		min-width: 120px;
 	}
 	&--state {
@@ -68,6 +67,7 @@
 		min-height: $form-size-height-basic;
 		padding-top: $size-padding;
 		padding-bottom: $size-padding;
+		text-indent: 3px;
 		&#{$self}--size {
 			&-small {
 				min-height: $form-size-height-small;

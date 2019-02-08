@@ -1,9 +1,19 @@
 <template>
 <article class="page">
 	<head-title type="h2" title="form - select"/>
+
+	<blockquote>
+		<p>
+			<strong>
+				component: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/select.vue" target="_blank">select.vue</a><br/>
+				scss: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/select.scss" target="_blank">select.scss</a>
+			</strong>
+		</p>
+	</blockquote>
+
 	<p>
 		여러 항목들중에서 하나를 선택하는 <code>&lt;form-select/></code> 컴포넌트다.<br/>
-		<code>slot</code>을 이용하여 `option` 엘리먼트 요소를 만들어서 사용하는 방식이다.
+		<code>slot</code>을 이용하여 <code>&lt;option/></code> 엘리먼트 요소를 만들어서 사용하는 방식이다.
 	</p>
 
 	<section>
@@ -98,7 +108,7 @@
 
 	<section>
 		<head-title type="h3" title="props"/>
-		<p>이 컴포넌트는 다음과 같은 `props`를 사용한다.</p>
+		<p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용한다.</p>
 		<table>
 			<thead>
 			<tr>
@@ -111,12 +121,12 @@
 			<tr>
 				<th>name</th>
 				<th>string</th>
-				<td>`name` attribute 로 사용된다.</td>
+				<td><code>name</code> attribute 로 사용된다.</td>
 			</tr>
 			<tr>
 				<th>id</th>
 				<th>string</th>
-				<td>`id` attribute 로 사용된다.</td>
+				<td><code>id</code> attribute 로 사용된다.</td>
 			</tr>
 			<tr>
 				<th>selected</th>
@@ -146,7 +156,7 @@
 			<tr>
 				<th>placeholder</th>
 				<th>string</th>
-				<td>컴포넌트를 설명하는 글을 넣는다. 이것을 사용하면 값이없는 `option`이 첫번째로 만들어진다.</td>
+				<td>컴포넌트를 설명하는 글을 넣는다. 이것을 사용하면 값이없는 <code>option</code>이 첫번째로 만들어진다.</td>
 			</tr>
 			<tr>
 				<th>size</th>
@@ -169,7 +179,7 @@
 
 	<section>
 		<head-title type="h3" title="event"/>
-		<p>이 컴포넌트는 다음과 같은 `event`를 사용한다.</p>
+		<p>이 컴포넌트는 다음과 같은 <code>event</code>를 사용한다.</p>
 		<table>
 			<thead>
 			<tr>

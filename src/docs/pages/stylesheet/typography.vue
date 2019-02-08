@@ -2,6 +2,10 @@
 <article class="page">
 	<head-title type="h2" title="typography"/>
 
+	<blockquote>
+		<strong>Source: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/css/typography.scss" target="_blank">typography.scss</a></strong>
+	</blockquote>
+
 	<p>
 		프로젝트에서 사용하는 타이포 스타일에 대한 css 클래스들에 대해서 다룬다.
 	</p>

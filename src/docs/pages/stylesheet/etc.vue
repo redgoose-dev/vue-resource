@@ -2,8 +2,12 @@
 <article class="page">
 	<head-title type="h2" title="etc"/>
 
+	<blockquote>
+		<strong>Source: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/css/etc.scss" target="_blank">etc.scss</a></strong>
+	</blockquote>
+
 	<p>
-		기타 쓸만한 스타일시트
+		그 외에 쓸만한 스타일들을 소개한다.
 	</p>
 </article>
 </template>

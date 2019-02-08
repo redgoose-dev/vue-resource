@@ -32,8 +32,19 @@ export default [
 		items: [
 			{ link: '/components/icon', title: 'icon' },
 			{ link: '/components/card', title: 'card' },
-			{ link: '/components/modal', title: 'modal' },
-			{ link: '/components/loading', title: 'loading' },
+			{
+				title: 'Modal',
+				items: [
+					{ link: '/components/modal/basic', title: 'basic' },
+				],
+			},
+			{
+				title: 'Loading',
+				items: [
+					{ link: '/components/loading/symbol', title: 'symbol' },
+					{ link: '/components/loading/progress', title: 'progress' },
+				],
+			},
 			{
 				title: 'Button',
 				items: [
@@ -45,6 +56,7 @@ export default [
 				items: [
 					{ link: '/components/form/text', title: 'text' },
 					{ link: '/components/form/select', title: 'select' },
+					{ link: '/components/form/select-wrapper', title: 'select-wrapper' },
 					{ link: '/components/form/radio', title: 'radio' },
 					{ link: '/components/form/checkbox', title: 'checkbox' },
 					{ link: '/components/form/switch', title: 'switch' },

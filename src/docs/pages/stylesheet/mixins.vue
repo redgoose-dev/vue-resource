@@ -333,4 +333,7 @@ export default {
 		}
 	}
 }
+ul.horizontal-scroll-demo {
+	padding-left: 0;
+}
 </style>

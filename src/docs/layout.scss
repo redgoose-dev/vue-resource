@@ -22,7 +22,7 @@ $size-side-width: 240px;
 	height: var(--header-height);
 	background: $color-key;
 	box-sizing: border-box;
-	//box-shadow: 0 2px 15px rgba(0,0,0,.08);
+	box-shadow: 0 2px 8px rgba(0,0,0,.2);
 	&__wrap {
 		display: flex;
 		align-items: center;
@@ -64,7 +64,7 @@ $size-side-width: 240px;
 			font-size: 1rem;
 			line-height: 1.25;
 			font-family: $font-eng;
-			font-weight: 400;
+			font-weight: 600;
 			a {
 				display: block;
 				padding: 8px 0;
