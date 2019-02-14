@@ -6,9 +6,12 @@
 		<strong>Source: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/css/etc.scss" target="_blank">etc.scss</a></strong>
 	</blockquote>
 
-	<p>
-		그 외에 쓸만한 스타일들을 소개합니다.
-	</p>
+	<p>그 외에 쓸만한 스타일들을 소개합니다.</p>
+
+	<section>
+		<head-title type="h3" title="background blur"/>
+		<p>..</p>
+	</section>
 </article>
 </template>
 
