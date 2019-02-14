@@ -14,7 +14,7 @@ export default [
 	{
 		title: 'Stylesheet',
 		items: [
-			{ link: '/stylesheet', title: 'guide' },
+			{ link: '/stylesheet', title: 'introduce' },
 			{ link: '/stylesheet/normalize', title: 'normalize' },
 			{ link: '/stylesheet/web-fonts', title: 'web fonts' },
 			{ link: '/stylesheet/variables', title: 'variables' },

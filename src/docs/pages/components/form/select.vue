@@ -12,13 +12,13 @@
 	</blockquote>
 
 	<p>
-		여러 항목들중에서 하나를 선택하는 <code>&lt;form-select/></code> 컴포넌트다.<br/>
-		<code>slot</code>을 이용하여 <code>&lt;option/></code> 엘리먼트 요소를 만들어서 사용하는 방식이다.
+		여러 항목들중에서 하나를 선택하는 <code>&lt;form-select/></code> 컴포넌트입니다.<br/>
+		<code>slot</code>을 이용하여 <code>&lt;option/></code> 엘리먼트 요소를 만들어서 사용하는 방식입니다.
 	</p>
 
 	<section>
 		<head-title type="h3" title="basic"/>
-		<p>기본적인 형태로 사용한다.</p>
+		<p>기본적인 형태로 사용합니다.</p>
 		<div class="example">
 			<form-select placeholder="Please pick fruit." v-model="fruit">
 				<option value="apple">apple</option>
@@ -37,7 +37,7 @@
 
 	<section>
 		<head-title type="h3" title="disabled"/>
-		<p>비활성화 되었을때의 모습이다.</p>
+		<p>비활성화 되었을때의 모습입니다.</p>
 		<div class="example">
 			<form-select :disabled="true" placeholder="disabled select"/>
 		</div>
@@ -48,7 +48,7 @@
 
 	<section>
 		<head-title type="h3" title="multiple"/>
-		<p>여러가지 항목을 선택할 용도로 사용한다.</p>
+		<p>여러가지 항목을 선택할 용도로 사용합니다.</p>
 		<div class="example">
 			<form-select :multiple="true">
 				<option value="option1">option #1</option>
@@ -80,7 +80,7 @@
 
 	<section>
 		<head-title type="h3" title="inline"/>
-		<p>인라인 형식으로 사용한다.</p>
+		<p>인라인 형식으로 사용합니다.</p>
 		<div class="example">
 			<form-select :inline="true" placeholder="inline select"/>
 		</div>
@@ -91,7 +91,7 @@
 
 	<section>
 		<head-title type="h3" title="state"/>
-		<p>폼이 어떤 상태인지 표시한다.</p>
+		<p>폼이 어떤 상태인지 표시합니다.</p>
 		<div class="example">
 			<div class="row row-h-center row-gutter-h">
 				<div class="col"><form-select state="primary" placeholder="primary"/></div>
@@ -108,7 +108,7 @@
 
 	<section>
 		<head-title type="h3" title="props"/>
-		<p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용한다.</p>
+		<p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
 		<table>
 			<thead>
 			<tr>
@@ -121,12 +121,12 @@
 			<tr>
 				<th>name</th>
 				<th>string</th>
-				<td><code>name</code> attribute 로 사용된다.</td>
+				<td><code>name</code> attribute 로 사용</td>
 			</tr>
 			<tr>
 				<th>id</th>
 				<th>string</th>
-				<td><code>id</code> attribute 로 사용된다.</td>
+				<td><code>id</code> attribute 로 사용</td>
 			</tr>
 			<tr>
 				<th>selected</th>
@@ -156,7 +156,7 @@
 			<tr>
 				<th>placeholder</th>
 				<th>string</th>
-				<td>컴포넌트를 설명하는 글을 넣는다. 이것을 사용하면 값이없는 <code>option</code>이 첫번째로 만들어진다.</td>
+				<td>컴포넌트를 설명하는 글을 넣습니다. 이것을 사용하면 값이없는 <code>option</code>이 첫번째로 만들어집니다.</td>
 			</tr>
 			<tr>
 				<th>size</th>
@@ -171,7 +171,7 @@
 			<tr>
 				<th>native</th>
 				<th>boolean</th>
-				<td>네이티브 형태의 모습으로 사용한다.</td>
+				<td>네이티브 형태의 모습으로 사용합니다.</td>
 			</tr>
 			</tbody>
 		</table>
@@ -179,7 +179,7 @@
 
 	<section>
 		<head-title type="h3" title="event"/>
-		<p>이 컴포넌트는 다음과 같은 <code>event</code>를 사용한다.</p>
+		<p>이 컴포넌트는 다음과 같은 <code>event</code>를 사용합니다.</p>
 		<table>
 			<thead>
 			<tr>
@@ -190,7 +190,7 @@
 			<tbody>
 			<tr>
 				<th>change</th>
-				<td>선택한 요소가 변경되면 호출된다.</td>
+				<td>선택한 요소가 변경되면 호출됩니다.</td>
 			</tr>
 			</tbody>
 		</table>

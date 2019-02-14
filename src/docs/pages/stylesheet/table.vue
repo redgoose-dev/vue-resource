@@ -7,8 +7,8 @@
 	</blockquote>
 
 	<p>
-		테이블 스타일 가이드에 대하여 다룬다.<br/>
-		변화의 폭이 크기 때문에 컴포넌트 보다는 스타일시트로 만들어서 사용하는것이 좋아 보인다.
+		테이블 스타일 가이드에 대하여 다룹니다.<br/>
+		변화의 폭이 크기 때문에 컴포넌트 보다는 스타일시트로 만들어서 사용하는것이 좋아 보입니다.
 	</p>
 
 	<section>
@@ -90,7 +90,7 @@
 
 	<section>
 		<head-title type="h3" title="striped"/>
-		<p>짝수열이 반복적으로 배경색이 강조된다.</p>
+		<p>짝수열이 반복적으로 배경색이 강조됩니다.</p>
 		<div class="example">
 			<table class="table table--striped">
 				<thead>
@@ -129,7 +129,7 @@
 
 	<section>
 		<head-title type="h3" title="bordered"/>
-		<p>모든 방향에 외곽선을 넣는다.</p>
+		<p>모든 방향에 외곽선을 넣습니다.</p>
 		<div class="example">
 			<table class="table table--bordered">
 				<thead>
@@ -164,8 +164,8 @@
 	<section>
 		<head-title type="h3" title="overflow"/>
 		<p>
-			가로 사이즈가 더 크게 사용된다면 스크롤을 할 수 있게된다.<br/>
-			주로 반응형 모바일화면에서 유용하게 사용할 수 있다.
+			가로 사이즈가 더 크게 사용된다면 스크롤을 할 수 있게됩니다.<br/>
+			주로 반응형 모바일화면에서 유용하게 사용할 수 있습니다.
 		</p>
 		<div class="example">
 			<div class="table--overflow">

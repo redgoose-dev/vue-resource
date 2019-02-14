@@ -7,7 +7,7 @@
 	</blockquote>
 
 	<p>
-		그 외에 쓸만한 스타일들을 소개한다.
+		그 외에 쓸만한 스타일들을 소개합니다.
 	</p>
 </article>
 </template>

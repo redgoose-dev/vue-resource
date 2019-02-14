@@ -7,12 +7,12 @@
 	</blockquote>
 
 	<p>
-		프로젝트에서 사용하는 타이포 스타일에 대한 css 클래스들에 대해서 다룬다.
+		프로젝트에서 사용하는 타이포 스타일에 대한 css 클래스들에 대해서 다룹니다.
 	</p>
 
 	<section>
 		<head-title type="h3" title="description"/>
-		<p>글 본문에서 사용할 수 있다.</p>
+		<p>글 본문에서 사용할 수 있습니다.</p>
 		<div class="example">
 			<div class="typo-description">
 				<p class="typo-description__title">description subject</p>
@@ -37,8 +37,8 @@
 	<section>
 		<head-title type="h3" title="header"/>
 		<p>
-			페이지 제목으로 사용된다.<br/>
-			`Page heading`은 한 페이지에 한개만 들어가고, <code>&lt;h1/></code>이나 <code>&lt;h2/></code> 엘리먼트를 사용하는것을 강력하게 권장한다.
+			페이지 제목으로 사용됩니다.<br/>
+			`Page heading`은 한 페이지에 한개만 들어가고, <code>&lt;h1/></code>이나 <code>&lt;h2/></code> 엘리먼트를 사용하는것을 강력하게 권장합니다.
 		</p>
 		<div class="example">
 			<h2 class="typo-heading--page">Page heading</h2>
@@ -53,7 +53,7 @@
 
 	<section>
 		<head-title type="h3" title="color"/>
-		<p>공통적으로 사용하는 색상을 클래스 이름으로 사용한다.</p>
+		<p>공통적으로 사용하는 색상을 클래스 이름으로 사용합니다.</p>
 		<div class="example">
 			<p class="typo-color--base">text color-base</p>
 			<p class="typo-color--key">text color-key</p>
@@ -72,7 +72,7 @@
 
 	<section>
 		<head-title type="h3" title="alignment"/>
-		<p>클래스 이름으로 글자를 정렬한다.</p>
+		<p>클래스 이름으로 글자를 정렬합니다.</p>
 		<div class="example">
 			<p class="typo-align--left">text align - left</p>
 			<hr>
@@ -118,7 +118,7 @@
 &lt;/ul></code>
 		</pre>
 
-		<p>inline 형식으로 가로로 정렬할 수 있다.</p>
+		<p>inline 형식으로 가로로 정렬할 수 있습니다.</p>
 		<div class="example">
 			<ul class="typo-list--inline">
 				<li>apple</li>
@@ -135,7 +135,7 @@
 
 	<section>
 		<head-title type="h3" title="description list"/>
-		<p>글 본문의 제목과 내용의 조합으로 사용한다.</p>
+		<p>글 본문의 제목과 내용의 조합으로 사용합니다.</p>
 		<div class="example">
 			<dl class="typo-description-list">
 				<dt>Description lists</dt>
@@ -156,7 +156,7 @@
 
 	<section>
 		<head-title type="h3" title="blockquote"/>
-		<p>특정 문장을 강조할때 사용한다.</p>
+		<p>특정 문장을 강조할때 사용합니다.</p>
 		<div class="example">
 			<blockquote class="typo-blockquote">
 				<h3 class="typo-description__title">Euismod</h3>
@@ -176,7 +176,7 @@
 
 	<section>
 		<head-title type="h3" title="bracket"/>
-		<p>글을 따옴표나 괄호를 감쌀때 사용한다.</p>
+		<p>글을 따옴표나 괄호를 감쌀때 사용합니다.</p>
 		<div class="example">
 			<p class="typo-bracket">bracket</p>
 			<p class="typo-bracket--square">bracket square</p>
