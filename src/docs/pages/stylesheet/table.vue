@@ -61,8 +61,7 @@
 				</tfoot>
 			</table>
 		</div>
-		<pre class="example-code">
-			<code>&lt;table class="table">
+		<pre class="example-code"><code>&lt;table class="table">
 	&lt;thead>
 	&lt;tr>
 		&lt;th>Date&lt;/th>
@@ -84,8 +83,7 @@
 		&lt;td class="typo-align--right">5678&lt;/td>
 	&lt;/tr>
 	&lt;/tfoot>
-&lt;/table></code>
-		</pre>
+&lt;/table></code></pre>
 	</section>
 
 	<section>
@@ -185,11 +183,9 @@
 				</table>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="table--overflow">
+		<pre class="example-code"><code>&lt;div class="table--overflow">
 	&lt;table class="table"/>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 	</section>
 </article>
 </template>

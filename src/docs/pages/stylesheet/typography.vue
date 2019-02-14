@@ -22,16 +22,14 @@
 				</p>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;!-- solo -->
+		<pre class="example-code"><code>&lt;!-- solo -->
 &lt;p class="typo-description">body&lt;/p>
 
 &lt;!-- with title -->
 &lt;div class="typo-description">
 	&lt;p class="typo-description__title">title&lt;/p>
 	&lt;p>body&lt;/p>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 	</section>
 
 	<section>
@@ -45,10 +43,8 @@
 			<hr>
 			<h3 class="typo-heading--section">Section heading</h3>
 		</div>
-		<pre class="example-code">
-			<code>&lt;h2 class="typo-heading--page">page heading&lt;/h2>
-&lt;h3 class="typo-heading--section">section heading&lt;/h2></code>
-		</pre>
+		<pre class="example-code"><code>&lt;h2 class="typo-heading--page">page heading&lt;/h2>
+&lt;h3 class="typo-heading--section">section heading&lt;/h2></code></pre>
 	</section>
 
 	<section>
@@ -61,13 +57,11 @@
 			<p class="typo-color--success">text color-success</p>
 			<p class="typo-color--error">text color-error</p>
 		</div>
-		<pre class="example-code">
-			<code>&lt;p class="typo-color--base">text color-base&lt;/p>
+		<pre class="example-code"><code>&lt;p class="typo-color--base">text color-base&lt;/p>
 &lt;p class="typo-color--key">text color-key&lt;/p>
 &lt;p class="typo-color--sub">text color-sub&lt;/p>
 &lt;p class="typo-color--success">text color-success&lt;/p>
-&lt;p class="typo-color--error">text color-error&lt;/p></code>
-		</pre>
+&lt;p class="typo-color--error">text color-error&lt;/p></code></pre>
 	</section>
 
 	<section>
@@ -84,12 +78,10 @@
 				text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justifytext align - justifytext align - justify text align - justify text align - justify...
 			</p>
 		</div>
-		<pre class="example-code">
-			<code>&lt;p class="typo-align--left">text&lt;/p>
+		<pre class="example-code"><code>&lt;p class="typo-align--left">text&lt;/p>
 &lt;p class="typo-align--center">text&lt;/p>
 &lt;p class="typo-align--right">text&lt;/p>
-&lt;p class="typo-align--justify">text&lt;/p></code>
-		</pre>
+&lt;p class="typo-align--justify">text&lt;/p></code></pre>
 	</section>
 
 	<section>
@@ -108,15 +100,13 @@
 				<li>mango</li>
 			</ul>
 		</div>
-		<pre class="example-code">
-			<code>&lt;ul class="typo-list">
+		<pre class="example-code"><code>&lt;ul class="typo-list">
 	&lt;li>...&lt;/li>
 &lt;/ul>
 
 &lt;ul class="typo-list--not-native">
 	&lt;li>...&lt;/li>
-&lt;/ul></code>
-		</pre>
+&lt;/ul></code></pre>
 
 		<p>inline 형식으로 가로로 정렬할 수 있습니다.</p>
 		<div class="example">
@@ -126,11 +116,9 @@
 				<li>mango</li>
 			</ul>
 		</div>
-		<pre class="example-code">
-			<code>&lt;ul class="typo-list--inline">
+		<pre class="example-code"><code>&lt;ul class="typo-list--inline">
 	&lt;li>...&lt;/li>
-&lt;/ul></code>
-		</pre>
+&lt;/ul></code></pre>
 	</section>
 
 	<section>
@@ -144,14 +132,12 @@
 				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
 			</dl>
 		</div>
-		<pre class="example-code">
-			<code>&lt;dl class="typo-description-list">
+		<pre class="example-code"><code>&lt;dl class="typo-description-list">
 	&lt;dt>&lt;/dt>
 	&lt;dd>&lt;/dd>
 	&lt;dt>&lt;/dt>
 	&lt;dd>&lt;/dd>
-&lt;/dl></code>
-		</pre>
+&lt;/dl></code></pre>
 	</section>
 
 	<section>
@@ -165,13 +151,11 @@
 				</p>
 			</blockquote>
 		</div>
-		<pre class="example-code">
-			<code>&lt;blockquote class="typo-blockquote">
+		<pre class="example-code"><code>&lt;blockquote class="typo-blockquote">
 	&lt;p class="typo-description">
 		...
 	&lt;/p>
-&lt;/blockquote></code>
-		</pre>
+&lt;/blockquote></code></pre>
 	</section>
 
 	<section>
@@ -183,12 +167,10 @@
 			<p class="typo-bracket--quot">quot</p>
 			<p class="typo-bracket--small-quot">small quot</p>
 		</div>
-		<pre class="example-code">
-			<code>&lt;p class="typo-bracket">bracket&lt;/p>
+		<pre class="example-code"><code>&lt;p class="typo-bracket">bracket&lt;/p>
 &lt;p class="typo-bracket--square">bracket square&lt;/p>
 &lt;p class="typo-bracket--quot">quot&lt;/p>
-&lt;p class="typo-bracket--small-quot">small quot&lt;/p></code>
-		</pre>
+&lt;p class="typo-bracket--small-quot">small quot&lt;/p></code></pre>
 	</section>
 </article>
 </template>

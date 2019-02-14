@@ -71,15 +71,13 @@
 			필드의 그룹이 되는 엘리먼트인 <code>fieldset</code>에서 사용한다. 글 작성폼에서 하나의 섹션이라고 볼 수 있습니다.<br/>
 			`fieldset` 엘리먼트의 기본 스타일을 삭제하고 그 하위의 legend 엘리먼트를 안보이게 하는 역할을 합니다.
 		</p>
-		<pre>
-			<code>&lt;fieldset class="forms-fieldset">
+		<pre><code>&lt;fieldset class="forms-fieldset">
 	&lt;legend>필수입력항목 작성 폼&lt;/legend>
 	&lt;div>
 		&lt;div class="forms-field">..&lt;/div>
 		&lt;div class="forms-field">..&lt;/div>
 	&lt;/div>
-&lt;/fieldset></code>
-		</pre>
+&lt;/fieldset></code></pre>
 	</section>
 
 	<section>
@@ -87,8 +85,7 @@
 		<p>
 			글을 작성하는 폼 항목 하나를 표현할때 사용한다. 폼과 레이블, 도움말 메시지의 조합으로 이루어집니다.
 		</p>
-		<pre>
-			<code>&lt;div class="forms-field">
+		<pre><code>&lt;div class="forms-field">
 	&lt;div class="row">
 		&lt;div class="col-3">
 			&lt;label for="example">Label name&lt;/label>
@@ -97,8 +94,7 @@
 			&lt;input type="text"/>
 		&lt;/div>
 	&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 	</section>
 
 	<section>
@@ -118,11 +114,9 @@
 			<p class="forms-help forms-help--success">help message - success</p>
 			<p class="forms-help forms-help--error">help message - error</p>
 		</div>
-		<pre class="example-code">
-			<code>&lt;p class="forms-help">help message - basic&lt;/p>
+		<pre class="example-code"><code>&lt;p class="forms-help">help message - basic&lt;/p>
 &lt;p class="forms-help forms-help--success">help message - success&lt;/p>
-&lt;p class="forms-help forms-help--error">help message - error&lt;/p></code>
-		</pre>
+&lt;p class="forms-help forms-help--error">help message - error&lt;/p></code></pre>
 	</section>
 
 	<section>

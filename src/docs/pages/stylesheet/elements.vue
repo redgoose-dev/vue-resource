@@ -18,8 +18,7 @@
 	<p>
 		<router-link to="/stylesheet/variables">variables.css</router-link>를 `import`로 리소스를 가져와서 사용하는것을 권장합니다.
 	</p>
-	<pre>
-		<code>@import "./variables";
+	<pre><code>@import "./variables";
 
 a {
 	color: $color-key;
@@ -27,8 +26,7 @@ a {
 body {
 	margin: 0;
 	font-size: 16px;
-}</code>
-	</pre>
+}</code></pre>
 </article>
 </template>
 

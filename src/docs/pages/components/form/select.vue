@@ -26,13 +26,11 @@
 				<option value="mango">mango</option>
 			</form-select>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-select placeholder="Please pick fruit." v-model="fruit">
+		<pre class="example-code"><code>&lt;form-select placeholder="Please pick fruit." v-model="fruit">
 	&lt;option value="apple">apple&lt;/option>
 	&lt;option value="banana">banana&lt;/option>
 	&lt;option value="mango">mango&lt;/option>
-&lt;/form-select></code>
-		</pre>
+&lt;/form-select></code></pre>
 	</section>
 
 	<section>
@@ -41,9 +39,7 @@
 		<div class="example">
 			<form-select :disabled="true" placeholder="disabled select"/>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-select :disabled="true"/></code>
-		</pre>
+		<pre class="example-code"><code>&lt;form-select :disabled="true"/></code></pre>
 	</section>
 
 	<section>
@@ -56,9 +52,7 @@
 				<option value="option3">option #3</option>
 			</form-select>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-select :multiple="true"/></code>
-		</pre>
+		<pre class="example-code"><code>&lt;form-select :multiple="true"/></code></pre>
 	</section>
 
 	<section>
@@ -71,11 +65,9 @@
 				<div class="col"><form-select size="large" placeholder="large"/></div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-select size="small" placeholder="small"/>
+		<pre class="example-code"><code>&lt;form-select size="small" placeholder="small"/>
 &lt;form-select placeholder="basic"/>
-&lt;form-select size="large" placeholder="large"/></code>
-		</pre>
+&lt;form-select size="large" placeholder="large"/></code></pre>
 	</section>
 
 	<section>
@@ -84,9 +76,7 @@
 		<div class="example">
 			<form-select :inline="true" placeholder="inline select"/>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-select :inline="true"/></code>
-		</pre>
+		<pre class="example-code"><code>&lt;form-select :inline="true"/></code></pre>
 	</section>
 
 	<section>
@@ -99,11 +89,9 @@
 				<div class="col"><form-select state="error" placeholder="error"/></div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-select state="primary"/>
+		<pre class="example-code"><code>&lt;form-select state="primary"/>
 &lt;form-select state="success"/>
-&lt;form-select state="error"/></code>
-		</pre>
+&lt;form-select state="error"/></code></pre>
 	</section>
 
 	<section>

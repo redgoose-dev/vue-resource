@@ -19,8 +19,7 @@
 		서비스를 위한 공통적인 스타일시트를 만들때 scss 에서는 <code>app.scss</code> 파일 하나를 만들어서 다른 scss 파일들을 import 해올것입니다.<br/>
 		여기에서 필요한 <code>scss</code>들을 다음과 같은 방법으로 불러와서 사용할 수 있습니다.
 	</p>
-	<pre>
-<code>@import "./fonts";
+	<pre><code>@import "./fonts";
 @import "./variables";
 @import "./mixins";
 @import "./elements";
@@ -28,8 +27,7 @@
 @import "./typography";
 @import "./forms";
 @import "./table";
-@import "./etc";</code>
-	</pre>
+@import "./etc";</code></pre>
 	<p>각 리소스들은 Stylesheet 그룹의 각 페이지에서 자세히 다룹니다.</p>
 
 	<blockquote>

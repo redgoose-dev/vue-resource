@@ -28,12 +28,10 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row">
+		<pre class="example-code"><code>&lt;div class="row">
 	&lt;div class="col">col&lt;/div>
 	&lt;div class="col">col&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 		<p>만약 여러가지 속성을 같이 사용하고 싶다면 멀티클래스 형식으로 작성해줍니다.</p>
 		<pre><code>&lt;div class="row row-gutter row-v-center"/></code></pre>
 	</section>
@@ -53,13 +51,11 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row">
+		<pre class="example-code"><code>&lt;div class="row">
 	&lt;div class="col col-4">col&lt;/div>
 	&lt;div class="col col-4">col&lt;/div>
 	&lt;div class="col col-4">col&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 		<head-title type="h4" title="반응형 레이아웃에 대한 컬럼 사이즈 표"/>
 		<p>
 			다음 표는 스크린 사이즈의 조건에 맞으면 컬럼의 사이즈가 변하게 됩니다. <b>참고로 모바일 퍼스트 기준이며 반응형 사이즈 기준에 따라 달라집니다.</b>
@@ -103,8 +99,7 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row">
+		<pre class="example-code"><code>&lt;div class="row">
 	&lt;div class="col">col&lt;/div>
 	&lt;div class="col-8 col-lg-2">col&lt;/div>
 	&lt;div class="col">col&lt;/div>
@@ -114,8 +109,7 @@
 	&lt;div class="col-4 col-md-2">col&lt;/div>
 	&lt;div class="col-4 col-md-8">col&lt;/div>
 	&lt;div class="col-4 col-md-2">col&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 	</section>
 
 	<section>
@@ -130,13 +124,11 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row">
+		<pre class="example-code"><code>&lt;div class="row">
 	&lt;div class="col">col&lt;/div>
 	&lt;div class="col-auto">col-auto&lt;/div>
 	&lt;div class="col col-md-auto">col col-md-auto&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 	</section>
 
 	<section>
@@ -155,14 +147,12 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row row-gutter">
+		<pre class="example-code"><code>&lt;div class="row row-gutter">
 	&lt;div class="col col-6">col-6&lt;/div>
 	&lt;div class="col col-6">col-6&lt;/div>
 	&lt;div class="col col-6">col-6&lt;/div>
 	&lt;div class="col col-6">col-6&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 		<p>
 			기본적으로 사용하면 위와같이 가로,세로축의 여백이 생깁니다.<br/>
 			컬럼 엘리먼트에서 padding 값을 임의로 조정하고 있기 때문에 대략적으로 다음과 같은 형태로 컬럼속에 엘리먼트 하나를 감싼 상태에서 무언가를 넣는것을 권장합니다.
@@ -190,8 +180,7 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row row-gutter-h">
+		<pre class="example-code"><code>&lt;div class="row row-gutter-h">
 	&lt;div class="col col-6">col-6&lt;/div>
 	&lt;div class="col col-6">col-6&lt;/div>
 	&lt;div class="col col-6">col-6&lt;/div>
@@ -203,8 +192,7 @@
 	&lt;div class="col col-6">col-6&lt;/div>
 	&lt;div class="col col-6">col-6&lt;/div>
 	&lt;div class="col col-6">col-6&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 		<p>가로나 세로 한쪽 축으로만 여백을 넣을 수 있습니다.</p>
 	</section>
 
@@ -235,11 +223,9 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row row-v-start"/>
+		<pre class="example-code"><code>&lt;div class="row row-v-start"/>
 &lt;div class="row row-v-center"/>
-&lt;div class="row row-v-end"/></code>
-		</pre>
+&lt;div class="row row-v-end"/></code></pre>
 	</section>
 
 	<section>
@@ -286,13 +272,11 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row row-h-start"/>
+		<pre class="example-code"><code>&lt;div class="row row-h-start"/>
 &lt;div class="row row-h-center"/>
 &lt;div class="row row-h-end"/>
 &lt;div class="row row-h-around"/>
-&lt;div class="row row-h-between"/></code>
-		</pre>
+&lt;div class="row row-h-between"/></code></pre>
 	</section>
 
 	<section>
@@ -309,12 +293,10 @@
 				</div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;div class="row row-gutter">
+		<pre class="example-code"><code>&lt;div class="row row-gutter">
 	&lt;div class="order-1 order-md-2">col&lt;/div>
 	&lt;div class="order-2 order-md-1">col&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 	</section>
 
 	<section>
@@ -322,11 +304,9 @@
 		<p>
 			<code>.row-gutter</code>가 적용된 그리드 레이아웃을 감싸기 위한 용도로 만들어졌습니다. <code>.row-gutter</code>를 적용하면 사이드가 돌출되는 부분을 <code>overflow: hidden;</code>속성을 가리기 위한 용도로 사용할 수 있습니다.
 		</p>
-		<pre class="example-code">
-			<code>&lt;div class="row-wrap">
+		<pre class="example-code"><code>&lt;div class="row-wrap">
 	&lt;div class="col">&lt;/div>
-&lt;/div></code>
-		</pre>
+&lt;/div></code></pre>
 		<p>
 			만약 <code>.row-wrap</code> 엘리먼트의 영역을 벗어나는 자식 요소가 있다면 <code>overflow: hidden;</code> 속성 때문에 요소가 잘려서 안보이기 때문에 <code>.row-wrap</code> 클래스를 사용하지 않는것을 권장드립니다.
 		</p>

@@ -25,9 +25,7 @@
 		<div class="example">
 			<form-text placeholder="Please input message"/>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-text placeholder="Please input message"/></code>
-		</pre>
+		<pre class="example-code"><code>&lt;form-text placeholder="Please input message"/></code></pre>
 	</section>
 
 	<section>
@@ -38,9 +36,7 @@
 		<div class="example">
 			<form-text type="textarea" placeholder="Please input message" :rows="3"/>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-text type="textarea" :rows="2"/></code>
-		</pre>
+		<pre class="example-code"><code>&lt;form-text type="textarea" :rows="2"/></code></pre>
 	</section>
 
 	<section>
@@ -56,11 +52,9 @@
 				<div class="col"><form-text size="large" placeholder="large"/></div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-text size="small" placeholder="small"/>
+		<pre class="example-code"><code>&lt;form-text size="small" placeholder="small"/>
 &lt;form-text placeholder="basic"/>
-&lt;form-text size="large" placeholder="large"/></code>
-		</pre>
+&lt;form-text size="large" placeholder="large"/></code></pre>
 	</section>
 
 	<section>
@@ -69,9 +63,7 @@
 		<div class="example">
 			<form-text :readonly="true" placeholder="readonly"/>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-text :readonly="true"/></code>
-		</pre>
+		<pre class="example-code"><code>&lt;form-text :readonly="true"/></code></pre>
 	</section>
 
 	<section>
@@ -80,9 +72,7 @@
 		<div class="example">
 			<form-text :disabled="true" placeholder="disabled"/>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-text :disabled="true"/></code>
-		</pre>
+		<pre class="example-code"><code>&lt;form-text :disabled="true"/></code></pre>
 	</section>
 
 	<section>
@@ -91,9 +81,7 @@
 		<div class="example">
 			<form-text :inline="true" native-size="15" placeholder="inline style"/>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-text :inline="true" native-size="15"/></code>
-		</pre>
+		<pre class="example-code"><code>&lt;form-text :inline="true" native-size="15"/></code></pre>
 	</section>
 
 	<section>
@@ -106,11 +94,9 @@
 				<div class="col"><form-text state="error" placeholder="error"/></div>
 			</div>
 		</div>
-		<pre class="example-code">
-			<code>&lt;form-text state="primary"/>
+		<pre class="example-code"><code>&lt;form-text state="primary"/>
 &lt;form-text state="success"/>
-&lt;form-text state="error"/></code>
-		</pre>
+&lt;form-text state="error"/></code></pre>
 	</section>
 
 	<section>
