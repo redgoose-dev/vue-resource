@@ -36,6 +36,7 @@ $grid-col-gutter: $size-grid-col-gutter;
 		-ms-flex: 1;
 		flex: 1;
 		max-width: 100%;
+		box-sizing: border-box;
 	}
 	@for $i from 1 to 13 {
 		.col#{$type}-#{$i} {

@@ -60,7 +60,7 @@
 		<p>
 			다음 표는 스크린 사이즈의 조건에 맞으면 컬럼의 사이즈가 변하게 됩니다. <b>참고로 모바일 퍼스트 기준이며 반응형 사이즈 기준에 따라 달라집니다.</b>
 		</p>
-		<table>
+		<table class="table table--center table--bordered">
 			<caption>Size table</caption>
 			<thead>
 			<tr>
@@ -73,11 +73,11 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th>none</th>
-				<th>.col-sm-</th>
-				<th>.col-md-</th>
-				<th>.col-lg-</th>
-				<th>.col-xl-</th>
+				<td>none</td>
+				<td>.col-sm-</td>
+				<td>.col-md-</td>
+				<td>.col-lg-</td>
+				<td>.col-xl-</td>
 			</tr>
 			</tbody>
 		</table>

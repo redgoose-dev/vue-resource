@@ -5,9 +5,7 @@
 	:title="title"
 	:class="classNames"
 	@click.native="onClick">
-	<span class="button__wrap">
-		<slot/>
-	</span>
+	<slot/>
 </router-link>
 <a
 	v-else-if="href"
@@ -16,19 +14,16 @@
 	:title="title"
 	:class="classNames"
 	@click="onClick">
-	<span class="button__wrap">
-		<slot/>
-	</span>
+	<slot/>
 </a>
 <button
 	v-else
 	:type="type"
 	:title="title"
+	:disabled="disabled"
 	:class="classNames"
 	@click="onClick">
-	<span class="button__wrap">
-		<slot/>
-	</span>
+	<slot/>
 </button>
 </template>
 
@@ -68,21 +63,23 @@ export default {
 		{
 			return [
 				'button',
-				`button--type-${this.buttonType}`,
 				this.size && `button--size-${this.size}`,
-				this.color && `button--size-${this.color}`,
+				this.color && `button--color-${this.color}`,
 				this.round && 'button--round',
-				this.disabled && 'button--disabled',
 				this.outline && 'button--outline',
 				this.inline && 'button--inline',
+				(this.disabled && (this.to || this.href)) && `button--disabled`,
 			];
-		}
+		},
 	},
 	methods: {
 		onClick(e)
 		{
-			e.preventDefault();
-			// TODO: router-link 에서 클릭 이벤트 막는법 찾아보기
+			if (this.disabled)
+			{
+				e.preventDefault();
+				return;
+			}
 			this.$emit('click', e);
 		}
 	},

@@ -3,14 +3,20 @@
 
 .table {
 	$self: '.table';
-	$color-line: mix($color-gray-light, #fff, 50%);
-	$color-line-strong: $color-gray-light;
+	$color-line: #e6e6e6;
+	$color-line-strong: #bbb;
 
 	width: 100%;
 	border-collapse: collapse;
 	text-align: left;
 	font-size: .8125rem;
 
+	caption {
+		padding: 0 0 6px;
+		text-align: left;
+		font-size: .8125rem;
+		font-weight: 600;
+	}
 	th,
 	td {
 		padding: 10px 15px;

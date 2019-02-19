@@ -1,0 +1,96 @@
+@import "../../../css/variables";
+@import "../../../css/mixins";
+
+// set variables
+$self: '.button';
+$height-small: $form-size-height-small;
+$height-normal: $form-size-height-basic;
+$height-large: $form-size-height-large;
+$color-bg-base: $color-key;
+$color-bg-sub: $color-sub;
+$color-bg-light: $color-gray-light;
+$color-bg-dark: $color-gray-dark;
+$color-text: #fff;
+$color-text-invert: $color-key;
+$color-focus: rgba(#000, .15);
+$opacity-active: .65;
+
+// base
+#{$self} {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: $height-normal;
+	color: $color-text;
+	background: $color-bg-base;
+	border: 1px solid $color-bg-base;
+	transition: opacity 200ms ease-out, box-shadow 100ms ease-out;
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 3px $color-focus;
+	}
+	&:active {
+		opacity: $opacity-active;
+	}
+
+	&[type] {
+		display: block;
+		align-items: unset;
+		justify-content: unset;
+		width: 100%;
+		cursor: pointer;
+		border-radius: 0;
+	}
+	&[href] {
+		text-decoration: none;
+	}
+
+	// color
+	&--color {
+		&-sub {
+			background: $color-bg-sub;
+			border-color: $color-bg-sub;
+		}
+		&-light {
+			background: $color-bg-light;
+			border-color: $color-bg-light;
+			color: $color-text-invert;
+		}
+		&-dark {
+			background: $color-bg-dark;
+			border-color: $color-bg-dark;
+		}
+		&-none {
+			background: transparent;
+			border-color: transparent;
+			color: $color-text-invert;
+		}
+	}
+
+	// size
+	&--size {
+		&-small {}
+		&-large {}
+	}
+
+	// inline
+	&--inline {
+		display: inline-block;
+		padding-left: 15px;
+		padding-right: 15px;
+		&[type] {
+			width: auto;
+		}
+	}
+
+	// disabled
+	&--disabled,
+	&[disabled] {
+		opacity: $opacity-active;
+		cursor: not-allowed;
+	}
+}

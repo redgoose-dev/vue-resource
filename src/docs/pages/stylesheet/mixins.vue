@@ -36,7 +36,7 @@
 		<head-title type="h3" title="color-linear-gradient"/>
 		<p>선형 그라디언트 컬러 표현을 합니다.</p>
 		<pre><code>@include color-linear-gradient($matt-color, $start, $end, $direction);</code></pre>
-		<table>
+		<table class="table table--center table--bordered">
 			<caption>Parameters</caption>
 			<thead>
 			<tr>
@@ -47,24 +47,24 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th><code>$matt-color</code></th>
-				<th></th>
-				<td>그라디언트가 지원안될때 사용되는 단색컬러</td>
+				<th>$matt-color</th>
+				<td></td>
+				<td class="typo-align--left">그라디언트가 지원안될때 사용되는 단색컬러</td>
 			</tr>
 			<tr>
-				<th><code>$start</code></th>
-				<th></th>
-				<td>시작 컬러</td>
+				<th>$start</th>
+				<td></td>
+				<td class="typo-align--left">시작 컬러</td>
 			</tr>
 			<tr>
-				<th><code>$end</code></th>
-				<th></th>
-				<td>종료 컬러</td>
+				<th>$end</th>
+				<td></td>
+				<td class="typo-align--left">종료 컬러</td>
 			</tr>
 			<tr>
-				<th><code>$direction</code></th>
-				<th>vertical,horizontal</th>
-				<td>그라디언트의 방향을 정합니다.</td>
+				<th>$direction</th>
+				<td>vertical,horizontal</td>
+				<td class="typo-align--left">그라디언트의 방향을 정합니다.</td>
 			</tr>
 			</tbody>
 		</table>
@@ -83,7 +83,7 @@
 			이미지 경로는 파일이름까지 적습니다. <code>@</code> 앞까지..
 		</p>
 		<pre><code>@include image-sprite($src-1x, $src-2x, $width, $height);</code></pre>
-		<table>
+		<table class="table table--center table--bordered">
 			<caption>Parameters</caption>
 			<thead>
 			<tr>
@@ -94,24 +94,24 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th><code>$src-1x</code></th>
-				<th>./sp-image.jpg</th>
-				<td>스프라이드 1x 사이즈 이미지 경로</td>
+				<th>$src-1x</th>
+				<td>./sp-image.jpg</td>
+				<td class="typo-align--left">스프라이드 1x 사이즈 이미지 경로</td>
 			</tr>
 			<tr>
-				<th><code>$src-2x</code></th>
-				<th>./sp-image@2x.jpg</th>
-				<td>스프라이드 2x 사이즈 이미지 경로</td>
+				<th>$src-2x</th>
+				<td>./sp-image@2x.jpg</td>
+				<td class="typo-align--left">스프라이드 2x 사이즈 이미지 경로</td>
 			</tr>
 			<tr>
-				<th><code>$width</code></th>
-				<th>320px</th>
-				<td>스프라이드 이미지 가로사이즈</td>
+				<th>$width</th>
+				<td>320px</td>
+				<td class="typo-align--left">스프라이드 이미지 가로사이즈</td>
 			</tr>
 			<tr>
-				<th><code>$height</code></th>
-				<th>240px</th>
-				<td>스프라이드 이미지 세로사이즈</td>
+				<th>$height</th>
+				<td>240px</td>
+				<td class="typo-align--left">스프라이드 이미지 세로사이즈</td>
 			</tr>
 			</tbody>
 		</table>
@@ -127,7 +127,7 @@
 		<head-title type="h3" title="text-multi-line"/>
 		<p>여러줄 텍스트 표현을 할 수 있습니다.</p>
 		<pre><code>@include text-multi-line($height, $row);</code></pre>
-		<table>
+		<table class="table table--center table--bordered">
 			<caption>Parameters</caption>
 			<thead>
 			<tr>
@@ -138,14 +138,14 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th><code>$height</code></th>
-				<th>1rem</th>
-				<td>1 라인당 높이 사이즈</td>
+				<th>$height</th>
+				<td>1rem</td>
+				<td class="typo-align--left">1 라인당 높이 사이즈</td>
 			</tr>
 			<tr>
-				<th><code>$row</code></th>
-				<th>3</th>
-				<td>최대 라인 수</td>
+				<th>$row</th>
+				<td>3</td>
+				<td class="typo-align--left">최대 라인 수</td>
 			</tr>
 			</tbody>
 		</table>
@@ -155,7 +155,7 @@
 		<head-title type="h3" title="button-touch-options"/>
 		<p>버튼에서 터치에 대한 추가속성을 넣습니다.</p>
 		<pre><code>@include button-touch-options($opacity);</code></pre>
-		<table>
+		<table class="table table--center table--bordered">
 			<caption>Parameters</caption>
 			<thead>
 			<tr>
@@ -166,9 +166,9 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th><code>$opacity</code></th>
-				<th>true</th>
-				<td>버튼을 누르고 있을때 투명하게 합니다.</td>
+				<th>$opacity</th>
+				<td>true</td>
+				<td class="typo-align--left">버튼을 누르고 있을때 투명하게 합니다.</td>
 			</tr>
 			</tbody>
 		</table>
@@ -187,7 +187,7 @@
 		<head-title type="h4" title="horizontal-scroll-wrap"/>
 		<p>아이템들을 감싸는 목록에서 적용해줘야합니다.</p>
 		<pre><code>@include horizontal-scroll-wrap($padding-side, $padding-bottom);</code></pre>
-		<table>
+		<table class="table table--center table--bordered">
 			<caption>Parameters</caption>
 			<thead>
 			<tr>
@@ -198,21 +198,21 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th><code>$padding-side</code></th>
-				<th>16px</th>
-				<td>사이드 여백 사이즈</td>
+				<th>$padding-side</th>
+				<td>16px</td>
+				<td class="typo-align--left">사이드 여백 사이즈</td>
 			</tr>
 			<tr>
-				<th><code>$padding-bottom</code></th>
-				<th>16px</th>
-				<td>아래쪽 여백 사이즈. 아래쪽에 스크롤이 나오기때문에 여백이 필요합니다.</td>
+				<th>$padding-bottom</th>
+				<td>16px</td>
+				<td class="typo-align--left">아래쪽 여백 사이즈. 아래쪽에 스크롤이 나오기때문에 여백이 필요합니다.</td>
 			</tr>
 			</tbody>
 		</table>
 		<head-title type="h4" title="horizontal-scroll-item"/>
 		<p>아이템에서 적용해줘야합니다.</p>
 		<pre><code>@include horizontal-scroll-item($padding-side);</code></pre>
-		<table>
+		<table class="table table--center table--bordered">
 			<caption>Parameters</caption>
 			<thead>
 			<tr>
@@ -223,14 +223,14 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th><code>$padding-side</code></th>
-				<th>16px</th>
-				<td>사이드 여백 사이즈</td>
+				<th>$padding-side</th>
+				<td>16px</td>
+				<td class="typo-align--left">사이드 여백 사이즈</td>
 			</tr>
 			<tr>
-				<th><code>$padding-side-outer</code></th>
-				<th>16px</th>
-				<td>사이드 외곽영역 여백 사이즈.<br/>이 값이 없으면 <code>$padding-side</code>값으로 사용합니다.</td>
+				<th>$padding-side-outer</th>
+				<td>16px</td>
+				<td class="typo-align--left">사이드 외곽영역 여백 사이즈.<br/>이 값이 없으면 <code>$padding-side</code>값으로 사용합니다.</td>
 			</tr>
 			</tbody>
 		</table>
