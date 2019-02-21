@@ -3,9 +3,12 @@
 
 // set variables
 $self: '.button';
-$height-small: $form-size-height-small;
-$height-normal: $form-size-height-basic;
-$height-large: $form-size-height-large;
+// size
+$size-height-small: $form-size-height-small;
+$size-height-normal: $form-size-height-basic;
+$size-height-large: $form-size-height-large;
+$size-padding-side: 20px;
+// color
 $color-bg-base: $color-key;
 $color-bg-sub: $color-sub;
 $color-bg-light: $color-gray-light;
@@ -13,7 +16,14 @@ $color-bg-dark: $color-gray-dark;
 $color-text: #fff;
 $color-text-invert: $color-key;
 $color-focus: rgba(#000, .15);
+// font
+$font-size-normal: $form-size-font-basic;
+$font-size-small: $form-size-font-small;
+$font-size-large: $form-size-font-large;
+// etc
 $opacity-active: .65;
+$opacity-disabled: .5;
+
 
 // base
 #{$self} {
@@ -23,11 +33,12 @@ $opacity-active: .65;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	height: $height-normal;
+	height: $size-height-normal;
 	color: $color-text;
 	background: $color-bg-base;
 	border: 1px solid $color-bg-base;
 	transition: opacity 200ms ease-out, box-shadow 100ms ease-out;
+	font-size: $font-size-normal;
 
 	&:focus {
 		outline: none;
@@ -48,49 +59,95 @@ $opacity-active: .65;
 	&[href] {
 		text-decoration: none;
 	}
+}
 
-	// color
-	&--color {
+// color
+#{$self}--color {
+	&-sub {
+		background: $color-bg-sub;
+		border-color: $color-bg-sub;
+	}
+	&-light {
+		background: $color-bg-light;
+		border-color: $color-bg-light;
+		color: $color-text-invert;
+	}
+	&-dark {
+		background: $color-bg-dark;
+		border-color: $color-bg-dark;
+	}
+	&-none {
+		background: transparent;
+		border-color: transparent;
+		color: $color-text-invert;
+	}
+}
+
+// size
+#{$self}--size {
+	&-small {
+		height: $size-height-small;
+		font-size: $font-size-small;
+	}
+	&-large {
+		height: $size-height-large;
+		font-size: $font-size-large;
+	}
+}
+
+// outline
+#{$self}--outline {
+	background: transparent;
+	color: $color-bg-base;
+
+	&#{$self}--color {
 		&-sub {
-			background: $color-bg-sub;
 			border-color: $color-bg-sub;
+			color: $color-bg-sub;
 		}
 		&-light {
-			background: $color-bg-light;
 			border-color: $color-bg-light;
-			color: $color-text-invert;
+			color: mix(#000, $color-bg-light, 25%);
 		}
 		&-dark {
-			background: $color-bg-dark;
 			border-color: $color-bg-dark;
-		}
-		&-none {
-			background: transparent;
-			border-color: transparent;
-			color: $color-text-invert;
+			color: $color-bg-dark;
 		}
 	}
+}
 
-	// size
-	&--size {
-		&-small {}
-		&-large {}
+// round
+#{$self}--round {
+	&, &[type] {
+		border-radius: $size-height-normal * .5;
 	}
-
-	// inline
-	&--inline {
-		display: inline-block;
-		padding-left: 15px;
-		padding-right: 15px;
-		&[type] {
-			width: auto;
+	&#{$self}--size {
+		&-small {
+			&, &[type] {
+				border-radius: $size-height-small * .5;
+			}
+		}
+		&-large {
+			&, &[type] {
+				border-radius: $size-height-large * .5;
+			}
 		}
 	}
+}
 
-	// disabled
-	&--disabled,
-	&[disabled] {
-		opacity: $opacity-active;
-		cursor: not-allowed;
+// inline
+#{$self}--inline {
+	display: inline-block;
+	padding-left: $size-padding-side;
+	padding-right: $size-padding-side;
+	&[type] {
+		width: auto;
 	}
+}
+
+// disabled
+#{$self}--disabled,
+#{$self}[disabled] {
+	opacity: $opacity-disabled;
+	cursor: not-allowed;
 }

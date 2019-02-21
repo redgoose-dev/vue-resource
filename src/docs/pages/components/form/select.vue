@@ -97,7 +97,7 @@
 	<section>
 		<head-title type="h3" title="props"/>
 		<p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
-		<table>
+		<table class="table table--center table--bordered">
 			<thead>
 			<tr>
 				<th>name</th>
@@ -107,59 +107,61 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th>name</th>
-				<th>string</th>
-				<td><code>name</code> attribute 로 사용</td>
+				<td>name</td>
+				<td>string</td>
+				<td class="typo-align--left"><code>name</code> attribute 로 사용</td>
 			</tr>
 			<tr>
-				<th>id</th>
-				<th>string</th>
-				<td><code>id</code> attribute 로 사용</td>
+				<td>id</td>
+				<td>string</td>
+				<td class="typo-align--left"><code>id</code> attribute 로 사용</td>
 			</tr>
 			<tr>
-				<th>selected</th>
-				<th>string, number</th>
-				<td>선택된 value 값</td>
+				<td>selected</td>
+				<td>string, number</td>
+				<td class="typo-align--left">선택된 value 값</td>
 			</tr>
 			<tr>
-				<th>required</th>
-				<th>boolean</th>
-				<td>필수값인지에 대한 여부</td>
+				<td>required</td>
+				<td>boolean</td>
+				<td class="typo-align--left">필수값인지에 대한 여부</td>
 			</tr>
 			<tr>
-				<th>disabled</th>
-				<th>boolean</th>
-				<td>비활성화</td>
+				<td>disabled</td>
+				<td>boolean</td>
+				<td class="typo-align--left">비활성화</td>
 			</tr>
 			<tr>
-				<th>inline</th>
-				<th>boolean</th>
-				<td>인라인 형식으로 사용</td>
+				<td>inline</td>
+				<td>boolean</td>
+				<td class="typo-align--left">인라인 형식으로 사용</td>
 			</tr>
 			<tr>
-				<th>multiple</th>
-				<th>boolean</th>
-				<td>여러항목 사용</td>
+				<td>multiple</td>
+				<td>boolean</td>
+				<td class="typo-align--left">여러항목 사용</td>
 			</tr>
 			<tr>
-				<th>placeholder</th>
-				<th>string</th>
-				<td>컴포넌트를 설명하는 글을 넣습니다. 이것을 사용하면 값이없는 <code>option</code>이 첫번째로 만들어집니다.</td>
+				<td>placeholder</td>
+				<td>string</td>
+				<td class="typo-align--left">
+					컴포넌트를 설명하는 글을 넣습니다. 이것을 사용하면 값이없는 <code>option</code>이 첫번째로 만들어집니다.
+				</td>
 			</tr>
 			<tr>
-				<th>size</th>
-				<th>string</th>
-				<td>컴포넌트의 사이즈 <code>small, large</code></td>
+				<td>size</td>
+				<td>string</td>
+				<td class="typo-align--left">컴포넌트의 사이즈 <code>small, large</code></td>
 			</tr>
 			<tr>
-				<th>state</th>
-				<th>string</th>
-				<td>컴포넌트의 상태 <code>primary, success, error</code></td>
+				<td>state</td>
+				<td>string</td>
+				<td class="typo-align--left">컴포넌트의 상태 <code>primary, success, error</code></td>
 			</tr>
 			<tr>
-				<th>native</th>
-				<th>boolean</th>
-				<td>네이티브 형태의 모습으로 사용합니다.</td>
+				<td>native</td>
+				<td>boolean</td>
+				<td class="typo-align--left">네이티브 형태의 모습으로 사용합니다.</td>
 			</tr>
 			</tbody>
 		</table>
@@ -168,17 +170,17 @@
 	<section>
 		<head-title type="h3" title="event"/>
 		<p>이 컴포넌트는 다음과 같은 <code>event</code>를 사용합니다.</p>
-		<table>
+		<table class="table table--center table--bordered">
 			<thead>
 			<tr>
 				<th>name</th>
-				<th>description</th>
+				<th>comment</th>
 			</tr>
 			</thead>
 			<tbody>
 			<tr>
-				<th>change</th>
-				<td>선택한 요소가 변경되면 호출됩니다.</td>
+				<td>@change</td>
+				<td class="typo-align--left">선택한 요소가 변경되면 호출됩니다.</td>
 			</tr>
 			</tbody>
 		</table>

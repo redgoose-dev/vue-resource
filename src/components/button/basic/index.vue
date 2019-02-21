@@ -37,10 +37,10 @@ export default {
 		type: { type: String, default: 'button' }, // button,reset,submit
 		title: { type: String, default: null },
 		size: { type: String, default: null }, // small,large
-		color: { type: String, default: null }, // none,sub,gray
+		color: { type: String, default: null }, // sub,light,dark,none
+		outline: { type: Boolean, default: false }, // true,false
 		round: { type: Boolean, default: false }, // true,false
 		disabled: { type: Boolean, default: false }, // true,false
-		outline: { type: Boolean, default: false }, // true,false
 		inline: { type: Boolean, default: false }, // true,false
 	},
 	computed: {

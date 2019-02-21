@@ -22,10 +22,10 @@
 				</p>
 			</div>
 		</div>
-		<pre class="example-code"><code>&lt;!-- solo -->
+		<pre class="example-code"><code>// solo
 &lt;p class="typo-description">body&lt;/p>
 
-&lt;!-- with title -->
+// with title
 &lt;div class="typo-description">
 	&lt;p class="typo-description__title">title&lt;/p>
 	&lt;p>body&lt;/p>
@@ -43,7 +43,10 @@
 			<hr>
 			<h3 class="typo-heading--section">Section heading</h3>
 		</div>
-		<pre class="example-code"><code>&lt;h2 class="typo-heading--page">page heading&lt;/h2>
+		<pre class="example-code"><code>// page heading
+&lt;h2 class="typo-heading--page">page heading&lt;/h2>
+
+// section heading
 &lt;h3 class="typo-heading--section">section heading&lt;/h2></code></pre>
 	</section>
 
@@ -57,10 +60,19 @@
 			<p class="typo-color--success">text color-success</p>
 			<p class="typo-color--error">text color-error</p>
 		</div>
-		<pre class="example-code"><code>&lt;p class="typo-color--base">text color-base&lt;/p>
+		<pre class="example-code"><code>// base
+&lt;p class="typo-color--base">text color-base&lt;/p>
+
+// key
 &lt;p class="typo-color--key">text color-key&lt;/p>
+
+// sub
 &lt;p class="typo-color--sub">text color-sub&lt;/p>
+
+// success
 &lt;p class="typo-color--success">text color-success&lt;/p>
+
+// error
 &lt;p class="typo-color--error">text color-error&lt;/p></code></pre>
 	</section>
 
@@ -78,9 +90,16 @@
 				text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justify text align - justifytext align - justifytext align - justify text align - justify text align - justify...
 			</p>
 		</div>
-		<pre class="example-code"><code>&lt;p class="typo-align--left">text&lt;/p>
+		<pre class="example-code"><code>// left
+&lt;p class="typo-align--left">text&lt;/p>
+
+// center
 &lt;p class="typo-align--center">text&lt;/p>
+
+// right
 &lt;p class="typo-align--right">text&lt;/p>
+
+// justify
 &lt;p class="typo-align--justify">text&lt;/p></code></pre>
 	</section>
 
@@ -100,10 +119,12 @@
 				<li>mango</li>
 			</ul>
 		</div>
-		<pre class="example-code"><code>&lt;ul class="typo-list">
+		<pre class="example-code"><code>// list
+&lt;ul class="typo-list">
 	&lt;li>...&lt;/li>
 &lt;/ul>
 
+// do not native
 &lt;ul class="typo-list--not-native">
 	&lt;li>...&lt;/li>
 &lt;/ul></code></pre>
@@ -167,9 +188,16 @@
 			<p class="typo-bracket--quot">quot</p>
 			<p class="typo-bracket--small-quot">small quot</p>
 		</div>
-		<pre class="example-code"><code>&lt;p class="typo-bracket">bracket&lt;/p>
+		<pre class="example-code"><code>// bracket
+&lt;p class="typo-bracket">bracket&lt;/p>
+
+// bracket square
 &lt;p class="typo-bracket--square">bracket square&lt;/p>
+
+// quot
 &lt;p class="typo-bracket--quot">quot&lt;/p>
+
+// small quot
 &lt;p class="typo-bracket--small-quot">small quot&lt;/p></code></pre>
 	</section>
 </article>

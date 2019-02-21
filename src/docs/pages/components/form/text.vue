@@ -52,8 +52,13 @@
 				<div class="col"><form-text size="large" placeholder="large"/></div>
 			</div>
 		</div>
-		<pre class="example-code"><code>&lt;form-text size="small" placeholder="small"/>
+		<pre class="example-code"><code>// small
+&lt;form-text size="small" placeholder="small"/>
+
+// normal
 &lt;form-text placeholder="basic"/>
+
+// large
 &lt;form-text size="large" placeholder="large"/></code></pre>
 	</section>
 
@@ -85,8 +90,11 @@
 	</section>
 
 	<section>
-		<head-title type="h3" title="status"/>
-		<p>폼이 어떤 상태인지 표시한다. 주로 잘못 입력했을때 폼에서 시각적으로 알려주면 많은 도움이 됩니다.</p>
+		<head-title type="h3" title="state"/>
+		<p>
+			폼이 어떤 상태인지 표시합니다.<br/>
+			주로 잘못 입력했을때 폼에서 시각적으로 알려주면 많은 도움이 됩니다.
+		</p>
 		<div class="example">
 			<div class="row row-gutter-h">
 				<div class="col"><form-text state="primary" placeholder="primary"/></div>
@@ -94,15 +102,20 @@
 				<div class="col"><form-text state="error" placeholder="error"/></div>
 			</div>
 		</div>
-		<pre class="example-code"><code>&lt;form-text state="primary"/>
+		<pre class="example-code"><code>// primary
+&lt;form-text state="primary"/>
+
+// success
 &lt;form-text state="success"/>
+
+// error
 &lt;form-text state="error"/></code></pre>
 	</section>
 
 	<section>
 		<head-title type="h3" title="props"/>
 		<p>이 컴포넌트는 다음과 같은 `props`를 사용합니다.</p>
-		<table>
+		<table class="table table--center table--bordered">
 			<thead>
 			<tr>
 				<th>name</th>
@@ -111,63 +124,63 @@
 			</thead>
 			<tbody>
 			<tr>
-				<th>type</th>
-				<td>
+				<td>type</td>
+				<td class="typo-align--left">
 					입력폼 타입을 정합니다. <code>text, textarea, email, date, tel ...</code><br/>
 					<a href="https://www.w3schools.com/tags/att_input_type.asp" target="_blank">HTML &lt;input> type Attribute</a> 페이지를 참고합니다.
 				</td>
 			</tr>
 			<tr>
-				<th>name</th>
-				<td>`name` attribute 로 사용됩니다.</td>
+				<td>name</td>
+				<td class="typo-align--left">`name` attribute 로 사용됩니다.</td>
 			</tr>
 			<tr>
-				<th>id</th>
-				<td>`id` attribute 로 사용됩니다.</td>
+				<td>id</td>
+				<td class="typo-align--left">`id` attribute 로 사용됩니다.</td>
 			</tr>
 			<tr>
-				<th>value</th>
-				<td>내용 값</td>
+				<td>value</td>
+				<td class="typo-align--left">내용 값</td>
 			</tr>
 			<tr>
-				<th>placeholder</th>
-				<td>내용이 없을때 임시로 표시되는 메시지</td>
+				<td>placeholder</td>
+				<td class="typo-align--left">내용이 없을때 임시로 표시되는 메시지</td>
 			</tr>
 			<tr>
-				<th>maxlength</th>
-				<td>최대 글자길이 제한.</td>
+				<td>maxlength</td>
+				<td class="typo-align--left">최대 글자길이 제한.</td>
 			</tr>
 			<tr>
-				<th>required</th>
-				<td>필수값인지에 대한 여부</td>
+				<td>required</td>
+				<td class="typo-align--left">필수값인지에 대한 여부</td>
 			</tr>
 			<tr>
-				<th>disabled</th>
-				<td>비활성화</td>
+				<td>disabled</td>
+				<td class="typo-align--left">비활성화</td>
 			</tr>
 			<tr>
-				<th>readonly</th>
-				<td>읽기전용</td>
+				<td>readonly</td>
+				<td class="typo-align--left">읽기전용</td>
 			</tr>
 			<tr>
-				<th>inline</th>
-				<td>인라인 형식으로 사용</td>
+				<td>inline</td>
+				<td class="typo-align--left">인라인 형식으로 사용</td>
 			</tr>
 			<tr>
-				<th>native-size</th>
-				<td>`size` attribute 로 사용됩니다.</td>
+				<td>native-size</td>
+				<td class="typo-align--left">`size` attribute 로 사용됩니다.</td>
 			</tr>
 			<tr>
-				<th>rows</th>
-				<td>`rows` attribute 로 사용하며 <code>type=textarea</code> 일때 사용됩니다.</td>
+				<td>rows</td>
+				<td class="typo-align--left">`rows` attribute 로 사용하며 <code>type=textarea</code> 일때 사용됩니다.</td>
 			</tr>
 			<tr>
-				<th>state</th>
-				<td>컴포넌트의 상태</td>
+				<td>state</td>
+				<td class="typo-align--left">컴포넌트의 상태</td>
 			</tr>
 			<tr>
-				<th>size</th>
-				<td>컴포넌트의 사이즈</td>
+				<td>size</td>
+				<td class="typo-align--left">컴포넌트의 사이즈</td>
 			</tr>
 			</tbody>
 		</table>
@@ -175,22 +188,23 @@
 
 	<section>
 		<head-title type="h3" title="event"/>
-		<p>이 컴포넌트는 다음과 같은 `event`를 사용합니다.</p>
-		<table>
+		<p>컴포넌트에서 사용하는 이벤트</p>
+
+		<table class="table table--center table--bordered">
 			<thead>
 			<tr>
 				<th>name</th>
-				<th>description</th>
+				<th>comment</th>
 			</tr>
 			</thead>
 			<tbody>
 			<tr>
-				<th>change</th>
-				<td>내용이 변했을때 호출됩니다.</td>
+				<td>@change</td>
+				<td class="typo-align--left">내용이 변했을때 발생하는 이벤트</td>
 			</tr>
 			<tr>
-				<th>position</th>
-				<td>클락하거나 내용을 입력할때 커서 위치를 알려줍니다.</td>
+				<td>@position</td>
+				<td class="typo-align--left">클릭하거나 내용을 입력할때 커서 위치를 알려줍니다.</td>
 			</tr>
 			</tbody>
 		</table>
