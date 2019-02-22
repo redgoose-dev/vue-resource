@@ -31,7 +31,7 @@
 export default {
 	name: 'page',
 	components: {
-		'head-title': () => import('@/docs/component/title'),
+		'head-title': () => import('@/docs/layout/title'),
 	},
 }
 </script>

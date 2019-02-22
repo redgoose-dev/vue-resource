@@ -1,6 +1,6 @@
 <template>
 <article class="page">
-	<head-title type="h2" title="form - checkbox"/>
+	<head-title type="h2" title="form / checkbox"/>
 </article>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
 	name: 'page',
 	components: {
-		'head-title': () => import('@/docs/component/title'),
+		'head-title': () => import('@/docs/layout/title'),
 	},
 }
 </script>

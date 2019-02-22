@@ -1,6 +1,6 @@
 <template>
 <article class="page">
-	<head-title type="h2" title="form - text"/>
+	<head-title type="h2" title="form / text"/>
 
 	<blockquote>
 		<p>
@@ -216,7 +216,7 @@
 export default {
 	name: 'page',
 	components: {
-		'head-title': () => import('@/docs/component/title'),
+		'head-title': () => import('@/docs/layout/title'),
 		'form-text': () => import('@/components/forms/text'),
 	},
 }

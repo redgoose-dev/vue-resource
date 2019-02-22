@@ -1,6 +1,6 @@
 <template>
 <article class="page">
-	<head-title type="h2" title="form - select"/>
+	<head-title type="h2" title="form / select"/>
 
 	<blockquote>
 		<p>
@@ -65,8 +65,13 @@
 				<div class="col"><form-select size="large" placeholder="large"/></div>
 			</div>
 		</div>
-		<pre class="example-code"><code>&lt;form-select size="small" placeholder="small"/>
+		<pre class="example-code"><code>// small
+&lt;form-select size="small" placeholder="small"/>
+
+// normal
 &lt;form-select placeholder="basic"/>
+
+// large
 &lt;form-select size="large" placeholder="large"/></code></pre>
 	</section>
 
@@ -89,8 +94,13 @@
 				<div class="col"><form-select state="error" placeholder="error"/></div>
 			</div>
 		</div>
-		<pre class="example-code"><code>&lt;form-select state="primary"/>
+		<pre class="example-code"><code>// primary
+&lt;form-select state="primary"/>
+
+// success
 &lt;form-select state="success"/>
+
+// error
 &lt;form-select state="error"/></code></pre>
 	</section>
 
@@ -100,67 +110,67 @@
 		<table class="table table--center table--bordered">
 			<thead>
 			<tr>
-				<th>name</th>
-				<th>type</th>
-				<th>description</th>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Comment</th>
 			</tr>
 			</thead>
 			<tbody>
 			<tr>
 				<td>name</td>
-				<td>string</td>
+				<td>String</td>
 				<td class="typo-align--left"><code>name</code> attribute 로 사용</td>
 			</tr>
 			<tr>
 				<td>id</td>
-				<td>string</td>
+				<td>String</td>
 				<td class="typo-align--left"><code>id</code> attribute 로 사용</td>
 			</tr>
 			<tr>
 				<td>selected</td>
-				<td>string, number</td>
+				<td>String,Number</td>
 				<td class="typo-align--left">선택된 value 값</td>
 			</tr>
 			<tr>
 				<td>required</td>
-				<td>boolean</td>
+				<td>Boolean</td>
 				<td class="typo-align--left">필수값인지에 대한 여부</td>
 			</tr>
 			<tr>
 				<td>disabled</td>
-				<td>boolean</td>
+				<td>Boolean</td>
 				<td class="typo-align--left">비활성화</td>
 			</tr>
 			<tr>
 				<td>inline</td>
-				<td>boolean</td>
+				<td>Boolean</td>
 				<td class="typo-align--left">인라인 형식으로 사용</td>
 			</tr>
 			<tr>
 				<td>multiple</td>
-				<td>boolean</td>
+				<td>Boolean</td>
 				<td class="typo-align--left">여러항목 사용</td>
 			</tr>
 			<tr>
 				<td>placeholder</td>
-				<td>string</td>
+				<td>String</td>
 				<td class="typo-align--left">
 					컴포넌트를 설명하는 글을 넣습니다. 이것을 사용하면 값이없는 <code>option</code>이 첫번째로 만들어집니다.
 				</td>
 			</tr>
 			<tr>
 				<td>size</td>
-				<td>string</td>
+				<td>String</td>
 				<td class="typo-align--left">컴포넌트의 사이즈 <code>small, large</code></td>
 			</tr>
 			<tr>
 				<td>state</td>
-				<td>string</td>
+				<td>String</td>
 				<td class="typo-align--left">컴포넌트의 상태 <code>primary, success, error</code></td>
 			</tr>
 			<tr>
 				<td>native</td>
-				<td>boolean</td>
+				<td>Boolean</td>
 				<td class="typo-align--left">네이티브 형태의 모습으로 사용합니다.</td>
 			</tr>
 			</tbody>
@@ -173,8 +183,8 @@
 		<table class="table table--center table--bordered">
 			<thead>
 			<tr>
-				<th>name</th>
-				<th>comment</th>
+				<th>Name</th>
+				<th>Comment</th>
 			</tr>
 			</thead>
 			<tbody>
@@ -193,7 +203,7 @@
 export default {
 	name: 'page',
 	components: {
-		'head-title': () => import('@/docs/component/title'),
+		'head-title': () => import('@/docs/layout/title'),
 		'form-select': () => import('@/components/forms/select'),
 	},
 	data()

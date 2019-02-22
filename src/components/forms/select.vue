@@ -11,15 +11,12 @@
 		inline && 'form-select--inline',
 		size && `form-select--size-${size}`,
 		state && `form-select--state-${state}`,
-		selected && `form-select--selected`,
+		!!isSelected && `form-select--selected`,
 		multiple && `form-select--multiple`,
 		!native && `form-select--not-native`,
 	]"
 	@input="onChange">
-		<option
-			v-if="placeholder"
-			value=""
-			:disabled="false">
+		<option v-if="placeholder" value="" :disabled="false">
 			{{placeholder}}
 		</option>
 		<slot/>
@@ -45,6 +42,13 @@ export default {
 	model: {
 		prop: 'selected',
 		event: 'change',
+	},
+	computed: {
+		isSelected()
+		{
+			console.log(this.selected);
+			return !!this.selected;
+		}
 	},
 	methods: {
 		onChange: function(e)
