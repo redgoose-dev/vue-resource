@@ -36,6 +36,7 @@ export default {
 		required: { type: Boolean, default: false },
 		color: { type: String, default: null }, // sub,error
 		size: { type: String, default: null }, // small,large
+		animation: { type: String, default: null }, // TODO
 	},
 	model: {
 		prop: 'checked',
