@@ -12,7 +12,7 @@
 		:name="name"
 		:id="id"
 		:value="value"
-		:checked="checked"
+		:checked="checked === value"
 		:disabled="disabled"
 		:required="required"
 		@change="onChange"/>
@@ -30,13 +30,13 @@ export default {
 		name: { type: String, default: null },
 		id: { type: String, default: null },
 		label: { type: String, default: null },
-		value: { type: [String,Number,Boolean] },
+		value: { type: [String,Number,Boolean], default: null },
 		checked: { type: [Boolean, String], default: false },
 		disabled: { type: Boolean, default: false },
 		required: { type: Boolean, default: false },
-		color: { type: String, default: null }, // sub,error
+		color: { type: String, default: null }, // sub,success,error
 		size: { type: String, default: null }, // small,large
-		animation: { type: String, default: null }, // TODO
+		animation: { type: String, default: null }, // elastic,none
 	},
 	model: {
 		prop: 'checked',
@@ -45,7 +45,7 @@ export default {
 	methods: {
 		onChange(e)
 		{
-			this.$emit('change', e);
+			this.$emit('change', e.target.value, e);
 		},
 	},
 }

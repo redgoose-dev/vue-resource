@@ -4,25 +4,43 @@
 // set variables
 $self: '.form-radio';
 // size
-$size-padding: 6px 6px;
 $size-font-normal: $form-size-font-basic;
 $size-icon-normal: 20px;
 $size-icon-normal-padding: 10px;
 $size-icon-border: 2px;
 $size-label-left-padding: 8px;
+$size-height-small: $form-size-height-small;
+$size-height-normal: $form-size-height-basic;
+$size-height-large: $form-size-height-large;
+$size-side-padding-small: 8px;
+$size-side-padding-basic: 12px;
+$size-side-padding-large: 18px;
+$size-font-base: $form-size-font-basic;
+$size-font-small: $form-size-font-small;
+$size-font-large: $form-size-font-large;
 // color
 $color-border-normal: #ccc;
+$color-icon-inside: $color-key;
+$color-icon-inside-sub: $color-sub;
+$color-icon-inside-success: $color-success;
+$color-icon-inside-error: $color-error;
+$color-icon-border-sub: $color-sub;
+$color-icon-border-success: $color-success;
+$color-icon-border-error: $color-error;
 // speed
 $speed-toggle-checked: 100ms;
+// opacity
+$opacity-disabled: .5;
 
 
 // base
 #{$self} {
 	position: relative;
-	display: inline-block;
+	display: block;
 	font-size: 0;
+	height: $size-height-normal;
+	padding: 0 $size-side-padding-basic;
 	box-sizing: border-box;
-	padding: $size-padding;
 
 	> input {
 		position: absolute;
@@ -32,14 +50,14 @@ $speed-toggle-checked: 100ms;
 		width: 100%;
 		height: 100%;
 		opacity: 0;
+		appearance: none;
 		cursor: pointer;
 	}
 	> span {
-		display: inline-block;
-		> * {
-			display: inline-block;
-			vertical-align: middle;
-		}
+		display: flex;
+		align-items: center;
+		height: 100%;
+		box-sizing: border-box;
 		> i {
 			position: relative;
 			width: $size-icon-normal;
@@ -56,7 +74,7 @@ $speed-toggle-checked: 100ms;
 				width: $size-icon-normal - $size-icon-normal-padding;
 				height: $size-icon-normal - $size-icon-normal-padding;
 				transform: translate(-50%, -50%) scale(0);
-				background: $color-key;
+				background: $color-icon-inside;
 				transition: transform $speed-toggle-checked ease-out;
 				border-radius: 50%;
 			}
@@ -72,6 +90,117 @@ $speed-toggle-checked: 100ms;
 		> i {
 			&:after {
 				transform: translate(-50%, -50%) scale(1);
+			}
+		}
+	}
+	> input:focus + span {
+		> em {
+			text-decoration: underline;
+		}
+	}
+	//&:focus-within {
+	//	box-shadow: 0 0 1px 2px rgba($color-key, 1);
+	//	border-radius: 2px;
+	//}
+}
+
+// size
+#{$self}--size {
+	&-small {
+		height: $size-height-small;
+		padding: 0 $size-side-padding-small;
+		> span {
+			> i {
+				width: $size-icon-normal - 4px;
+				height: $size-icon-normal - 4px;
+				&:after {
+					width: $size-icon-normal - $size-icon-normal-padding - 2px;
+					height: $size-icon-normal - $size-icon-normal-padding - 2px;
+				}
+			}
+			> em {
+				font-size: $size-font-small;
+			}
+		}
+	}
+	&-large {
+		height: $size-height-large;
+		padding: 0 $size-side-padding-large;
+		> span {
+			> i {
+				width: $size-icon-normal + 2px;
+				height: $size-icon-normal + 2px;
+				&:after {
+					width: $size-icon-normal - $size-icon-normal-padding + 2px;
+					height: $size-icon-normal - $size-icon-normal-padding + 2px;
+				}
+			}
+			> em {
+				font-size: $size-font-large;
+			}
+		}
+	}
+}
+
+// color
+#{$self}--color {
+	&-sub {
+		> span {
+			> i {
+				border-color: $color-icon-border-sub;
+				&:after {
+					background: $color-icon-inside-sub;
+				}
+			}
+		}
+	}
+	&-success {
+		> span {
+			> i {
+				border-color: $color-icon-border-success;
+				&:after {
+					background: $color-icon-inside-success;
+				}
+			}
+		}
+	}
+	&-error {
+		> span {
+			> i {
+				border-color: $color-icon-border-error;
+				&:after {
+					background: $color-icon-inside-error;
+				}
+			}
+		}
+	}
+}
+
+// disabled
+#{$self}--disabled {
+	opacity: $opacity-disabled;
+	> input {
+		cursor: not-allowed;
+	}
+}
+
+// animation
+#{$self}--animation {
+	&-elastic {
+		> span > i:after {
+			transition-duration: $speed-toggle-checked;
+		}
+		> input:checked + span {
+			i:after {
+				transition-duration: $speed-toggle-checked + 100ms;
+				transition-timing-function: cubic-bezier(.35,1.9,.68,1.02);
+			}
+		}
+	}
+	&-none {
+		> span {
+			> i:after {
+				transition: none;
 			}
 		}
 	}
