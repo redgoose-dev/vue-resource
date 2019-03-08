@@ -1,0 +1,16 @@
+@import "../../css/variables";
+@import "../../css/mixins";
+
+// set variables
+$self: '.form-checkbox';
+// size
+$size-icon-normal: 20px;
+$size-icon-normal-padding: 10px;
+$size-icon-border: 2px;
+
+
+// base
+#{$self} {
+	position: relative;
+	//
+}

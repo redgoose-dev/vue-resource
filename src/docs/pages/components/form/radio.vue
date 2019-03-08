@@ -5,8 +5,8 @@
 	<blockquote>
 		<p>
 			<strong>
-				unit component: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/radio.vue" target="_blank">radio.vue</a><br/>
-				group component: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/radio.scss" target="_blank">radios.scss</a>
+				component: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/radio.vue" target="_blank">radio.vue</a><br/>
+				scss: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/radio.scss" target="_blank">radios.scss</a>
 			</strong>
 		</p>
 	</blockquote>

@@ -4,7 +4,6 @@
 // set variables
 $self: '.form-radio';
 // size
-$size-font-normal: $form-size-font-basic;
 $size-icon-normal: 20px;
 $size-icon-normal-padding: 10px;
 $size-icon-border: 2px;
@@ -82,7 +81,7 @@ $opacity-disabled: .5;
 		> em {
 			margin-left: $size-label-left-padding;
 			font-style: normal;
-			font-size: $size-font-normal;
+			font-size: $size-font-base;
 			line-height: 1;
 		}
 	}
