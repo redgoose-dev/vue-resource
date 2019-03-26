@@ -67,6 +67,7 @@
 		margin-top: 0;
 	}
 
+	// example
 	.example {
 		position: relative;
 		background: #fff;
@@ -133,5 +134,12 @@
 	.example-code {
 		margin-top: -1px;
 		position: relative;
+	}
+
+	// table
+	.table {
+		thead {
+			background: #fff;
+		}
 	}
 }

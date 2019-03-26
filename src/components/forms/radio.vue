@@ -16,10 +16,11 @@
 		:disabled="disabled"
 		:required="required"
 		@change="onChange"/>
-	<span>
+	<span v-if="!$slots.default" class="form-radio__body">
 		<i>icon</i>
 		<em v-if="!!label">{{label}}</em>
 	</span>
+	<slot v-else/>
 </label>
 </template>
 

@@ -183,6 +183,27 @@
 			</tbody>
 		</table>
 	</section>
+
+	<section>
+		<head-title type="h3" title="event"/>
+		<p>컴포넌트에서 사용하는 이벤트</p>
+		<table class="table table--center table--bordered">
+			<thead>
+			<tr>
+				<th>name</th>
+				<th>params</th>
+				<th>comment</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>@change</td>
+				<td><code>sw,event</code></td>
+				<td class="typo-align--left">라디오 버튼의 상태가 변했을때 이벤트 발생</td>
+			</tr>
+			</tbody>
+		</table>
+	</section>
 </article>
 </template>
 

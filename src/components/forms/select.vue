@@ -46,7 +46,6 @@ export default {
 	computed: {
 		isSelected()
 		{
-			console.log(this.selected);
 			return !!this.selected;
 		}
 	},

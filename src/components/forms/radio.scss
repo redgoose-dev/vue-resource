@@ -5,7 +5,7 @@
 $self: '.form-radio';
 // size
 $size-icon-normal: 20px;
-$size-icon-normal-padding: 10px;
+$size-icon-normal-padding: 8px;
 $size-icon-border: 2px;
 $size-label-left-padding: 8px;
 $size-height-small: $form-size-height-small;
@@ -52,7 +52,7 @@ $opacity-disabled: .5;
 		appearance: none;
 		cursor: pointer;
 	}
-	> span {
+	&__body {
 		display: flex;
 		align-items: center;
 		height: 100%;
@@ -85,14 +85,14 @@ $opacity-disabled: .5;
 			line-height: 1;
 		}
 	}
-	> input:checked + span {
+	> input:checked + #{$self}__body {
 		> i {
 			&:after {
 				transform: translate(-50%, -50%) scale(1);
 			}
 		}
 	}
-	> input:focus + span {
+	> input:focus + #{$self}__body {
 		> em {
 			text-decoration: underline;
 		}
@@ -108,13 +108,13 @@ $opacity-disabled: .5;
 	&-small {
 		height: $size-height-small;
 		padding: 0 $size-side-padding-small;
-		> span {
+		> #{$self}__body {
 			> i {
 				width: $size-icon-normal - 4px;
 				height: $size-icon-normal - 4px;
 				&:after {
-					width: $size-icon-normal - $size-icon-normal-padding - 2px;
-					height: $size-icon-normal - $size-icon-normal-padding - 2px;
+					width: $size-icon-normal - $size-icon-normal-padding - 4px;
+					height: $size-icon-normal - $size-icon-normal-padding - 4px;
 				}
 			}
 			> em {
@@ -125,7 +125,7 @@ $opacity-disabled: .5;
 	&-large {
 		height: $size-height-large;
 		padding: 0 $size-side-padding-large;
-		> span {
+		> #{$self}__body {
 			> i {
 				width: $size-icon-normal + 2px;
 				height: $size-icon-normal + 2px;
@@ -144,7 +144,7 @@ $opacity-disabled: .5;
 // color
 #{$self}--color {
 	&-sub {
-		> span {
+		> #{$self}__body {
 			> i {
 				border-color: $color-icon-border-sub;
 				&:after {
@@ -154,7 +154,7 @@ $opacity-disabled: .5;
 		}
 	}
 	&-success {
-		> span {
+		> #{$self}__body {
 			> i {
 				border-color: $color-icon-border-success;
 				&:after {
@@ -164,7 +164,7 @@ $opacity-disabled: .5;
 		}
 	}
 	&-error {
-		> span {
+		> #{$self}__body {
 			> i {
 				border-color: $color-icon-border-error;
 				&:after {
@@ -186,10 +186,10 @@ $opacity-disabled: .5;
 // animation
 #{$self}--animation {
 	&-elastic {
-		> span > i:after {
+		> #{$self}__body > i:after {
 			transition-duration: $speed-toggle-checked;
 		}
-		> input:checked + span {
+		> input:checked + #{$self}__body {
 			i:after {
 				transition-duration: $speed-toggle-checked + 100ms;
 				transition-timing-function: cubic-bezier(.35,1.9,.68,1.02);
@@ -197,7 +197,7 @@ $opacity-disabled: .5;
 		}
 	}
 	&-none {
-		> span {
+		> #{$self}__body {
 			> i:after {
 				transition: none;
 			}

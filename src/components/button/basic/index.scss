@@ -141,6 +141,7 @@ $opacity-disabled: .5;
 	padding-left: $size-padding-side;
 	padding-right: $size-padding-side;
 	&[type] {
+		display: inline-block;
 		width: auto;
 	}
 }
