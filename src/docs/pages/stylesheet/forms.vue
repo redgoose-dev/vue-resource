@@ -21,9 +21,6 @@
 			다음 예제는 `forms`에서 사용되는 클래스와 각 폼 컴포넌트들을 조합할때의 모습입니다.<br/>
 			이 예제는 데모를 위하여 약간 수정한것 뿐이고, 프로젝트에서 사용할 스타일을 상황에 맞게 고쳐야 할것입니다.
 		</p>
-		<p>
-			<b class="text-color--key">TODO: 폼 컴포넌트들과 여기부분이 다 만들어지면 마무리로 만들어질 예정</b>
-		</p>
 		<div class="example">
 			<form action="#">
 				<fieldset class="forms-fieldset">
@@ -46,17 +43,6 @@
 							<div class="col-12 col-sm">
 								<form-text type="password" id="example2" placeholder="please input text"/>
 								<p class="forms-help">forms-help message</p>
-							</div>
-						</div>
-					</div>
-					<div class="forms-field">
-						<div class="row row-v-center">
-							<div class="col-12 col-sm-3">
-								<label for="example3" class="forms-label">Phone number</label>
-							</div>
-							<div class="col-12 col-sm">
-								<form-text type="text" id="example3" placeholder="please input text"/>
-								<button type="button">// TODO: 사이드 버튼</button>
 							</div>
 						</div>
 					</div>
@@ -139,6 +125,7 @@ export default {
 	components: {
 		'head-title': () => import('@/docs/layout/title'),
 		'form-text': () => import('@/components/forms/text'),
+		'button-basic': () => import('@/components/button/basic'),
 	},
 }
 </script>

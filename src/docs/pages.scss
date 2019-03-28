@@ -37,6 +37,7 @@
 			border-radius: 0;
 			color: $color-sub;
 			font-size: .8125rem;
+			line-height: 1.64;
 		}
 	}
 	blockquote:not([class*=typo-]) {
@@ -138,8 +139,6 @@
 
 	// table
 	.table {
-		thead {
-			background: #fff;
-		}
+		background: #fff;
 	}
 }

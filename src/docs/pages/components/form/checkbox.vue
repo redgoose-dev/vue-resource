@@ -190,7 +190,8 @@ event(sw, event)
 
 	<p>
 		// TODO: 체크된 value 값 가져오기 작성예정.<br/>
-		// TODO: <code>name=foo[]</code> 형식으로도 시도해볼 필요가 있음
+		// TODO: <code>name=foo[]</code> 형식으로도 시도해볼 필요가 있음<br/>
+		// TODO: https://github.com/redgoose-dev/vue-resource/issues/7
 	</p>
 
 	<section>
