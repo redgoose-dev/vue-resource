@@ -135,7 +135,7 @@
 		<head-title type="h3" title="gutter"/>
 		<p>
 			컬럼 사이의 가로 여백을 넣을 수 있습니다.<br/>
-			간격 사이즈의 한 컬럼 사이즈는 <code>variables.scss</code> 파일에 있는 <code>$size-grid-col-gutter</code> 값에서 변경할 수 있습니다.
+			간격 사이즈의 한 컬럼 사이즈는 <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/css/variables.scss" target="_blank">variables.scss</a> 파일에 있는 <code>$size-grid-col-gutter</code> 값에서 변경할 수 있습니다.
 		</p>
 		<div class="example">
 			<div class="example-grid">
