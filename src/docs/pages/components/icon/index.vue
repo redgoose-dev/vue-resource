@@ -1,15 +1,13 @@
 <template>
 <article class="page">
 	<head-title type="h2" title="icon"/>
-
 	<blockquote>
 		<p>
 			<strong>
-				component: <a href="https://github.com/redgoose-dev/vue-resource/tree/master/src/components/icons" target="_blank">icons</a>
+				component: <a href="https://github.com/redgoose-dev/vue-resource/tree/master/src/components/icon" target="_blank">icon</a>
 			</strong>
 		</p>
 	</blockquote>
-
 	<p>
 		<code>SVG</code> 코드를 이용한 아이콘 컴포넌트 입니다.<br/>
 		웹폰트 아이콘을 사용할 수 없고, 색상이나 사이즈를 컴포넌트나 <code>stylesheet</code>로 수정할 수 있도록할때 사용할 수 있습니다.
