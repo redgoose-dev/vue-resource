@@ -22,7 +22,7 @@
 		</p>
 		<div class="example">
 			<card-thumbnail
-				src="https://goose.redgoose.me/data/upload/original/201904/2019-04-02_2-1.jpg"
+				src="https://images.unsplash.com/photo-1554504099-1f8349c359fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"
 				title="title"
 				type="cover"
 				:full="false"
@@ -75,6 +75,13 @@
 	<section>
 		<head-title type="h3" title="row"/>
 		<p>위아래 조합의 썸네일 이미지 요소입니다.</p>
+		<div class="example">
+			<card-row
+				src="https://goose.redgoose.me/data/upload/original/201904/2019-04-02_2-1.jpg"
+				title="title"
+				type="cover"
+			/>
+		</div>
 	</section>
 
 	<section>
@@ -95,3 +102,7 @@ export default {
 	},
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>
