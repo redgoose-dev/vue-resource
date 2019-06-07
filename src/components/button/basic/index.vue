@@ -44,21 +44,6 @@ export default {
 		inline: { type: Boolean, default: false }, // true,false
 	},
 	computed: {
-		buttonType()
-		{
-			if (!!this.to)
-			{
-				return 'router';
-			}
-			else if (!!this.href)
-			{
-				return 'a';
-			}
-			else
-			{
-				return 'button';
-			}
-		},
 		classNames()
 		{
 			return [
