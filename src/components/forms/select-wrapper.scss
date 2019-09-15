@@ -9,56 +9,56 @@ $color-state-error: $color-error;
 
 
 // base
-#{$self} {
-	position: relative;
-	display: block;
-	font-size: 0;
+.form-select-wrapper {
+  position: relative;
+  display: block;
+  font-size: 0;
 
-	&__icon {
-		$size: 5px;
-		position: absolute;
-		right: 15px;
-		top: 50%;
-		margin-top: -#{$size * .5};
-		pointer-events: none;
-		svg {
-			width: $size * 2;
-			height: $size;
-			color: $color-base;
-		}
-	}
-	.form-select {
-		padding-right: 34px;
-	}
+  &__icon {
+    $size: 5px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -#{$size * .5};
+    pointer-events: none;
+    svg {
+      width: $size * 2;
+      height: $size;
+      color: $color-base;
+    }
+  }
+  .form-select {
+    padding-right: 34px;
+  }
 }
 
 // state
-#{$self}--state {
-	&-primary {
-		#{$self}__icon svg {
-			color: $color-state-primary;
-		}
-	}
-	&-success {
-		#{$self}__icon svg {
-			color: $color-state-success;
-		}
-	}
-	&-error {
-		#{$self}__icon svg {
-			color: $color-state-error;
-		}
-	}
+.form-select-wrapper--state {
+  &-primary {
+    #{$self}__icon svg {
+      color: $color-state-primary;
+    }
+  }
+  &-success {
+    #{$self}__icon svg {
+      color: $color-state-success;
+    }
+  }
+  &-error {
+    #{$self}__icon svg {
+      color: $color-state-error;
+    }
+  }
 }
 
 // inline
-#{$self}--inline {
-	display: inline-block;
+.form-select-wrapper--inline {
+  display: inline-block;
 }
 
 // disabled
-#{$self}--disabled {
-	#{$self}__icon {
-		opacity: .5;
-	}
+.form-select-wrapper--disabled {
+  #{$self}__icon {
+    opacity: .5;
+  }
 }

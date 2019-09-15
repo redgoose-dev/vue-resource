@@ -35,175 +35,175 @@ $opacity-disabled: .5;
 
 
 // base
-#{$self} {
-	position: relative;
-	display: block;
-	font-size: 0;
-	height: $size-height-normal;
-	padding: 0 $size-side-padding-basic;
-	box-sizing: border-box;
+.form-checkbox {
+  position: relative;
+  display: block;
+  font-size: 0;
+  height: $size-height-normal;
+  padding: 0 $size-side-padding-basic;
+  box-sizing: border-box;
 
-	> input {
-		position: absolute;
-		z-index: 2;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		appearance: none;
-		cursor: pointer;
-	}
+  > input {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    appearance: none;
+    cursor: pointer;
+  }
 
-	&__body {
-		display: flex;
-		align-items: center;
-		height: 100%;
-		box-sizing: border-box;
-		> i {
-			position: relative;
-			width: $size-icon-normal;
-			height: $size-icon-normal;
-			border: $size-icon-border solid $color-border-normal;
-			border-radius: $size-icon-border-outer-radius;
-			box-sizing: border-box;
-			&:after {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				width: $size-icon-normal - $size-icon-normal-padding;
-				height: $size-icon-normal - $size-icon-normal-padding;
-				transform: translate(-50%, -50%) scale(0);
-				background: $color-icon-inside;
-				transition: transform $speed-toggle-checked ease-out;
-				border-radius: $size-icon-border-inner-radius;
-			}
-		}
-		> em {
-			margin-left: $size-label-left-padding;
-			font-style: normal;
-			font-size: $size-font-base;
-			line-height: 1;
-		}
-	}
-	> input:checked + #{$self}__body {
-		> i {
-			&:after {
-				transform: translate(-50%, -50%) scale(1);
-			}
-		}
-	}
-	> input:focus + #{$self}__body {
-		> em {
-			text-decoration: underline;
-		}
-	}
-	//&:focus-within {
-	//	box-shadow: 0 0 1px 2px rgba($color-key, 1);
-	//	border-radius: 2px;
-	//}
+  &__body {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    > i {
+      position: relative;
+      width: $size-icon-normal;
+      height: $size-icon-normal;
+      border: $size-icon-border solid $color-border-normal;
+      border-radius: $size-icon-border-outer-radius;
+      box-sizing: border-box;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: $size-icon-normal - $size-icon-normal-padding;
+        height: $size-icon-normal - $size-icon-normal-padding;
+        transform: translate(-50%, -50%) scale(0);
+        background: $color-icon-inside;
+        transition: transform $speed-toggle-checked ease-out;
+        border-radius: $size-icon-border-inner-radius;
+      }
+    }
+    > em {
+      margin-left: $size-label-left-padding;
+      font-style: normal;
+      font-size: $size-font-base;
+      line-height: 1;
+    }
+  }
+  > input:checked + #{$self}__body {
+    > i {
+      &:after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+  > input:focus + #{$self}__body {
+    > em {
+      text-decoration: underline;
+    }
+  }
+  //&:focus-within {
+  //	box-shadow: 0 0 1px 2px rgba($color-key, 1);
+  //	border-radius: 2px;
+  //}
 }
 
 // size
-#{$self}--size {
-	&-small {
-		height: $size-height-small;
-		padding: 0 $size-side-padding-small;
-		> #{$self}__body {
-			> i {
-				width: $size-icon-normal - 4px;
-				height: $size-icon-normal - 4px;
-				&:after {
-					width: $size-icon-normal - $size-icon-normal-padding - 4px;
-					height: $size-icon-normal - $size-icon-normal-padding - 4px;
-				}
-			}
-			> em {
-				font-size: $size-font-small;
-			}
-		}
-	}
-	&-large {
-		height: $size-height-large;
-		padding: 0 $size-side-padding-large;
-		> #{$self}__body {
-			> i {
-				width: $size-icon-normal + 2px;
-				height: $size-icon-normal + 2px;
-				&:after {
-					width: $size-icon-normal - $size-icon-normal-padding + 2px;
-					height: $size-icon-normal - $size-icon-normal-padding + 2px;
-				}
-			}
-			> em {
-				font-size: $size-font-large;
-			}
-		}
-	}
+.form-checkbox--size {
+  &-small {
+    height: $size-height-small;
+    padding: 0 $size-side-padding-small;
+    > #{$self}__body {
+      > i {
+        width: $size-icon-normal - 4px;
+        height: $size-icon-normal - 4px;
+        &:after {
+          width: $size-icon-normal - $size-icon-normal-padding - 4px;
+          height: $size-icon-normal - $size-icon-normal-padding - 4px;
+        }
+      }
+      > em {
+        font-size: $size-font-small;
+      }
+    }
+  }
+  &-large {
+    height: $size-height-large;
+    padding: 0 $size-side-padding-large;
+    > #{$self}__body {
+      > i {
+        width: $size-icon-normal + 2px;
+        height: $size-icon-normal + 2px;
+        &:after {
+          width: $size-icon-normal - $size-icon-normal-padding + 2px;
+          height: $size-icon-normal - $size-icon-normal-padding + 2px;
+        }
+      }
+      > em {
+        font-size: $size-font-large;
+      }
+    }
+  }
 }
 
 // color
-#{$self}--color {
-	&-sub {
-		> #{$self}__body {
-			> i {
-				border-color: $color-icon-border-sub;
-				&:after {
-					background: $color-icon-inside-sub;
-				}
-			}
-		}
-	}
-	&-success {
-		> #{$self}__body {
-			> i {
-				border-color: $color-icon-border-success;
-				&:after {
-					background: $color-icon-inside-success;
-				}
-			}
-		}
-	}
-	&-error {
-		> #{$self}__body {
-			> i {
-				border-color: $color-icon-border-error;
-				&:after {
-					background: $color-icon-inside-error;
-				}
-			}
-		}
-	}
+.form-checkbox--color {
+  &-sub {
+    > #{$self}__body {
+      > i {
+        border-color: $color-icon-border-sub;
+        &:after {
+          background: $color-icon-inside-sub;
+        }
+      }
+    }
+  }
+  &-success {
+    > #{$self}__body {
+      > i {
+        border-color: $color-icon-border-success;
+        &:after {
+          background: $color-icon-inside-success;
+        }
+      }
+    }
+  }
+  &-error {
+    > #{$self}__body {
+      > i {
+        border-color: $color-icon-border-error;
+        &:after {
+          background: $color-icon-inside-error;
+        }
+      }
+    }
+  }
 }
 
 // disabled
-#{$self}--disabled {
-	opacity: $opacity-disabled;
-	> input {
-		cursor: not-allowed;
-	}
+.form-checkbox--disabled {
+  opacity: $opacity-disabled;
+  > input {
+    cursor: not-allowed;
+  }
 }
 
 // animation
-#{$self}--animation {
-	&-elastic {
-		> #{$self}__body > i:after {
-			transition-duration: $speed-toggle-checked;
-		}
-		> input:checked + #{$self}__body {
-			i:after {
-				transition-duration: $speed-toggle-checked + 100ms;
-				transition-timing-function: cubic-bezier(.35,1.9,.68,1.02);
-			}
-		}
-	}
-	&-none {
-		> #{$self}__body {
-			> i:after {
-				transition: none;
-			}
-		}
-	}
+.form-checkbox--animation {
+  &-elastic {
+    > #{$self}__body > i:after {
+      transition-duration: $speed-toggle-checked;
+    }
+    > input:checked + #{$self}__body {
+      i:after {
+        transition-duration: $speed-toggle-checked + 100ms;
+        transition-timing-function: cubic-bezier(.35,1.9,.68,1.02);
+      }
+    }
+  }
+  &-none {
+    > #{$self}__body {
+      > i:after {
+        transition: none;
+      }
+    }
+  }
 }

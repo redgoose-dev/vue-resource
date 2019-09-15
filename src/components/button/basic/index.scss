@@ -26,129 +26,129 @@ $opacity-disabled: .5;
 
 
 // base
-#{$self} {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	height: $size-height-normal;
-	color: $color-text;
-	background: $color-bg-base;
-	border: 1px solid $color-bg-base;
-	transition: opacity 200ms ease-out, box-shadow 100ms ease-out;
-	font-size: $font-size-normal;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: $size-height-normal;
+  color: $color-text;
+  background: $color-bg-base;
+  border: 1px solid $color-bg-base;
+  transition: opacity 200ms ease-out, box-shadow 100ms ease-out;
+  font-size: $font-size-normal;
 
-	&:focus {
-		outline: none;
-		box-shadow: 0 0 0 3px $color-focus;
-	}
-	&:active {
-		opacity: $opacity-active;
-	}
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px $color-focus;
+  }
+  &:active {
+    opacity: $opacity-active;
+  }
 
-	&[type] {
-		display: block;
-		align-items: unset;
-		justify-content: unset;
-		width: 100%;
-		cursor: pointer;
-		border-radius: 0;
-	}
-	&[href] {
-		text-decoration: none;
-	}
+  &[type] {
+    display: block;
+    align-items: unset;
+    justify-content: unset;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0;
+  }
+  &[href] {
+    text-decoration: none;
+  }
 }
 
 // color
-#{$self}--color {
-	&-sub {
-		background: $color-bg-sub;
-		border-color: $color-bg-sub;
-	}
-	&-light {
-		background: $color-bg-light;
-		border-color: $color-bg-light;
-		color: $color-text-invert;
-	}
-	&-dark {
-		background: $color-bg-dark;
-		border-color: $color-bg-dark;
-	}
-	&-none {
-		background: transparent;
-		border-color: transparent;
-		color: $color-text-invert;
-	}
+.button--color {
+  &-sub {
+    background: $color-bg-sub;
+    border-color: $color-bg-sub;
+  }
+  &-light {
+    background: $color-bg-light;
+    border-color: $color-bg-light;
+    color: $color-text-invert;
+  }
+  &-dark {
+    background: $color-bg-dark;
+    border-color: $color-bg-dark;
+  }
+  &-none {
+    background: transparent;
+    border-color: transparent;
+    color: $color-text-invert;
+  }
 }
 
 // size
-#{$self}--size {
-	&-small {
-		height: $size-height-small;
-		font-size: $font-size-small;
-	}
-	&-large {
-		height: $size-height-large;
-		font-size: $font-size-large;
-	}
+.button--size {
+  &-small {
+    height: $size-height-small;
+    font-size: $font-size-small;
+  }
+  &-large {
+    height: $size-height-large;
+    font-size: $font-size-large;
+  }
 }
 
 // outline
-#{$self}--outline {
-	background: transparent;
-	color: $color-bg-base;
+.button--outline {
+  background: transparent;
+  color: $color-bg-base;
 
-	&#{$self}--color {
-		&-sub {
-			border-color: $color-bg-sub;
-			color: $color-bg-sub;
-		}
-		&-light {
-			border-color: $color-bg-light;
-			color: mix(#000, $color-bg-light, 25%);
-		}
-		&-dark {
-			border-color: $color-bg-dark;
-			color: $color-bg-dark;
-		}
-	}
+  &#{$self}--color {
+    &-sub {
+      border-color: $color-bg-sub;
+      color: $color-bg-sub;
+    }
+    &-light {
+      border-color: $color-bg-light;
+      color: mix(#000, $color-bg-light, 25%);
+    }
+    &-dark {
+      border-color: $color-bg-dark;
+      color: $color-bg-dark;
+    }
+  }
 }
 
 // round
-#{$self}--round {
-	&, &[type] {
-		border-radius: $size-height-normal * .5;
-	}
-	&#{$self}--size {
-		&-small {
-			&, &[type] {
-				border-radius: $size-height-small * .5;
-			}
-		}
-		&-large {
-			&, &[type] {
-				border-radius: $size-height-large * .5;
-			}
-		}
-	}
+.button--round {
+  &, &[type] {
+    border-radius: $size-height-normal * .5;
+  }
+  &#{$self}--size {
+    &-small {
+      &, &[type] {
+        border-radius: $size-height-small * .5;
+      }
+    }
+    &-large {
+      &, &[type] {
+        border-radius: $size-height-large * .5;
+      }
+    }
+  }
 }
 
 // inline
-#{$self}--inline {
-	display: inline-block;
-	padding-left: $size-padding-side;
-	padding-right: $size-padding-side;
-	&[type] {
-		display: inline-block;
-		width: auto;
-	}
+.button--inline {
+  display: inline-block;
+  padding-left: $size-padding-side;
+  padding-right: $size-padding-side;
+  &[type] {
+    display: inline-block;
+    width: auto;
+  }
 }
 
 // disabled
-#{$self}--disabled,
-#{$self}[disabled] {
-	opacity: $opacity-disabled;
-	cursor: not-allowed;
+.button--disabled,
+.button[disabled] {
+  opacity: $opacity-disabled;
+  cursor: not-allowed;
 }

@@ -22,57 +22,59 @@ $speed-transition: 200ms; // 원의 전환속도
 // opacity
 $opacity-disabled: .5;
 
-#{$self} {
-	position: relative;
-	display: inline-block;
-	font-size: 0;
-	margin: 0;
-	padding: 4px;
-	box-sizing: border-box;
-	background: none;
-	appearance: none;
-	border: none;
-	@include button-touch-options(false);
-	&:focus {
-		#{$self}-icon {
-			border-color: $color-border-focus;
-			box-shadow: $color-shadow-focus;
-		}
-	}
-	&:disabled {
-		opacity: $opacity-disabled;
-		cursor: not-allowed;
-	}
+
+// base
+.form-switch {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  margin: 0;
+  padding: 4px;
+  box-sizing: border-box;
+  background: none;
+  appearance: none;
+  border: none;
+  @include button-touch-options(false);
+  &:focus {
+    #{$self}-icon {
+      border-color: $color-border-focus;
+      box-shadow: $color-shadow-focus;
+    }
+  }
+  &:disabled {
+    opacity: $opacity-disabled;
+    cursor: not-allowed;
+  }
 }
-#{$self}-icon {
-	content: '';
-	position: relative;
-	display: inline-block;
-	width: $size-width;
-	height: $size-height;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	border: $size-border-width solid $color-border-outer;
-	border-radius: $size-height * .5;
-	box-sizing: border-box;
-	> i {
-		display: inline-block;
-		position: absolute;
-		left: 0;
-		top: 50%;
-		width: $size-circle;
-		height: $size-circle;
-		background: $color-circle-off;
-		border-radius: 50%;
-		transition: transform $speed-transition ease-out, background $speed-transition ease-out;
-		transform: translate($size-position-start, -50%);
-	}
-	&--on {
-		> i {
-			background: $color-circle-on;
-			transform: translate($size-position-end, -50%);
-		}
-	}
+.form-switch-icon {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: $size-width;
+  height: $size-height;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: $size-border-width solid $color-border-outer;
+  border-radius: $size-height * .5;
+  box-sizing: border-box;
+  > i {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: $size-circle;
+    height: $size-circle;
+    background: $color-circle-off;
+    border-radius: 50%;
+    transition: transform $speed-transition ease-out, background $speed-transition ease-out;
+    transform: translate($size-position-start, -50%);
+  }
+  &--on {
+    > i {
+      background: $color-circle-on;
+      transform: translate($size-position-end, -50%);
+    }
+  }
 }

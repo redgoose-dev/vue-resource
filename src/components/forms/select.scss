@@ -1,84 +1,87 @@
 @import "../../css/variables";
 @import "../../css/mixins";
 
+// set variables
+$self: '.form-select';
+$size-padding: 12px;
+
+
+// base
 .form-select {
-	$self: '.form-select';
-	$size-padding: 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: $form-size-height-basic;
+  margin: 0;
+  padding: 0 $size-padding;
+  text-indent: 6px;
+  border: 1px solid $form-color-border;
+  border-radius: $form-size-radius;
+  font-size: $form-size-font-basic;
+  line-height: normal;
+  font-weight: 400;
+  color: mix($color-base, #fff, 40%);
+  background: #fff;
+  -webkit-tap-highlight-color: transparent;
+  transition: box-shadow 150ms ease-out;
 
-	display: block;
-	width: 100%;
-	box-sizing: border-box;
-	height: $form-size-height-basic;
-	margin: 0;
-	padding: 0 $size-padding;
-	text-indent: 6px;
-	border: 1px solid $form-color-border;
-	border-radius: $form-size-radius;
-	font-size: $form-size-font-basic;
-	line-height: normal;
-	font-weight: 400;
-	color: mix($color-base, #fff, 40%);
-	background: #fff;
-	-webkit-tap-highlight-color: transparent;
-	transition: box-shadow 150ms ease-out;
+  &:focus {
+    outline: none;
+    border-color: $form-color-border-focus;
+    box-shadow: $form-color-shadow-focus;
+  }
+  &:disabled {
+    opacity: .5;
+    background: mix(#000, #fff, 4%);
+    cursor: not-allowed;
+  }
 
-	&:focus {
-		outline: none;
-		border-color: $form-color-border-focus;
-		box-shadow: $form-color-shadow-focus;
-	}
-	&:disabled {
-		opacity: .5;
-		background: mix(#000, #fff, 4%);
-		cursor: not-allowed;
-	}
-
-	&--selected {
-		color: $color-base;
-	}
-	&--size {
-		&-small {
-			height: $form-size-height-small;
-			font-size: $form-size-font-small;
-		}
-		&-large {
-			height: $form-size-height-large;
-			font-size: $form-size-font-large;
-		}
-	}
-	&--inline {
-		width: auto;
-		display: inline-block;
-		min-width: 120px;
-	}
-	&--state {
-		&-primary {
-			border-color: $color-sub;
-		}
-		&-success {
-			border-color: $color-success;
-		}
-		&-error {
-			border-color: $color-error;
-		}
-	}
-	&--multiple {
-		height: auto;
-		min-height: $form-size-height-basic;
-		padding-top: $size-padding;
-		padding-bottom: $size-padding;
-		text-indent: 3px;
-		&#{$self}--size {
-			&-small {
-				min-height: $form-size-height-small;
-			}
-			&-large {
-				min-height: $form-size-height-large;
-			}
-		}
-	}
-	&--not-native {
-		appearance: none;
-		text-indent: 0;
-	}
+  &--selected {
+    color: $color-base;
+  }
+  &--size {
+    &-small {
+      height: $form-size-height-small;
+      font-size: $form-size-font-small;
+    }
+    &-large {
+      height: $form-size-height-large;
+      font-size: $form-size-font-large;
+    }
+  }
+  &--inline {
+    width: auto;
+    display: inline-block;
+    min-width: 120px;
+  }
+  &--state {
+    &-primary {
+      border-color: $color-sub;
+    }
+    &-success {
+      border-color: $color-success;
+    }
+    &-error {
+      border-color: $color-error;
+    }
+  }
+  &--multiple {
+    height: auto;
+    min-height: $form-size-height-basic;
+    padding-top: $size-padding;
+    padding-bottom: $size-padding;
+    text-indent: 3px;
+    &#{$self}--size {
+      &-small {
+        min-height: $form-size-height-small;
+      }
+      &-large {
+        min-height: $form-size-height-large;
+      }
+    }
+  }
+  &--not-native {
+    appearance: none;
+    text-indent: 0;
+  }
 }
