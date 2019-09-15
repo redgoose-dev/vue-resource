@@ -4,7 +4,7 @@
 	<blockquote>
 		<p>
 			<strong>
-				component: <a href="https://github.com/redgoose-dev/vue-resource/tree/master/src/components/icon" target="_blank">icon</a>
+				component: <a :href="`${$store.state.url.github}tree/master/src/components/icon`" target="_blank">icon</a>
 			</strong>
 		</p>
 	</blockquote>
@@ -125,7 +125,7 @@
 		<p>
 			위의 코드를 복사하고 아이콘 컴포넌트 위치 기준에서 <code>./src</code>경로에서 <code>icon-{NAME}.vue</code> 형식으로 vue 파일을 만들고 <code>&lt;template>&lt;/template></code> 엘리먼트를 만들어서 그 속에 복사한 svg 소스코드를 붙여넣습니다.
 		</p>
-		<p><a href="https://github.com/redgoose-dev/vue-resource/tree/master/src/components/icons/src" target="_blank">여기</a>에서 미리 만들어져 있는 예제 아이콘들을 참고할 수 있습니다.</p>
+		<p><a :href="`${$store.state.url.github}tree/master/src/components/icons/src`" target="_blank">여기</a>에서 미리 만들어져 있는 예제 아이콘들을 참고할 수 있습니다.</p>
 		<p>다음과 같이 아이콘 파일 <code>code-{NAME}.vue</code> 형식에서 <code>{NAME}</code> 부분을 이름으로 사용해서 컴포넌트로 아이콘을 불러올 수 있습니다.</p>
 		<div class="example">
 			<icon name="star"/>

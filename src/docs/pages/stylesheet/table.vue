@@ -3,7 +3,7 @@
 	<head-title type="h2" title="table"/>
 
 	<blockquote>
-		<strong>Source: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/css/table.scss" target="_blank">table.scss</a></strong>
+		<strong>Source: <a :href="`${$store.state.url.github}blob/master/src/css/table.scss`" target="_blank">table.scss</a></strong>
 	</blockquote>
 
 	<p>

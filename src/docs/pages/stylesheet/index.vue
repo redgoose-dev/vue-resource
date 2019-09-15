@@ -3,7 +3,7 @@
 	<head-title type="h2" title="introduce"/>
 
 	<blockquote>
-		<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/tree/master/src/css" target="_blank">css</a></strong>
+		<strong>Source: <a :href="`${$store.state.url.github}tree/master/src/css`" target="_blank">css</a></strong>
 	</blockquote>
 
 	<p>

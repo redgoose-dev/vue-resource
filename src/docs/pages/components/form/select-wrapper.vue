@@ -5,8 +5,8 @@
 	<blockquote>
 		<p>
 			<strong>
-				component: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/select-wrapper.vue" target="_blank">select-wrapper.vue</a><br/>
-				scss: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/select-wrapper.scss" target="_blank">select-wrapper.scss</a>
+				component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/select-wrapper.vue`" target="_blank">select-wrapper.vue</a><br/>
+				scss: <a :href="`${$store.state.url.github}blob/master/src/components/forms/select-wrapper.scss`" target="_blank">select-wrapper.scss</a>
 			</strong>
 		</p>
 	</blockquote>

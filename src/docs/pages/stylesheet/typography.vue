@@ -3,7 +3,7 @@
 	<head-title type="h2" title="typography"/>
 
 	<blockquote>
-		<strong>Source: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/css/typography.scss" target="_blank">typography.scss</a></strong>
+		<strong>Source: <a :href="`${$store.state.url.github}blob/master/src/css/typography.scss`" target="_blank">typography.scss</a></strong>
 	</blockquote>
 
 	<p>

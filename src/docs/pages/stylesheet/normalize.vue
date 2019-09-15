@@ -5,7 +5,7 @@
 	<blockquote>
 		<ul>
 			<li>
-				<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/blob/master/src/css/normalize.css" target="_blank">normalize.css</a></strong>
+				<strong>Source: <a :href="`${$store.state.url.github}blob/master/src/css/normalize.css`" target="_blank">normalize.css</a></strong>
 			</li>
 			<li>
 				normalize.css: <a href="https://necolas.github.io/normalize.css" target="_blank">https://necolas.github.io/normalize.css</a>

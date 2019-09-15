@@ -5,10 +5,10 @@
 	<blockquote>
 		<p>
 			<strong>
-				component: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/switch.vue" target="_blank">switch.vue</a>
+				component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/switch.vue`" target="_blank">switch.vue</a>
 			</strong><br/>
 			<strong>
-				scss: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/switch.scss" target="_blank">switch.scss</a>
+				scss: <a :href="`${$store.state.url.github}blob/master/src/components/forms/switch.scss`" target="_blank">switch.scss</a>
 			</strong>
 		</p>
 	</blockquote>

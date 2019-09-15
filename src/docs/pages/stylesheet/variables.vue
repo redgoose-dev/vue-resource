@@ -3,7 +3,7 @@
 	<head-title type="h2" title="variables"/>
 
 	<blockquote>
-		<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/blob/master/src/css/variables.scss" target="_blank">variables.scss</a></strong>
+		<strong>Source: <a :href="`${$store.state.url.github}blob/master/src/css/variables.scss`" target="_blank">variables.scss</a></strong>
 	</blockquote>
 
 	<p>

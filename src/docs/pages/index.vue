@@ -25,7 +25,7 @@
 		앞으로 유용한 컴포넌트들이나 팁들은 계속 기록할 예정입니다.
 	</p>
 	<p>
-		문의나 기능 개선할 필요가 있는 부분이 있다면 <a href="https://github.com/redgoose-dev/vue-resource/issues" target="_blank">github issues</a>에서 글 부탁드립니다.
+		문의나 기능 개선할 필요가 있는 부분이 있다면 <a :href="`${$store.state.url.github}issues`" target="_blank">GitHub issues</a>에서 글 부탁드립니다.
 	</p>
 </div>
 </template>

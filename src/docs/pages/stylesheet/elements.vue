@@ -4,7 +4,7 @@
 
 	<blockquote>
 		<p>
-			<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/blob/master/src/css/elements.scss" target="_blank">elements.scss</a></strong>
+			<strong>Source: <a :href="`${$store.state.url.github}blob/master/src/css/elements.scss`" target="_blank">elements.scss</a></strong>
 		</p>
 	</blockquote>
 

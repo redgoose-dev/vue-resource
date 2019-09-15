@@ -4,7 +4,7 @@
 	<blockquote>
 		<p>
 			<strong>
-				component: <a href="https://github.com/redgoose-dev/vue-resource/tree/master/src/components/card" target="_blank">card</a>
+				component: <a :href="`${$store.state.url.github}tree/master/src/components/card`" target="_blank">card</a>
 			</strong>
 		</p>
 	</blockquote>
@@ -77,7 +77,7 @@
 		<p>위아래 조합의 썸네일 이미지 요소입니다.</p>
 		<div class="example">
 			<card-row
-				src="https://goose.redgoose.me/data/upload/original/201904/2019-04-02_2-1.jpg"
+				src="image.jpg"
 				title="title"
 				type="cover"
 			/>

@@ -5,8 +5,8 @@
 	<blockquote>
 		<p>
 			<strong>
-				component: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/checkbox.vue" target="_blank">checkbox.vue</a><br/>
-				scss: <a href="https://github.com/redgoose-dev/vue-resource/blob/master/src/components/forms/checkbox.scss" target="_blank">checkbox.scss</a>
+				component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/checkbox.vue`" target="_blank">checkbox.vue</a><br/>
+				scss: <a :href="`${$store.state.url.github}blob/master/src/components/forms/checkbox.scss`" target="_blank">checkbox.scss</a>
 			</strong>
 		</p>
 	</blockquote>

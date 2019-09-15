@@ -16,8 +16,8 @@
 			</div>
 			<div class="layout-header__side">
 				<nav class="external-links">
-					<a href="https://github.com/redgoose-dev/vue-redgoose-source" target="_blank">GitHub</a>
-					<a href="https://redgoose.me" target="_blank">redgoose.me</a>
+					<a :href="$store.state.url.github" target="_blank">GitHub</a>
+					<a :href="$store.state.url.redgoose" target="_blank">redgoose.me</a>
 				</nav>
 			</div>
 		</div>

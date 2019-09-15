@@ -3,7 +3,7 @@
 	<head-title type="h2" title="mixins"/>
 
 	<blockquote>
-		<strong>Source: <a href="https://github.com/redgoose-dev/vue-redgoose-source/blob/master/src/css/mixins.scss" target="_blank">mixins.scss</a></strong>
+		<strong>Source: <a :href="`${$store.state.url.github}blob/master/src/css/mixins.scss`" target="_blank">mixins.scss</a></strong>
 	</blockquote>
 
 	<p>
