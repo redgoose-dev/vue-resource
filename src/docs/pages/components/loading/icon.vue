@@ -1,12 +1,12 @@
 <template>
 <article class="page">
-	<head-title type="h2" title="loading - symbol"/>
+	<head-title type="h2" title="loading - icon"/>
 
 	<blockquote>
 		<p>
 			<strong>
-				component: <a href="#" target="_blank">TODO: symbol.vue</a><br/>
-				scss: <a href="#" target="_blank">TODO: symbol.scss</a>
+				component: <a href="#" target="_blank">TODO: icon.vue</a><br/>
+				scss: <a href="#" target="_blank">TODO: icon.scss</a>
 			</strong>
 		</p>
 	</blockquote>

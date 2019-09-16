@@ -1,50 +1,49 @@
 // * Forms
 
-
 @import "./variables";
 @import "./mixins";
 
 
 // fieldset
 .forms-fieldset {
-	margin: 0;
-	padding: 0;
-	border: none;
-	> legend {
-		position: absolute;
-		font-size: 0;
-		visibility: hidden;
-	}
-	&:disabled {}
+  margin: 0;
+  padding: 0;
+  border: none;
+  > legend {
+    position: absolute;
+    font-size: 0;
+    visibility: hidden;
+  }
+  &:disabled {}
 }
 
 // fields
 .forms-field {
-	box-sizing: border-box;
-	border-top: 1px solid mix($color-gray-light, #fff, 50%);
-	padding: 15px 0;
-	&:last-child {
-		border-bottom: 1px solid mix($color-gray-light, #fff, 50%);
-	}
+  box-sizing: border-box;
+  border-top: 1px solid mix($color-gray-light, #fff, 50%);
+  padding: 15px 0;
+  &:last-child {
+    border-bottom: 1px solid mix($color-gray-light, #fff, 50%);
+  }
 }
 
 // label
 .forms-label {
-	font-size: .875rem;
-	line-height: 1rem;
-	font-weight: 600;
-	cursor: pointer;
+  font-size: .875rem;
+  line-height: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 // help
 .forms-help {
-	margin: 4px 0 0;
-	font-size: .75rem;
-	color: $color-gray;
-	&--success {
-		color: $color-success;
-	}
-	&--error {
-		color: $color-error;
-	}
+  margin: 4px 0 0;
+  font-size: .75rem;
+  color: $color-gray;
+  &--success {
+    color: $color-success;
+  }
+  &--error {
+    color: $color-error;
+  }
 }

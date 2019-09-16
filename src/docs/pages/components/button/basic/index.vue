@@ -19,7 +19,7 @@
 					<button-basic to="/">router-link</button-basic>
 				</div>
 				<div class="col">
-					<button-basic href="/">anchor</button-basic>
+					<button-basic href="https://google.com" target="_blank">anchor</button-basic>
 				</div>
 				<div class="col">
 					<button-basic>button</button-basic>

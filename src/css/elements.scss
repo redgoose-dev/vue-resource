@@ -1,37 +1,37 @@
 // * Elements
 
-
 @import "./variables";
 
+
 html {
-	touch-action: manipulation;
+  touch-action: manipulation;
 }
 body {
-	min-width: $size-screen-min;
-	margin: 0;
-	font-size: 16px;
-	line-height: 1.54;
-	background: $color-bg;
+  min-width: $size-screen-min;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.54;
+  background: $color-bg;
 }
 body, button, input, textarea, select {
-	font-family: $font-system;
-	-webkit-text-size-adjust: 100%;
-	text-size-adjust: none;
-	color: $color-base;
+  font-family: $font-system;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: none;
+  color: $color-base;
 }
 a {
-	color: $color-key;
+  color: $color-key;
 }
 table {
-	width: 100%;
-	border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 dl, dd {
-	margin: 0;
+  margin: 0;
 }
 code,
 kbd,
 pre,
 samp {
-	font-family: $font-console;
+  font-family: $font-console;
 }

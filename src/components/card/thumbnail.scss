@@ -1,0 +1,63 @@
+@import "../../css/variables";
+@import "../../css/mixins";
+
+// set variables
+$self: '.card-thumbnail';
+$image-height: 180px; // image height
+
+
+// base
+.card-thumbnail {
+  display: block;
+  background: #fafafa;
+  font-size: 0;
+
+  > img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &--type {
+    &-cover {
+      height: $image-height;
+      position: relative;
+      overflow: hidden;
+      > img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @supports (object-fit: cover) {
+        position: static;
+        overflow: auto;
+        > img {
+          position: static;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: none;
+        }
+      }
+    }
+    &-contain {
+      height: $image-height;
+      max-height: 100%;
+      > img {
+        max-width: none;
+        height: 100%;
+      }
+      @supports (object-fit: contain) {
+        max-height: none;
+        > img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  &--full {
+    height: 100%;
+  }
+}

@@ -22,28 +22,4 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.card-row {
-  &__wrap {
-    margin: 0;
-    border: 1px solid #000;
-  }
-  &__image {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-    > img {
-      display: block;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 100%;
-    }
-  }
-  &__caption {}
-  &__title {}
-  &__description {}
-}
-</style>
+<style src="./row.scss" lang="scss" scoped></style>

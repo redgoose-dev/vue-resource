@@ -1,89 +1,91 @@
 // * Table
 @import "./variables";
 
+
+// base
 .table {
-	$self: '.table';
-	$color-line: #e6e6e6;
-	$color-line-strong: #ccc;
+  $self: '.table';
+  $color-line: #e6e6e6;
+  $color-line-strong: #ccc;
 
-	width: 100%;
-	border-collapse: collapse;
-	text-align: left;
-	font-size: .8125rem;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: .8125rem;
 
-	caption {
-		padding: 0 0 6px;
-		text-align: left;
-		font-size: .8125rem;
-		font-weight: 600;
-	}
-	th,
-	td {
-		padding: 10px 15px;
-		border-top: 1px solid $color-line;
-	}
-	tr {
-		&:first-child {
-			th,
-			td {
-				border-top: none;
-			}
-		}
-	}
+  caption {
+    padding: 0 0 6px;
+    text-align: left;
+    font-size: .8125rem;
+    font-weight: 600;
+  }
+  th,
+  td {
+    padding: 10px 15px;
+    border-top: 1px solid $color-line;
+  }
+  tr {
+    &:first-child {
+      th,
+      td {
+        border-top: none;
+      }
+    }
+  }
 
-	thead {
-		border-bottom: 1px solid $color-line-strong;
-	}
-	tbody {
-		tr {
-			transition: background 200ms ease-out;
-			&:hover {
-				background: mix($color-gray-light, #fff, 15%);
-			}
-		}
-	}
-	tbody + tbody {
-		border-top: 2px solid $color-line;
-	}
-	tfoot {
-		border-top: 1px solid $color-line-strong;
-	}
+  thead {
+    border-bottom: 1px solid $color-line-strong;
+  }
+  tbody {
+    tr {
+      transition: background 200ms ease-out;
+      &:hover {
+        background: mix($color-gray-light, #fff, 15%);
+      }
+    }
+  }
+  tbody + tbody {
+    border-top: 2px solid $color-line;
+  }
+  tfoot {
+    border-top: 1px solid $color-line-strong;
+  }
 
-	&--inline {
-		width: auto;
-	}
-	&--center {
-		text-align: center;
-	}
-	&--right {
-		text-align: right;
-	}
-	&--bordered {
-		border: 1px solid $color-line;
-		th,
-		td {
-			&:nth-child(n+2) {
-				border-left: 1px solid $color-line;
-			}
-		}
-	}
-	&--striped {
-		tbody {
-			tr:nth-child(even) {
-				background: mix($color-gray-light, #fff, 15%);
-				&:hover {
-					background: mix($color-gray-light, #fff, 30%);
-				}
-			}
-		}
-	}
-	&--overflow {
-		overflow-y: hidden;
-		overflow-x: auto;
-		box-sizing: border-box;
-		> #{$self} {
-			min-width: 640px;
-			border-bottom: none;
-		}
-	}
+  &--inline {
+    width: auto;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--bordered {
+    border: 1px solid $color-line;
+    th,
+    td {
+      &:nth-child(n+2) {
+        border-left: 1px solid $color-line;
+      }
+    }
+  }
+  &--striped {
+    tbody {
+      tr:nth-child(even) {
+        background: mix($color-gray-light, #fff, 15%);
+        &:hover {
+          background: mix($color-gray-light, #fff, 30%);
+        }
+      }
+    }
+  }
+  &--overflow {
+    overflow-y: hidden;
+    overflow-x: auto;
+    box-sizing: border-box;
+    > #{$self} {
+      min-width: 640px;
+      border-bottom: none;
+    }
+  }
 }

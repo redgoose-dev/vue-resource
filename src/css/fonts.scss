@@ -2,51 +2,48 @@
 
 $dir: '/fonts';
 
-// font - roboto
 
+// font - roboto
 @mixin font-loader-roboto($weight-name, $weight)
 {
-	@font-face {
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: $weight;
-		src: local('Roboto'), local('Roboto-#{$weight-name}'),
-			url('#{$dir}/roboto/roboto-v18-latin-#{$weight-name}.eot?#iefix') format('embedded-opentype'),
-			url('#{$dir}/roboto/roboto-v18-latin-#{$weight-name}.woff2') format('woff2'),
-			url('#{$dir}/roboto/roboto-v18-latin-#{$weight-name}.woff') format('woff');
-	}
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: $weight;
+    src: local('Roboto'), local('Roboto-#{$weight-name}'),
+      url('#{$dir}/roboto/roboto-v18-latin-#{$weight-name}.eot?#iefix') format('embedded-opentype'),
+      url('#{$dir}/roboto/roboto-v18-latin-#{$weight-name}.woff2') format('woff2'),
+      url('#{$dir}/roboto/roboto-v18-latin-#{$weight-name}.woff') format('woff');
+  }
 }
-
 @include font-loader-roboto('Regular', 400);
 @include font-loader-roboto('Medium', 500);
 @include font-loader-roboto('Bold', 700);
 
-
 // font - material design icons
-
 @font-face {
-	font-family: 'Material Icons';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Material Icons'), local('MaterialIcons-Regular'),
-		url('#{$dir}/material-icons/MaterialIcons-Regular.eot') format('embedded-opentype'),
-		url('#{$dir}/material-icons/MaterialIcons-Regular.woff2') format('woff2'),
-		url('#{$dir}/material-icons/MaterialIcons-Regular.woff') format('woff');
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'),
+    url('#{$dir}/material-icons/MaterialIcons-Regular.eot') format('embedded-opentype'),
+    url('#{$dir}/material-icons/MaterialIcons-Regular.woff2') format('woff2'),
+    url('#{$dir}/material-icons/MaterialIcons-Regular.woff') format('woff');
 }
 .material-icons {
-	font-family: 'Material Icons', sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 24px;
-	display: inline-block;
-	line-height: 1;
-	text-transform: none;
-	letter-spacing: normal;
-	word-wrap: normal;
-	white-space: nowrap;
-	direction: ltr;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	-moz-osx-font-smoothing: grayscale;
-	font-feature-settings: 'liga';
+  font-family: 'Material Icons', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
 }

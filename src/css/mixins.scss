@@ -1,6 +1,5 @@
 // * Mixins
 
-
 @import "./variables";
 
 
@@ -9,31 +8,31 @@
 // responsive
 @mixin responsive($range)
 {
-	@if $range == tablet
-	{
-		@media (min-width: #{$size-screen-tablet}) { @content; }
-	}
-	@if $range == desktop
-	{
-		@media (min-width: #{$size-screen-desktop}) { @content; }
-	}
-	@else if $range == desktop-1280
-	{
-		@media (min-width: #{$size-screen-desktop-1280}) { @content; }
-	}
-	@else if $range == desktop-1440
-	{
-		@media (min-width: #{$size-screen-desktop-1440}) { @content; }
-	}
-	@else if $range == desktop-1920
-	{
-		@media (min-width: #{$size-screen-desktop-1920}) { @content; }
-	}
+  @if $range == tablet
+  {
+    @media (min-width: #{$size-screen-tablet}) { @content; }
+  }
+  @if $range == desktop
+  {
+    @media (min-width: #{$size-screen-desktop}) { @content; }
+  }
+  @else if $range == desktop-1280
+  {
+    @media (min-width: #{$size-screen-desktop-1280}) { @content; }
+  }
+  @else if $range == desktop-1440
+  {
+    @media (min-width: #{$size-screen-desktop-1440}) { @content; }
+  }
+  @else if $range == desktop-1920
+  {
+    @media (min-width: #{$size-screen-desktop-1920}) { @content; }
+  }
 }
 // for retina
 @mixin retina()
 {
-	@media (-webkit-min-device-pixel-ratio: 2) { @content; }
+  @media (-webkit-min-device-pixel-ratio: 2) { @content; }
 }
 
 
@@ -42,16 +41,16 @@
 // gradient
 @mixin color-linear-gradient($matt-color, $start, $end, $direction:'vertical')
 {
-	background: $matt-color;
+  background: $matt-color;
 
-	@if $direction == 'horizontal'
-	{
-		background: linear-gradient(to right, $start, $end);
-	}
-	@else
-	{
-		background: linear-gradient(to bottom, $start, $end);
-	}
+  @if $direction == 'horizontal'
+  {
+    background: linear-gradient(to right, $start, $end);
+  }
+  @else
+  {
+    background: linear-gradient(to bottom, $start, $end);
+  }
 }
 
 
@@ -60,23 +59,23 @@
 // background image
 @mixin image-background()
 {
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 // make sprite image
 @mixin image-sprite($src-1x, $src-2x, $width:'320px', $height:'240px') {
-	display: block;
-	text-align: left;
-	text-indent: -9999px;
-	overflow: hidden;
-	font-size: 0;
-	background: transparent url('#{$src-1x}') no-repeat;
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.33dppx) {
-		background-image: url('#{$src-2x}');
-		background-size: $width $height;
-	}
+  display: block;
+  text-align: left;
+  text-indent: -9999px;
+  overflow: hidden;
+  font-size: 0;
+  background: transparent url('#{$src-1x}') no-repeat;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 1.33dppx) {
+    background-image: url('#{$src-2x}');
+    background-size: $width $height;
+  }
 }
 
 
@@ -85,21 +84,21 @@
 // single line text
 @mixin text-single-line()
 {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 // multi line text
 @mixin text-multi-line($height: 1rem, $row: 3)
 {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	line-height: $height;
-	max-height: $height * $row;
-	display: -webkit-box;
-	-webkit-line-clamp: $row;
-	-webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: $height;
+  max-height: $height * $row;
+  display: -webkit-box;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
 }
 
 
@@ -107,15 +106,15 @@
 
 // button touch options
 @mixin button-touch-options($opacity:false) {
-	outline: none;
-	user-select: none;
-	cursor: pointer;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	@if ($opacity) {
-		&:active {
-			opacity: .6;
-		}
-	}
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  @if ($opacity) {
+    &:active {
+      opacity: .6;
+    }
+  }
 }
 
 
@@ -124,53 +123,53 @@
 // blind
 @mixin blind()
 {
-	position: absolute;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0;
-	line-height: 0;
-	font-size: 0;
+  position: absolute;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
 }
 
 // horizontal scroll for mobile
 @mixin horizontal-scroll-wrap($padding-side:16px, $padding-bottom:16px)
 {
-	display: block;
-	padding-bottom: $padding-bottom;
-	margin: 0;
-	white-space: nowrap;
-	font-size: 0;
-	line-height: 0;
-	overflow-x: auto;
-	overflow-y: hidden;
-	-webkit-overflow-scrolling: touch;
-	-webkit-scroll-snap-type: x mandatory;
-	scroll-snap-type: x mandatory;
-	-webkit-scroll-padding-left: $padding-side;
-	scroll-padding-left: $padding-side;
+  display: block;
+  padding-bottom: $padding-bottom;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 0;
+  line-height: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  -webkit-scroll-padding-left: $padding-side;
+  scroll-padding-left: $padding-side;
 }
 @mixin horizontal-scroll-item($padding-side:16px, $padding-side-outer:null)
 {
-	@if $padding-side-outer == null
-	{
-		$padding-side-outer: $padding-side;
-	}
+  @if $padding-side-outer == null
+  {
+    $padding-side-outer: $padding-side;
+  }
 
-	position: relative;
-	display: inline-block;
-	margin-left: $padding-side;
-	padding: 0;
-	-webkit-scroll-snap-align: start;
-	scroll-snap-align: start;
-	vertical-align: top;
-	white-space: normal;
-	line-height: normal;
-	font-size: initial;
-	&:first-child {
-		margin-left: $padding-side-outer;
-	}
-	&:last-child {
-		margin-right: $padding-side-outer;
-	}
+  position: relative;
+  display: inline-block;
+  margin-left: $padding-side;
+  padding: 0;
+  -webkit-scroll-snap-align: start;
+  scroll-snap-align: start;
+  vertical-align: top;
+  white-space: normal;
+  line-height: normal;
+  font-size: initial;
+  &:first-child {
+    margin-left: $padding-side-outer;
+  }
+  &:last-child {
+    margin-right: $padding-side-outer;
+  }
 }
