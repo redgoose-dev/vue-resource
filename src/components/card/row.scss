@@ -7,24 +7,50 @@ $self: '.card-row';
 
 // base
 .card-row {
-  &__wrap {
-    margin: 0;
-    border: 1px solid #000;
-  }
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   &__image {
     position: relative;
-    height: 200px;
-    overflow: hidden;
-    > img {
+    margin: 0;
+    flex: 1;
+    min-height: 1px;
+    .img {
       display: block;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 100%;
+      margin: 0 auto;
+      height: 100%;
+      @supports (object-fit: contain) {
+        max-width: 100%;
+        object-fit: contain;
+      }
+      &--fit {
+        &-cover {
+          @supports (object-fit: cover) {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
     }
   }
-  &__caption {}
-  &__title {}
-  &__description {}
+  &__body {
+    position: relative;
+    margin: 8px 0 0;
+    box-sizing: border-box;
+  }
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    @include text-single-line();
+  }
+  &__description {
+    margin: 2px 0 0;
+    font-size: .75rem;
+    line-height: 1.25;
+    color: $color-gray-dark;
+    @include text-multi-line(.75rem * 1.25, 2);
+  }
 }

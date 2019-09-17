@@ -139,6 +139,10 @@ $size-side-width: 240px;
 		border-right: 1px solid #eee;
 		display: none;
 	}
+  &__body {
+    margin: 0 auto;
+    max-width: 780px;
+  }
 
 	@include responsive(tablet) {
 		padding: 30px 30px 30px $size-side-width + 30px;

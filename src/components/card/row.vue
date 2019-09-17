@@ -1,24 +1,30 @@
 <template>
 <article class="card-row">
-  <figure class="card-row__wrap">
-    <div class="card-row__image">
-      <img src="https://images.unsplash.com/photo-1554565998-1ca88fdf1fcd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
-    </div>
-    <figcaption class="card-row__caption">
-      <h2 class="card-row__title">title</h2>
-      <p class="card-row__description">descriptioin</p>
-    </figcaption>
+  <slot name="before"/>
+  <figure v-if="!!src || !!$slots.image" class="card-row__image">
+    <img v-if="src" :src="src" :alt="title" :class="['img', !!imageFit && `img--fit-${imageFit}`]">
+    <slot name="image"/>
   </figure>
+  <div class="card-row__body">
+    <h3 v-if="title" class="card-row__title">{{title}}</h3>
+    <p v-if="description" class="card-row__description">{{description}}</p>
+    <slot name="body"/>
+  </div>
+  <slot name="after"/>
 </article>
 </template>
 
 <script>
 export default {
   name: 'card-row',
+  components: {
+    'card-thumbnail': () => import('@/components/card/thumbnail'),
+  },
   props: {
     src: { type: String, default: null }, // image url
     title: { type: String, default: 'card title' }, // title
     description: { type: String, default: null }, // description
+    imageFit: { type: String, default: null }, // contain,cover
   },
 }
 </script>

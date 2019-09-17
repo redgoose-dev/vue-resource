@@ -24,9 +24,9 @@ export default {
 h2.title {
 	margin: 0 0 2rem;
 	border-bottom: 1px solid #ddd;
-	font-size: 1.75rem;
+	font-size: 2rem;
 	font-weight: 600;
-	line-height: 1.5;
+	line-height: 1.25;
 	letter-spacing: -.1rem;
 }
 h3.title {

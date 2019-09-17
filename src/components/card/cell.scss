@@ -7,5 +7,45 @@ $self: '.card-cell';
 
 // base
 .card-cell {
-  // TODO
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  height: var(--card-cell-size, 100px);
+  &__image {
+    position: relative;
+    margin: 0;
+    width: var(--card-cell-size, 100px);
+    height: 100%;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__body {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 1px;
+    box-sizing: border-box;
+    padding: 0 0 0 1rem;
+  }
+  &__body-wrap {
+    min-width: 1px;
+  }
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    @include text-single-line();
+  }
+  &__description {
+    margin: 2px 0 0;
+    font-size: .75rem;
+    line-height: 1.25;
+    color: $color-gray-dark;
+    @include text-multi-line(.75rem * 1.25, 2);
+  }
 }

@@ -1,5 +1,6 @@
 // * Table
 @import "./variables";
+@import "./mixins";
 
 
 // base
@@ -85,7 +86,6 @@
     box-sizing: border-box;
     > #{$self} {
       min-width: 640px;
-      border-bottom: none;
     }
   }
 }
