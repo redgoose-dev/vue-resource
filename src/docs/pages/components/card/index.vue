@@ -3,9 +3,7 @@
 	<head-title type="h2" title="card"/>
 	<blockquote>
 		<p>
-			<strong>
-				component: <a :href="`${$store.state.url.github}tree/master/src/components/card`" target="_blank">card</a>
-			</strong>
+			<strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/card`" target="_blank">card</a></strong>
 		</p>
 	</blockquote>
 	<p>

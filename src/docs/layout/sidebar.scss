@@ -11,14 +11,14 @@
 			ul {
 				margin: 0 0 20px;
 				ul {
-					margin: 0 0 10px;
+					margin: 0;
 				}
 			}
 		}
 		a {
 			display: block;
 			margin: 0;
-			padding: 4px 0;
+			padding: 3px 0;
 			font-size: .8125rem;
 			color: mix($color-base, #fff, 75%);
 			font-weight: 400;
@@ -44,7 +44,7 @@
 			font-weight: 600;
 		}
 		.head--dep-2 {
-			margin: 10px 0 3px;
+			margin: 10px 0 2px;
 			font-weight: 600;
 			font-size: .9375rem;
 		}

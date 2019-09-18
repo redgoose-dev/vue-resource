@@ -1,0 +1,43 @@
+@import "../../../css/variables";
+@import "../../../css/mixins";
+
+// set variables
+$self: '.loading-icon';
+
+
+// base
+.loading-icon {
+  display: inline-block;
+  box-sizing: border-box;
+  transition: opacity 500ms ease-out;
+  font-size: 0;
+
+  &__unit {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    animation: rotating 2s linear infinite;
+    animation-play-state: paused;
+    transform-origin: 50% 50%;
+    > * {
+      width: 100%;
+      height: 100%;
+    }
+    &.play {
+      animation-play-state: running;
+      will-change: transform;
+    }
+    @keyframes rotating {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  }
+
+  &--hide {
+    opacity: 0;
+  }
+  &--size {
+    width: 24px;
+    height: 24px;
+  }
+}
