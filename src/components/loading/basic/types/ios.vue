@@ -3,7 +3,8 @@
     v-else
     :class="[
       'spinner',
-      play && 'spinner--animating',
+      options.play && 'spinner--animating',
+      options.dark && 'spinner--dark',
     ]">
     <em v-for="o in Array(12)" class="spinner__blade"></em>
   </i>
@@ -13,7 +14,10 @@
 export default {
   name: 'loading-type-spinner',
   props: {
-    play: { type: Boolean, default: true },
+    options: {
+      play: { type: Boolean, default: true },
+      dark: { type: Boolean, default: true },
+    },
   },
 }
 </script>
@@ -49,11 +53,11 @@ export default {
       will-change: opacity;
     }
   }
-  /*&--gray {*/
-  /*  > em {*/
-  /*    background-color: #8c8c8c;*/
-  /*  }*/
-  /*}*/
+  &--dark {
+    > em {
+      background-color: #8c8c8c;
+    }
+  }
   @keyframes spinner-blade {
     0% { opacity: 0.85; }
     50% { opacity: 0.25; }

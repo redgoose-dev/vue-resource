@@ -67,7 +67,6 @@ export default [
         title: 'Loading',
         items: [
           { link: '/components/loading/basic', title: 'basic' },
-          { link: '/components/loading/icon', title: 'icon' },
           { link: '/components/loading/progress', title: 'progress' },
         ],
       },
