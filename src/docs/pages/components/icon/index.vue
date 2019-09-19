@@ -24,6 +24,7 @@
       <div class="row row-gutter icons-index">
         <div v-for="(name,k) in icons" class="col col-4 col-sm-3 col-md-2">
           <span><icon :name="name"/></span>
+          <em>{{name}}</em>
         </div>
       </div>
     </div>
@@ -188,7 +189,6 @@ export default {
   },
 }
 </script>
-
 <style lang="scss" scoped>
 .icons-index {
   span {
@@ -203,6 +203,14 @@ export default {
       top: 50%;
       transform: translate(-50%,-50%);
     }
+  }
+  em {
+    display: block;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    line-height: 1;
   }
 }
 </style>

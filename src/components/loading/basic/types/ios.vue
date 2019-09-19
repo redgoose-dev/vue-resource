@@ -1,29 +1,37 @@
 <template>
-  <i
+  <span
     v-else
     :class="[
       'spinner',
-      options.play && 'spinner--animating',
-      options.dark && 'spinner--dark',
+      play && 'spinner--animating',
+      dark && 'spinner--dark',
     ]">
     <em v-for="o in Array(12)" class="spinner__blade"></em>
-  </i>
+  </span>
 </template>
 
 <script>
 export default {
   name: 'loading-type-spinner',
   props: {
-    options: {
-      play: { type: Boolean, default: true },
-      dark: { type: Boolean, default: true },
+    options: { type: Object, default: null },
+  },
+  computed: {
+    play()
+    {
+      // default true
+      return !(this.options && !!this.options.play);
+    },
+    dark()
+    {
+      // default true
+      return !(this.options && !!this.options.dark);
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-// spinner
 .spinner {
   display: block;
   position: relative;

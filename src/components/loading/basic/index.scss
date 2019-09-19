@@ -7,5 +7,7 @@ $self: '.loading-basic';
 
 // base
 .loading-basic {
-  //
+  display: block;
+  box-sizing: border-box;
+  font-size: 0;
 }

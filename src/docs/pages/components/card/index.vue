@@ -35,17 +35,11 @@
 		<p><code>card-thumbnail</code> 컴포넌트에서 사용되는 `props`는 다음과 같습니다.</p>
     <div class="table--overflow">
       <table class="table table--center table--bordered">
-        <colgroup>
-          <col style="width: 100px">
-          <col style="width: 80px">
-          <col style="width: 100px">
-          <col>
-        </colgroup>
         <thead>
         <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Type</th>
-          <th scope="col">Value</th>
+          <th scope="col" style="width: 100px">Name</th>
+          <th scope="col" style="width: 80px">Type</th>
+          <th scope="col" style="width: 100px">Value</th>
           <th scope="col">Comment</th>
         </tr>
         </thead>
