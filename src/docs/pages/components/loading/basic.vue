@@ -64,13 +64,14 @@
         <div v-for="(name,k) in types" class="col col-4 col-sm-3 col-md-2">
           <div>
             <span>
-              <loading-basic :size="18" :type="name"/>
+              <loading-basic :size="24" :type="name"/>
             </span>
           </div>
           <em>{{name}}</em>
         </div>
       </div>
     </div>
+    <pre class="example-code"><code>&lt;loading-basic type="ring"/></code></pre>
   </section>
 </article>
 </template>
@@ -86,7 +87,7 @@ export default {
   {
     return {
       types: [
-        'ios',
+        'ios', 'ring', 'circle', 'material', 'boxes', 'box', 'balls', 'blocks',
       ],
     };
   }

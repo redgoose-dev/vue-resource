@@ -11,27 +11,20 @@
 
 <script>
 const types = [
-  'ios',
+  'ios', 'ring', 'circle', 'material', 'boxes', 'box', 'balls', 'blocks',
 ];
 export default {
   name: 'loading-basic',
   props: {
-    type: { type: String, default: 'ios' }, // ios
-    size: { type: Number, default: 16 },
+    type: { type: String, default: 'ios' },
+    size: { type: Number, default: 18 },
     options: { type: Object, default: null },
   },
   computed: {
     typeComponent()
     {
       if (!this.type) return null;
-      if (types.indexOf(this.type) > -1)
-      {
-        return () => import(`./types/${this.type}`);
-      }
-      else
-      {
-        return null;
-      }
+      return (types.indexOf(this.type) > -1) ? () => import(`./types/${this.type}`) : null;
     },
   },
 };

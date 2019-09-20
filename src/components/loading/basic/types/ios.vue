@@ -2,17 +2,17 @@
   <span
     v-else
     :class="[
-      'spinner',
-      play && 'spinner--animating',
-      dark && 'spinner--dark',
+      'loading-type-ios',
+      play && 'loading-type-ios--animating',
+      dark && 'loading-type-ios--dark',
     ]">
-    <em v-for="o in Array(12)" class="spinner__blade"></em>
+    <em v-for="o in Array(12)" class="loading-type-ios__blade"></em>
   </span>
 </template>
 
 <script>
 export default {
-  name: 'loading-type-spinner',
+  name: 'loading-type-ios',
   props: {
     options: { type: Object, default: null },
   },
@@ -24,15 +24,17 @@ export default {
     },
     dark()
     {
-      // default true
-      return !(this.options && !!this.options.dark);
+      // default false
+      return (this.options && !!this.options.dark);
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.spinner {
+@import "../../../../css/variables";
+
+.loading-type-ios {
   display: block;
   position: relative;
   width: 100%;
@@ -47,7 +49,7 @@ export default {
     border-radius: 50% / 20%;
     animation: spinner-blade 1s linear infinite;
     animation-play-state: paused;
-    background-color: white;
+    background-color: $color-base;
     @for $i from 1 through 12 {
       &:nth-child(#{$i}) {
         animation-delay: 1s / 12 * ($i - 21);
@@ -63,7 +65,7 @@ export default {
   }
   &--dark {
     > em {
-      background-color: #8c8c8c;
+      background-color: white;
     }
   }
   @keyframes spinner-blade {
