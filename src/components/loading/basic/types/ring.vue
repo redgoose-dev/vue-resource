@@ -1,6 +1,6 @@
 <template>
 <svg viewBox="0 0 50 50" class="loading-type-ring">
-  <circle cx="25" cy="25" r="20" fill="none"/>
+  <circle cx="25" cy="25" r="20" fill="none" :stroke="color"/>
 </svg>
 </template>
 
@@ -8,7 +8,13 @@
 export default {
   name: 'loading-type-ring',
   props: {
-    options: { type: Object, default: null }, // size, color
+    options: { type: Object, default: null }, // color
+  },
+  computed: {
+    color()
+    {
+      return (this.options && !!this.options.color) ? this.options.color : '#222';
+    },
   },
 }
 </script>
@@ -26,7 +32,6 @@ $animation-speed: 2s;
   box-sizing: border-box;
   animation: rotate $animation-speed linear infinite;
   & circle {
-    stroke: $border-color;
     stroke-width: $border-width;
     stroke-linecap: round;
     animation: dash 1.5s ease-in-out infinite;

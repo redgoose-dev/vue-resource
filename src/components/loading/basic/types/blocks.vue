@@ -1,9 +1,23 @@
 <template>
-<span class="loading-type-blocks">
+<span class="loading-type-blocks" :style="color && { '--color': color }">
   <em v-for="i in Array(9)"></em>
 </span>
 </template>
 
+<script>
+export default {
+  name: 'loading-type-blocks',
+  props: {
+    options: { type: Object, default: null }, // color
+  },
+  computed: {
+    color()
+    {
+      return (this.options && !!this.options.color) ? this.options.color : null;
+    },
+  },
+}
+</script>
 <style lang="scss" scoped>
 @import "../../../../css/variables";
 
@@ -17,7 +31,7 @@
     width: 33%;
     height: 33%;
     box-sizing: border-box;
-    background-color: $color-base;
+    background-color: var(--color, #{$color-base});
     float: left;
     animation: loading-type-blocks-scales 1.3s infinite ease-in-out;
     &:nth-child(1) {

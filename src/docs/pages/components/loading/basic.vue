@@ -43,7 +43,8 @@
           <td>Number</td>
           <td class="typo-align--left">
             컴포넌트의 사이즈입니다.<br/>
-            값을 <code>null</code>로 설정하고 `css`로 사이즈를 조정할 수 있습니다.
+            스타일시트로 사이즈를 조정하고 싶다면 값을 <code>null</code>로 변경해주세요.<br/>
+            옵션에 대한 내용은 <a :href="link_types" target="_blank">loading-types</a>페이지에서 참고해주세요.
           </td>
         </tr>
         <tr>
@@ -73,6 +74,49 @@
     </div>
     <pre class="example-code"><code>&lt;loading-basic type="ring"/></code></pre>
   </section>
+
+  <section>
+    <head-title type="h3" title="size"/>
+    <p>로딩 컴포너트의 사이즈</p>
+    <div class="example">
+      <div class="row row-v-center row-h-around">
+        <div>
+          <loading-basic :size="36" type="blocks"/>
+        </div>
+        <div>
+          <loading-basic :size="null" type="ring" style="width: 16px; height: 16px"/>
+        </div>
+      </div>
+    </div>
+    <pre class="example-code"><code>// set number
+&lt;loading-basic :size="36"/>
+
+// using stylesheet
+&lt;loading-basic :size="null" style="width: 16px; height: 16px"/></code></pre>
+  </section>
+
+  <section>
+    <head-title type="h3" title="options"/>
+    <p>
+      타입에 따라서 다른 옵션들을 사용할 수 있습니다.<br/>
+      옵션에 관한 내용은 <a :href="link_types" target="_blank">loading-types</a>페이지를 참고해주세요.
+    </p>
+    <div class="example">
+      <div class="row row-v-center row-h-around">
+        <div style="background-color: #222; padding: 16px">
+          <loading-basic type="ios" :options="{ play: true, dark: true }"/>
+        </div>
+        <div>
+          <loading-basic type="boxes" :options="{ color: 'green' }"/>
+        </div>
+      </div>
+    </div>
+    <pre class="example-code"><code>// ios
+&lt;loading-basic type="ios" :options="{ play: true, dark: true }"/>
+
+// boxes
+&lt;loading-basic type="boxes" :options="{ color: 'green' }"/></code></pre>
+  </section>
 </article>
 </template>
 
@@ -89,6 +133,7 @@ export default {
       types: [
         'ios', 'ring', 'circle', 'material', 'boxes', 'box', 'balls', 'blocks',
       ],
+      link_types: 'https://github.com/redgoose-dev/vue-resource/blob/master/src/components/loading/basic/types.md',
     };
   }
 }

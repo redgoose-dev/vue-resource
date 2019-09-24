@@ -20,12 +20,12 @@ export default {
     play()
     {
       // default true
-      return !(this.options && !!this.options.play);
+      return !!this.options ? !!this.options.play : true;
     },
     dark()
     {
       // default false
-      return (this.options && !!this.options.dark);
+      return !!this.options ?  !!this.options.dark : false;
     },
   },
 }

@@ -1,7 +1,21 @@
 <template>
-<span class="loading-type-box"></span>
+<span class="loading-type-box" :style="color && { '--color': color }"></span>
 </template>
 
+<script>
+export default {
+  name: 'loading-type-box',
+  props: {
+    options: { type: Object, default: null }, // color
+  },
+  computed: {
+    color()
+    {
+      return (this.options && !!this.options.color) ? this.options.color : null;
+    },
+  },
+}
+</script>
 <style lang="scss" scoped>
 @import "../../../../css/variables";
 
@@ -11,7 +25,7 @@ $animation-speed: 1.2s;
   display: block;
   width: 100%;
   height: 100%;
-  background-color: $color-base;
+  background-color: var(--color, #{$color-base});
   animation: loading-type-box-rotate $animation-speed infinite ease-in-out;
 
   @keyframes loading-type-box-rotate {

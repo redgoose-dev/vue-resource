@@ -4,6 +4,36 @@
 // set variables
 $self: '.loading-progress';
 
-
 // base
-.loading-progress {}
+.loading-progress {
+  display: block;
+  &__wrap {
+    position: relative;
+    border-radius: 10px;
+    height: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 3px;
+  }
+  &__bar {
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    background: $color-key;
+    border-radius: 6px;
+    transition: max-width 50ms linear;
+  }
+  &__label {
+    display: block;
+    margin: 4px 2px 0 0;
+    text-align: right;
+    font-weight: 600;
+    font-size: 11px;
+    font-family: $font-eng;
+    font-style: normal;
+    line-height: 1;
+    box-sizing: border-box;
+    color: $color-gray-dark;
+  }
+}

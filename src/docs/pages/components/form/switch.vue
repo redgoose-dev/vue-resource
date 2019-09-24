@@ -33,65 +33,65 @@
 		<pre class="example-code"><code>&lt;form-switch v-model="basic"/></code></pre>
 	</section>
 
+  <section>
+    <head-title type="h3" title="props"/>
+    <p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
+    <table class="table table--center table--bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Comment</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>title</td>
+        <td>String</td>
+        <td class="typo-align--left">버튼의 <code>title</code> attribute 로 사용</td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Boolean</td>
+        <td class="typo-align--left">비활성화</td>
+      </tr>
+      <tr>
+        <td>sw</td>
+        <td>Boolean</td>
+        <td class="typo-align--left">스위치 값</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <head-title type="h3" title="event"/>
+    <p>이 컴포넌트는 다음과 같은 <code>event</code>를 사용합니다.</p>
+    <table class="table table--center table--bordered">
+      <thead>
+      <tr>
+        <th>name</th>
+        <th>params</th>
+        <th>comment</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>@change</td>
+        <td><code>sw,event</code></td>
+        <td class="typo-align--left">스위치 상태가 변했을때 이벤트 발생</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
 	<section>
-		<head-title type="h3" title="basic"/>
+		<head-title type="h3" title="disabled"/>
 		<p>비활성화 되었을때의 모습입니다.</p>
 		<div class="example">
 			<form-switch v-model="basic" :disabled="true"/>
 		</div>
 		<pre class="example-code"><code>&lt;form-switch v-model="basic" :disabled="true"/></code></pre>
-	</section>
-
-	<section>
-		<head-title type="h3" title="props"/>
-		<p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
-		<table class="table table--center table--bordered">
-			<thead>
-			<tr>
-				<th>Name</th>
-				<th>Type</th>
-				<th>Comment</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>title</td>
-				<td>String</td>
-				<td class="typo-align--left">버튼의 <code>title</code> attribute 로 사용</td>
-			</tr>
-			<tr>
-				<td>disabled</td>
-				<td>Boolean</td>
-				<td class="typo-align--left">비활성화</td>
-			</tr>
-			<tr>
-				<td>sw</td>
-				<td>Boolean</td>
-				<td class="typo-align--left">스위치 값</td>
-			</tr>
-			</tbody>
-		</table>
-	</section>
-
-	<section>
-		<head-title type="h3" title="event"/>
-		<p>이 컴포넌트는 다음과 같은 <code>event</code>를 사용합니다.</p>
-		<table class="table table--center table--bordered">
-			<thead>
-			<tr>
-				<th>name</th>
-				<th>params</th>
-				<th>comment</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>@change</td>
-				<td><code>sw,event</code></td>
-				<td class="typo-align--left">스위치 상태가 변했을때 이벤트 발생</td>
-			</tr>
-			</tbody>
-		</table>
 	</section>
 </article>
 </template>

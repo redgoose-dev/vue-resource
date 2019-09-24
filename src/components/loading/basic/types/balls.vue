@@ -1,11 +1,25 @@
 <template>
-<span class="loading-type-balls">
+<span class="loading-type-balls" :style="color && { '--color': color }">
   <span v-for="i in Array(3)">
     <em></em>
   </span>
 </span>
 </template>
 
+<script>
+export default {
+  name: 'loading-type-balls',
+  props: {
+    options: { type: Object, default: null }, // color
+  },
+  computed: {
+    color()
+    {
+      return (this.options && !!this.options.color) ? this.options.color : null;
+    },
+  },
+}
+</script>
 <style lang="scss" scoped>
 @import "../../../../css/variables";
 
@@ -25,7 +39,7 @@
       display: block;
       width: 100%;
       padding-top: 100%;
-      background: $color-base;
+      background: var(--color, #{$color-base});
       border-radius: 100%;
       animation: loading-type-balls-scale 1.4s infinite ease-in-out both;
     }

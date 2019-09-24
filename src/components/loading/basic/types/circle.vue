@@ -1,6 +1,30 @@
 <template>
-<span class="loading-type-circle"></span>
+<span
+  class="loading-type-circle"
+  :style="{
+    ...(activeColor && { '--border-color': activeColor }),
+    ...(bgColor && { '--bg-color': bgColor }),
+  }"></span>
 </template>
+
+<script>
+export default {
+  name: 'loading-type-circle',
+  props: {
+    options: { type: Object, default: null }, // color,bgColor
+  },
+  computed: {
+    activeColor()
+    {
+      return (this.options && !!this.options.color) ? this.options.color : null;
+    },
+    bgColor()
+    {
+      return (this.options && !!this.options.bgColor) ? this.options.bgColor : null;
+    }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../../../../css/variables";
@@ -13,12 +37,12 @@ $animation-speed: 1s;
 .loading-type-circle {
   height: 100%;
   width: 100%;
-  color: $border-bg-color;
+  color: var(--bg-color, #{$border-bg-color});
   position: relative;
   display: block;
   border: $border-width solid;
   border-radius: 50%;
-  border-right-color: $color-base;
+  border-right-color: var(--border-color, #{$color-base});
   animation: rotate $animation-speed linear infinite;
   box-sizing: border-box;
   @keyframes rotate {

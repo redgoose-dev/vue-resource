@@ -1,9 +1,23 @@
 <template>
-<span class="loading-type-boxes">
+<span class="loading-type-boxes" :style="color && { '--color': color }">
   <em v-for="i in Array(4)"></em>
 </span>
 </template>
 
+<script>
+export default {
+  name: 'loading-type-boxes',
+  props: {
+    options: { type: Object, default: null }, // color
+  },
+  computed: {
+    color()
+    {
+      return (this.options && !!this.options.color) ? this.options.color : null;
+    },
+  },
+}
+</script>
 <style lang="scss" scoped>
 @import "../../../../css/variables";
 
@@ -27,7 +41,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: $color-base;
+      background-color: var(--color, #{$color-base});
       animation: loading-type-boxes-fold 2.76s infinite linear both;
       transform-origin: 100% 100%;
     }

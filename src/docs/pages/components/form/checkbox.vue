@@ -1,7 +1,6 @@
 <template>
 <article class="page">
 	<head-title type="h2" title="form / checkbox"/>
-
 	<blockquote>
 		<p>
 			<strong>
@@ -10,7 +9,6 @@
 			</strong>
 		</p>
 	</blockquote>
-
 	<p>여러 항목들을 선택하는 컴포넌트 입니다.</p>
 
 	<section>
@@ -33,6 +31,93 @@
 		</div>
 		<pre class="example-code"><code>&lt;form-checkbox v-model="checked" label="apple"/></code></pre>
 	</section>
+
+  <section>
+    <head-title type="h3" title="props"/>
+    <p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
+    <table class="table table--center table--bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Comment</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>name</td>
+        <td>String</td>
+        <td class="typo-align--left"><code>name</code> attribute 로 사용</td>
+      </tr>
+      <tr>
+        <td>id</td>
+        <td>String</td>
+        <td class="typo-align--left"><code>id</code> attribute 로 사용</td>
+      </tr>
+      <tr>
+        <td>label</td>
+        <td>String</td>
+        <td class="typo-align--left">항목에 표시되는 이름입니다. 값이 없으면 라디오 폼만 나타납니다.</td>
+      </tr>
+      <tr>
+        <td>value</td>
+        <td>String,Number,Boolean</td>
+        <td class="typo-align--left"><code>value</code> attribute 로 사용</td>
+      </tr>
+      <tr>
+        <td>checked</td>
+        <td>String,Boolean</td>
+        <td class="typo-align--left">체크되어있는지의 여부</td>
+      </tr>
+      <tr>
+        <td>disabled</td>
+        <td>Boolean</td>
+        <td class="typo-align--left">비활성화</td>
+      </tr>
+      <tr>
+        <td>required</td>
+        <td>Boolean</td>
+        <td class="typo-align--left">필수값인지에 대한 여부</td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>String</td>
+        <td class="typo-align--left">컴포넌트의 색상 <code>sub,success,error</code></td>
+      </tr>
+      <tr>
+        <td>size</td>
+        <td>String</td>
+        <td class="typo-align--left">컴포넌트의 사이즈 <code>small,large</code></td>
+      </tr>
+      <tr>
+        <td>animation</td>
+        <td>String</td>
+        <td class="typo-align--left">체크할때의 애니메이션 방식 <code>elastic,none</code></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <head-title type="h3" title="event"/>
+    <p>컴포넌트에서 사용하는 이벤트</p>
+    <table class="table table--center table--bordered">
+      <thead>
+      <tr>
+        <th>name</th>
+        <th>params</th>
+        <th>comment</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>@change</td>
+        <td><code>sw,event</code></td>
+        <td class="typo-align--left">체크박스의 상태가 변했을때 이벤트 발생</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
 
 	<section>
 		<head-title type="h3" title="size"/>
@@ -188,98 +273,28 @@ event(sw, event)
 }</code></pre>
 	</section>
 
-	<p>
-		// TODO: 체크된 value 값 가져오기 작성예정.<br/>
-		// TODO: <code>name=foo[]</code> 형식으로도 시도해볼 필요가 있음<br/>
-		// TODO: https://github.com/redgoose-dev/vue-resource/issues/7
-	</p>
-
-	<section>
-		<head-title type="h3" title="props"/>
-		<p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
-		<table class="table table--center table--bordered">
-			<thead>
-			<tr>
-				<th>Name</th>
-				<th>Type</th>
-				<th>Comment</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>name</td>
-				<td>String</td>
-				<td class="typo-align--left"><code>name</code> attribute 로 사용</td>
-			</tr>
-			<tr>
-				<td>id</td>
-				<td>String</td>
-				<td class="typo-align--left"><code>id</code> attribute 로 사용</td>
-			</tr>
-			<tr>
-				<td>label</td>
-				<td>String</td>
-				<td class="typo-align--left">항목에 표시되는 이름입니다. 값이 없으면 라디오 폼만 나타납니다.</td>
-			</tr>
-			<tr>
-				<td>value</td>
-				<td>String,Number,Boolean</td>
-				<td class="typo-align--left"><code>value</code> attribute 로 사용</td>
-			</tr>
-			<tr>
-				<td>checked</td>
-				<td>String,Boolean</td>
-				<td class="typo-align--left">체크되어있는지의 여부</td>
-			</tr>
-			<tr>
-				<td>disabled</td>
-				<td>Boolean</td>
-				<td class="typo-align--left">비활성화</td>
-			</tr>
-			<tr>
-				<td>required</td>
-				<td>Boolean</td>
-				<td class="typo-align--left">필수값인지에 대한 여부</td>
-			</tr>
-			<tr>
-				<td>color</td>
-				<td>String</td>
-				<td class="typo-align--left">컴포넌트의 색상 <code>sub,success,error</code></td>
-			</tr>
-			<tr>
-				<td>size</td>
-				<td>String</td>
-				<td class="typo-align--left">컴포넌트의 사이즈 <code>small,large</code></td>
-			</tr>
-			<tr>
-				<td>animation</td>
-				<td>String</td>
-				<td class="typo-align--left">체크할때의 애니메이션 방식 <code>elastic,none</code></td>
-			</tr>
-			</tbody>
-		</table>
-	</section>
-
-	<section>
-		<head-title type="h3" title="event"/>
-		<p>컴포넌트에서 사용하는 이벤트</p>
-		<table class="table table--center table--bordered">
-			<thead>
-			<tr>
-				<th>name</th>
-				<th>params</th>
-				<th>comment</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>@change</td>
-				<td><code>sw,event</code></td>
-				<td class="typo-align--left">체크박스의 상태가 변했을때 이벤트 발생</td>
-			</tr>
-			</tbody>
-		</table>
-	</section>
+  <section>
+    <head-title type="h3" title="using form example"/>
+    <p>다음은 폼에서 사용예제입니다.</p>
+    <div class="example">
+      <form method="post" @submit="onSubmitFormExample">
+        <ul class="typo-list--inline" style="margin-top: 0">
+          <li v-for="(o,k) in Array(8)">
+            <form-checkbox
+              name="formExample[]"
+              :id="`formExampleValue-${k}`"
+              :value="`formExampleValue-${k}`"
+              :label="`value-${k}`"/>
+          </li>
+        </ul>
+        <button-basic type="submit">submit</button-basic>
+      </form>
+      <div v-if="formExampleResult" class="form-checkbox-form-example">
+        <strong>form result:</strong>
+        <pre><code>{{formExampleResult}}</code></pre>
+      </div>
+    </div>
+  </section>
 </article>
 </template>
 
@@ -297,6 +312,8 @@ export default {
 			basic: [true, false, false],
 			checkAll: [false, false],
 			custom: false,
+      formExample: [],
+      formExampleResult: null,
 		};
 	},
 	methods: {
@@ -315,7 +332,27 @@ export default {
 		onChangeCheckbox(sw, event)
 		{
 			this.custom = sw;
-		}
+		},
+    onSubmitFormExample(e)
+    {
+      e.preventDefault();
+      this.formExampleResult = decodeURI(new URLSearchParams(new FormData(e.target)).toString());
+    },
 	},
 }
 </script>
+<style lang="scss" scoped>
+.form-checkbox-form-example {
+  margin: 16px 0 0;
+  > strong {
+    display: block;
+  }
+  > pre {
+    margin: 4px 0 0;
+    > code {
+      white-space: normal;
+      word-break: break-all;
+    }
+  }
+}
+</style>
