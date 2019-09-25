@@ -27,7 +27,7 @@ export default {
       }
       else if (this.total)
       {
-        return this.current / this.total * 100;
+        return Math.floor(this.current / this.total * 100);
       }
       else
       {

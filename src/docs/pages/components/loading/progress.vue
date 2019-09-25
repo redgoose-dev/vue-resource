@@ -15,9 +15,11 @@
     <head-title type="h3" title="basic"/>
     <p>기본적인 형태로 사용합니다.</p>
     <div class="example">
-      <loading-progress :percent="basicPercent"/>
+      <loading-progress :percent="basicPercent" :total="basicTotal" :current="basicCurrent"/>
       <hr>
-      <button-basic :inline="true" size="small" @click="playPercent">play</button-basic>
+      <button-basic :inline="true" size="small" @click="playPercent">play percent</button-basic>
+      &nbsp;
+      <button-basic :inline="true" size="small" @click="playSize">play size</button-basic>
     </div>
     <pre class="example-code"><code>&lt;loading-progress :percent="30"/></code></pre>
   </section>
@@ -77,7 +79,8 @@ export default {
   {
     return {
       basicPercent: 0,
-
+      basicTotal: 0,
+      basicCurrent: 0,
     };
   },
   methods: {
@@ -100,11 +103,19 @@ export default {
       };
       window.requestAnimationFrame(step);
     },
-    playSize(total, current)
+    playSize()
     {
-      const step = (timeStamp) => {
-
+      this.basicPercent = null;
+      this.basicTotal = 500000;
+      this.basicCurrent = 0;
+      const step = () => {
+        this.basicCurrent = this.basicCurrent + 3000;
+        if (this.basicCurrent < this.basicTotal)
+        {
+          window.requestAnimationFrame(step);
+        }
       };
+      window.requestAnimationFrame(step);
     },
   },
 }
