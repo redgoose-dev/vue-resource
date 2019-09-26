@@ -31,7 +31,7 @@ $opacity-disabled: .5;
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 0 $size-padding-side;
   box-sizing: border-box;
   height: $size-height-normal;
   color: $color-text;

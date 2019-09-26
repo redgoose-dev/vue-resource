@@ -1,0 +1,32 @@
+@import "../../../css/variables";
+@import "../../../css/mixins";
+
+// set variables
+$self: '.error-content';
+
+
+// base
+.error-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 40vh;
+  &__wrap {
+    padding: 30px 0;
+    box-sizing: border-box;
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    color: $color-gray;
+  }
+  &__message {
+    margin: 16px 0 0;
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 400;
+  }
+}
