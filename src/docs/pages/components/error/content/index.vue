@@ -20,6 +20,34 @@
   icon="cloud"
   message="message text"/></code></pre>
   </section>
+
+  <section>
+    <head-title type="h3" title="props"/>
+    <p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
+    <div class="table--overflow">
+      <table class="table table--center table--bordered">
+        <thead>
+        <tr>
+          <th scope="col" style="width: 120px">Name</th>
+          <th scope="col" style="width: 120px">Type</th>
+          <th>Comment</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>message</td>
+          <td>String</td>
+          <td class="typo-align--left">오류 메시지</td>
+        </tr>
+        <tr>
+          <td>icon</td>
+          <td>String</td>
+          <td class="typo-align--left"><code>icon</code> 컴포넌트 이름</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 </article>
 </template>
 

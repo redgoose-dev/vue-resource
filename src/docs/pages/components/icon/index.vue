@@ -39,6 +39,37 @@
   </section>
 
   <section>
+    <head-title type="h3" title="props"/>
+    <p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
+    <table class="table table--center table--bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Comment</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>name</td>
+        <td>String</td>
+        <td class="typo-align--left">아이콘 이름</td>
+      </tr>
+      <tr>
+        <td>size</td>
+        <td>Number</td>
+        <td class="typo-align--left">아이콘 사이즈. 가로/세로 동일한 수치로 사용합니다.</td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>String</td>
+        <td class="typo-align--left">아이콘의 컬러</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
     <head-title type="h3" title="size"/>
     <p>아이콘의 사이즈를 지정합니다.</p>
     <div class="example">
@@ -86,37 +117,6 @@
   </section>
 
   <section>
-    <head-title type="h3" title="props"/>
-    <p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
-    <table class="table table--center table--bordered">
-      <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Comment</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>name</td>
-        <td>String</td>
-        <td class="typo-align--left">아이콘 이름</td>
-      </tr>
-      <tr>
-        <td>size</td>
-        <td>Number</td>
-        <td class="typo-align--left">아이콘 사이즈. 가로/세로 동일한 수치로 사용합니다.</td>
-      </tr>
-      <tr>
-        <td>color</td>
-        <td>String</td>
-        <td class="typo-align--left">아이콘의 컬러</td>
-      </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
     <head-title type="h3" title="add icon"/>
     <p>먼저 svg 파일로 만들어진 아이콘 이미지로 아이콘 요소로 추가할 수 있습니다.</p>
     <p>텍스트 에디터로 <code>svg</code>파일을 열어보면 보통 다음 코드와 같은 형태로 되어있습니다.</p>
@@ -139,16 +139,26 @@
     <p>svg 코드를 직접 넣어서 사용할 수 있습니다.</p>
     <div class="example">
       <icon :size="48" color="blueviolet">
-        <g fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path>
+          <line x1="8" y1="16" x2="8" y2="16"></line>
+          <line x1="8" y1="20" x2="8" y2="20"></line>
+          <line x1="12" y1="18" x2="12" y2="18"></line>
+          <line x1="12" y1="22" x2="12" y2="22"></line>
+          <line x1="16" y1="16" x2="16" y2="16"></line>
+          <line x1="16" y1="20" x2="16" y2="20"></line>
         </g>
       </icon>
     </div>
     <pre class="example-code"><code>&lt;icon :size="48" color="blueviolet">
-  &lt;g fill="none" stroke="currentColor" stroke-width="2">
-    &lt;line x1="18" y1="6" x2="6" y2="18">&lt;/line>
-    &lt;line x1="6" y1="6" x2="18" y2="18">&lt;/line>
+  &lt;g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    &lt;path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25">&lt;/path>
+    &lt;line x1="8" y1="16" x2="8" y2="16">&lt;/line>
+    &lt;line x1="8" y1="20" x2="8" y2="20">&lt;/line>
+    &lt;line x1="12" y1="18" x2="12" y2="18">&lt;/line>
+    &lt;line x1="12" y1="22" x2="12" y2="22">&lt;/line>
+    &lt;line x1="16" y1="16" x2="16" y2="16">&lt;/line>
+    &lt;line x1="16" y1="20" x2="16" y2="20">&lt;/line>
   &lt;/g>
 &lt;/icon></code></pre>
   </section>
@@ -184,6 +194,7 @@ export default {
         'umbrella',
         'volume-2',
         'wifi',
+        'close',
       ],
     };
   },

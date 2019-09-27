@@ -16,7 +16,7 @@ export default [
     items: [
       { link: '/stylesheet', title: 'introduce' },
       { link: '/stylesheet/normalize', title: 'normalize' },
-      { link: '/stylesheet/web-fonts', title: 'web fonts' },
+      { link: '/stylesheet/web-fonts', title: 'web-fonts' },
       { link: '/stylesheet/variables', title: 'variables' },
       { link: '/stylesheet/mixins', title: 'mixins' },
       { link: '/stylesheet/elements', title: 'elements' },
