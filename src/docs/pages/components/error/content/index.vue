@@ -30,7 +30,7 @@
         <tr>
           <th scope="col" style="width: 120px">Name</th>
           <th scope="col" style="width: 120px">Type</th>
-          <th>Comment</th>
+          <th scope="col">Comment</th>
         </tr>
         </thead>
         <tbody>

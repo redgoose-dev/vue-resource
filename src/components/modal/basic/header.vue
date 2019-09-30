@@ -23,17 +23,30 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import "../../../css/variables";
+@import "../../../css/mixins";
+
 .modal-basic-header {
+  padding: 10px 20px;
+  background: #f4f4f4;
   h2 {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   nav {
     button {
       display: block;
       font-size: 0;
-      margin: 0;
-      padding: 0;
+      margin: -10px;
+      padding: 4px;
+      background: none;
+      border: none;
+      @include button-touch-options(true);
+      svg {
+        display: block;
+        width: 22px;
+        height: 22px;
+      }
     }
   }
 }

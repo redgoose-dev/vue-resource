@@ -41,12 +41,11 @@ export default {
   methods: {
     switchRoot(sw)
     {
-      if (!document) return false;
+      if (!document || !this.overflow) return false;
       let className = `${this.htmlClassName ? this.htmlClassName : ''} popup-modal-basic`;
       className = className.replace(/(^\s*)|(\s*$)/gi, '');
       const $html = document.querySelector('html');
       const splitHtmlClass = className.split(' ');
-      console.log(splitHtmlClass);
       if (sw)
       {
         splitHtmlClass.forEach((name) => $html.classList.add(name));
