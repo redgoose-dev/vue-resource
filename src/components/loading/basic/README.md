@@ -1,4 +1,4 @@
-# icon component
+# loading-basic component
 
 로딩 컴포넌트입니다.
 

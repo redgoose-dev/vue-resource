@@ -1,0 +1,46 @@
+@import "../../../css/variables";
+@import "../../../css/mixins";
+
+$self: '.navigation-dropdown';
+
+
+// base
+.navigation-dropdown {
+  &__context-wrap {
+    position: relative;
+  }
+}
+
+.navigation-dropdown-context {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  list-style: none;
+  background: #fff;
+  min-width: 150px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(#000, .3);
+  li {
+    &:nth-child(n+2) {
+      border-top: 1px solid #ddd;
+    }
+  }
+  button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: .8125rem;
+    padding: 10px 12px;
+    margin: 0;
+    @include button-touch-options(false);
+    &:active {
+      background: #f4f4f4;
+    }
+  }
+}

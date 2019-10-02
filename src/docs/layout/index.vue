@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import * as libs from '@/libs';
+
 export default {
 	name: 'layout',
 	components: {
@@ -46,6 +48,10 @@ export default {
 			openedSidebar: false,
 		};
 	},
+  mounted()
+  {
+    libs.util.initCustomEvent();
+  },
 	methods: {
 		toggleSidebar()
 		{
