@@ -1,14 +1,14 @@
 <template>
 <div class="navigation-dropdown" @click="onClickWrap">
   <div class="navigation-dropdown__trigger">
-    <button type="button" @click="onClickTrigger(!open)">
+    <button type="button" class="navigation-dropdown__button" @click="onChangeOpen(!open)">
       <slot/>
     </button>
   </div>
   <nav v-if="context && open" class="navigation-dropdown__context-wrap">
     <ul class="navigation-dropdown-context">
       <li v-for="(o,n) in context">
-        <button type="button" @click="o.click ? o.click(o) : null">{{o.label}}</button>
+        <button type="button" @click="onClickContextMenu(o)">{{o.label}}</button>
       </li>
     </ul>
   </nav>
@@ -20,6 +20,7 @@ export default {
   name: 'navigation-dropdown',
   props: {
     context: { type: [Array,Object], default: null },
+    eventName: { type: String, default: 'navigation-dropdown' },
   },
   data()
   {
@@ -28,29 +29,29 @@ export default {
     };
   },
   methods: {
-    onClickTrigger(sw)
-    {
-      if (this.open === sw) return;
-      if (sw)
-      {
-        window.on('click.navigation-dropdown', () => {
-          this.onChangeOpen(false);
-          window.off('click.navigation-dropdown');
-        });
-        this.onChangeOpen(true);
-      }
-      else
-      {
-        window.off('click.navigation-dropdown');
-        this.onChangeOpen(false);
-      }
-    },
     onClickWrap(e)
     {
       e.stopPropagation();
     },
+    onClickContextMenu(obj)
+    {
+      if (obj.click)
+      {
+        this.onChangeOpen(false);
+        obj.click(obj);
+      }
+    },
     onChangeOpen(sw)
     {
+      if (this.open === sw) return;
+      if (sw)
+      {
+        window.on(`click.${this.eventName}`, () => this.onChangeOpen(false));
+      }
+      else
+      {
+        window.off(`click.${this.eventName}`);
+      }
       this.open = sw;
       this.$emit('change', sw);
     },

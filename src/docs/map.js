@@ -52,7 +52,7 @@ export default [
       {
         title: 'Navigation',
         items: [
-          { link: '/components/navigation/pagination', title: 'pagination' },
+          { link: '/components/navigation/paginate', title: 'paginate' },
           { link: '/components/navigation/tab', title: 'tab' },
           { link: '/components/navigation/dropdown', title: 'dropdown' },
         ],

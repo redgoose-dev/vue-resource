@@ -9,6 +9,14 @@ $self: '.navigation-dropdown';
   &__context-wrap {
     position: relative;
   }
+  &__button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    @include button-touch-options(false);
+  }
 }
 
 .navigation-dropdown-context {
