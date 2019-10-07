@@ -1,2 +1,50 @@
 @import "../../../css/variables";
 @import "../../../css/mixins";
+
+$self: '.navigation-paginate';
+
+
+// base
+.navigation-paginate {
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    @include button-touch-options(true);
+    &--dir {
+      svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+      }
+      &:disabled {
+        opacity: .2;
+        cursor: default;
+      }
+    }
+    &--number {
+      margin: 0 2px;
+      font-size: .875rem;
+      font-family: $font-eng;
+      letter-spacing: -.025rem;
+      &:disabled {
+        background: $color-key;
+        color: #fff;
+        cursor: default;
+      }
+    }
+  }
+}
+

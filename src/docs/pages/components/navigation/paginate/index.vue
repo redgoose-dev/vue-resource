@@ -12,16 +12,16 @@
     <head-title type="h3" title="basic"/>
     <p>기본적인 형태로 사용합니다.</p>
     <div class="example">
-      <navigation-paginate
-        v-model="page"/>
-
-      <navigation-paginate-foo
-        v-model="page"
-        url="https://redgoose.me"
-        :page-count="10"
-        :page-range="5"
-        :margin-pages="0"/>
+      <p>page: {{page}}</p>
+      <hr>
+      <navigation-paginate v-model="page" :total="100"/>
     </div>
+    <pre class="example-code"><code>&lt;navigation-paginate v-model="page" :total="100"/></code></pre>
+  </section>
+
+  <section>
+    <head-title type="h3" title="props"/>
+    <p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
   </section>
 
 </article>
@@ -33,7 +33,6 @@ export default {
 	components: {
 		'head-title': () => import('@/docs/layout/title'),
     'navigation-paginate': () => import('@/components/navigation/paginate'),
-    'navigation-paginate-foo': () => import('@/components/navigation/paginate/foo'),
 	},
   data()
   {
