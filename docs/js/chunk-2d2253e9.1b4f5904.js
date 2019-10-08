@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2253e9"],{e426:function(e,t,n){"use strict";n.r(t);var a=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("article",{staticClass:"page"},[n("head-title",{attrs:{type:"h2",title:"Vue.js notes"}}),n("p",[e._v("\n\t\tvue.js notes\n\t")])],1)},s=[],l={name:"page",components:{"head-title":function(){return n.e("chunk-44a2e62e").then(n.bind(null,"0e12"))}}},u=l,c=n("2877"),i=Object(c["a"])(u,a,s,!1,null,null,null);t["default"]=i.exports}}]);
-//# sourceMappingURL=chunk-2d2253e9.1b4f5904.js.map
