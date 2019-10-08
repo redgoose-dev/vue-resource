@@ -30,7 +30,7 @@ $self: '.navigation-dropdown';
   background: #fff;
   min-width: 150px;
   box-sizing: border-box;
-  box-shadow: 0 2px 8px rgba(#000, .3);
+  box-shadow: 0 2px 10px rgba(#000, .3);
   li {
     &:nth-child(n+2) {
       border-top: 1px solid #ddd;
@@ -44,7 +44,7 @@ $self: '.navigation-dropdown';
     background: none;
     border: none;
     font-size: .8125rem;
-    padding: 10px 12px;
+    padding: 12px 15px;
     margin: 0;
     @include button-touch-options(false);
     &:active {

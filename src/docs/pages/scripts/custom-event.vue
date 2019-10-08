@@ -1,6 +1,6 @@
 <template>
 <article class="page">
-	<head-title type="h2" title="custom-event"/>
+	<head-title type="h2" title="Custom event"/>
 </article>
 </template>
 

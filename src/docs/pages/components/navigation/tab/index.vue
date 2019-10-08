@@ -27,29 +27,27 @@
   <section>
     <head-title type="h3" title="props"/>
     <p>이 컴포넌트는 다음과 같은 <code>props</code>를 사용합니다.</p>
-    <div class="table--overflow">
-      <table class="table table--center table--bordered">
-        <thead>
-        <tr>
-          <th scope="col" style="width:100px">Name</th>
-          <th scope="col" style="width:80px">Type</th>
-          <th scope="col">Comment</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>items</td>
-          <td>Array</td>
-          <td class="typo-align--left">탭 이름</td>
-        </tr>
-        <tr>
-          <td>active</td>
-          <td>Number</td>
-          <td class="typo-align--left">활성화된 탭 번호</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
+    <table class="table table--center table--bordered">
+      <thead>
+      <tr>
+        <th scope="col" style="width:100px">Name</th>
+        <th scope="col" style="width:80px">Type</th>
+        <th scope="col">Comment</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>items</td>
+        <td>Array</td>
+        <td class="typo-align--left">탭 이름</td>
+      </tr>
+      <tr>
+        <td>active</td>
+        <td>Number</td>
+        <td class="typo-align--left">활성화된 탭 번호</td>
+      </tr>
+      </tbody>
+    </table>
   </section>
 
   <section>

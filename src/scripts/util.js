@@ -1,5 +1,6 @@
 /**
  * sleep
+ * 실행을 딜레이시킵니다.
  *
  * @param {Number} delay
  * @return {Promise}
@@ -36,8 +37,6 @@ export function initCustomEvent()
       return this;
     },
   };
-
   window.on = document.on = Element.prototype.on = events.on;
   window.off = document.off = Element.prototype.off = events.off;
 }
-

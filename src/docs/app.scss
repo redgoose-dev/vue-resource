@@ -8,9 +8,8 @@
 
 // variables
 :root {
-	--header-height: 48px;
+	--header-height: 40px;
 }
-
 
 // elements
 html {
@@ -45,7 +44,6 @@ pre,
 samp {
 	font-family: $font-console;
 }
-
 
 // contents imports
 @import "./pages";

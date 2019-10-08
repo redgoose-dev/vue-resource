@@ -80,9 +80,9 @@ export default [
     ],
   },
   {
-    title: 'Script library',
+    title: 'Scripts',
     items: [
-      { link: '/scripts/sleep', title: 'sleep' },
+      { link: '/scripts/introduce', title: 'introduce' },
       { link: '/scripts/custom-event', title: 'custom event' },
       { link: '/scripts/api', title: 'support axios api' },
     ],
