@@ -83,8 +83,7 @@ export default [
     title: 'Scripts',
     items: [
       { link: '/scripts/introduce', title: 'introduce' },
-      { link: '/scripts/custom-event', title: 'custom event' },
-      { link: '/scripts/api', title: 'support axios api' },
+      { link: '/scripts/api', title: 'support API' },
     ],
   },
 ];

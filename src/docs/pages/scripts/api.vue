@@ -1,6 +1,6 @@
 <template>
 <article class="page">
-	<head-title type="h2" title="API"/>
+	<head-title type="h2" title="Support API"/>
 </article>
 </template>
 

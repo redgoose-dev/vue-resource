@@ -1,3 +1,0 @@
-# Script library
-
-sdmgsgd

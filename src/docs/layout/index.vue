@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import * as libs from '@/libs';
+import * as scripts from '@/scripts';
 
 export default {
 	name: 'layout',
@@ -50,7 +50,7 @@ export default {
 	},
   mounted()
   {
-    libs.util.initCustomEvent();
+    scripts.util.initCustomEvent();
   },
 	methods: {
 		toggleSidebar()
@@ -60,5 +60,4 @@ export default {
 	},
 }
 </script>
-
 <style src="./index.scss" lang="scss" scoped></style>
