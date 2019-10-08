@@ -2,12 +2,9 @@
 <article class="page">
   <head-title type="h2" title="form / select"/>
   <blockquote>
-    <p>
-      <strong>
-        component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/select.vue`" target="_blank">select.vue</a><br/>
-        scss: <a :href="`${$store.state.url.github}blob/master/src/components/forms/select.scss`" target="_blank">select.scss</a>
-      </strong>
-    </p>
+    <strong>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/select`" target="_blank">select</a>
+    </strong>
   </blockquote>
   <p>
     여러 항목들중에서 하나를 선택하는 <code>&lt;form-select/></code> 컴포넌트입니다.<br/>

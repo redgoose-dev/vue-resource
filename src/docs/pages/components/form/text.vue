@@ -2,12 +2,9 @@
 <article class="page">
   <head-title type="h2" title="form / text"/>
   <blockquote>
-    <p>
-      <strong>
-        component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/text.vue`" target="_blank">text.vue</a><br/>
-        scss: <a :href="`${$store.state.url.github}blob/master/src/components/forms/text.scss`" target="_blank">text.scss</a>
-      </strong>
-    </p>
+    <strong>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/text`" target="_blank">text</a>
+    </strong>
   </blockquote>
   <p>
     <code>&lt;form-text/></code>컴포넌트는 텍스트 입력폼으로 사용되는 컴포넌트입니다.<br/>

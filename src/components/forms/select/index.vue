@@ -58,4 +58,4 @@ export default {
 }
 </script>
 
-<style src="./select.scss" lang="scss" scoped></style>
+<style src="./index.scss" lang="scss" scoped></style>

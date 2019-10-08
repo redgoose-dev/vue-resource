@@ -37,4 +37,4 @@ export default {
 };
 </script>
 
-<style src="./switch.scss" lang="scss" scoped></style>
+<style src="./index.scss" lang="scss" scoped></style>

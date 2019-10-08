@@ -2,12 +2,9 @@
 <article class="page">
   <head-title type="h2" title="form / select-wrapper"/>
   <blockquote>
-    <p>
-      <strong>
-        component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/select-wrapper.vue`" target="_blank">select-wrapper.vue</a><br/>
-        scss: <a :href="`${$store.state.url.github}blob/master/src/components/forms/select-wrapper.scss`" target="_blank">select-wrapper.scss</a>
-      </strong>
-    </p>
+    <strong>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/select-wrapper`" target="_blank">select-wrapper</a>
+    </strong>
   </blockquote>
   <p>
     <router-link to="/components/form/select">form-select</router-link> 컴포넌트에서 좀더 직관적인 모습을 가진 모습으로 만들기 위하여 사용하는 <code>&lt;form-select/></code> 래퍼 컴포넌트입니다.<br/>

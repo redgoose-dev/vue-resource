@@ -1,22 +1,22 @@
 <template>
 <label
-  class="form-radio"
+  class="form-checkbox"
   :class="[
-    !!color && `form-radio--color-${color}`,
-    !!size && `form-radio--size-${size}`,
-    !!animation && `form-radio--animation-${animation}`,
-    !!disabled && `form-radio--disabled`,
+    !!color && `form-checkbox--color-${color}`,
+    !!size && `form-checkbox--size-${size}`,
+    !!animation && `form-checkbox--animation-${animation}`,
+    !!disabled && `form-checkbox--disabled`,
   ]">
   <input
-    type="radio"
+    type="checkbox"
     :name="name"
     :id="id"
     :value="value"
-    :checked="checked === value"
+    :checked="!!checked"
     :disabled="disabled"
     :required="required"
     @change="onChange"/>
-  <span v-if="!$slots.default" class="form-radio__body">
+  <span v-if="!$slots.default" class="form-checkbox__body">
     <i>icon</i>
     <em v-if="!!label">{{label}}</em>
   </span>
@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'form-radio',
+  name: 'form-checkbox',
   props: {
     name: { type: String, default: null },
     id: { type: String, default: null },
@@ -46,10 +46,10 @@ export default {
   methods: {
     onChange(e)
     {
-      this.$emit('change', e.target.value, e);
+      this.$emit('change', e.target.checked, e);
     },
   },
 }
 </script>
 
-<style src="./radio.scss" lang="scss" scoped></style>
+<style src="./index.scss" lang="scss" scoped></style>

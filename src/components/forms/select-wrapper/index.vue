@@ -25,4 +25,4 @@ export default {
 }
 </script>
 
-<style src="./select-wrapper.scss" lang="scss" scoped></style>
+<style src="./index.scss" lang="scss" scoped></style>

@@ -1,12 +1,14 @@
-@import "../../css/variables";
-@import "../../css/mixins";
+@import "../../../css/variables";
+@import "../../../css/mixins";
 
 // set variables
-$self: '.form-radio';
+$self: '.form-checkbox';
 // size
 $size-icon-normal: 20px;
 $size-icon-normal-padding: 8px;
 $size-icon-border: 2px;
+$size-icon-border-outer-radius: 4px;
+$size-icon-border-inner-radius: 2px;
 $size-label-left-padding: 8px;
 $size-height-small: $form-size-height-small;
 $size-height-normal: $form-size-height-basic;
@@ -33,7 +35,7 @@ $opacity-disabled: .5;
 
 
 // base
-.form-radio {
+.form-checkbox {
   position: relative;
   display: block;
   font-size: 0;
@@ -52,6 +54,7 @@ $opacity-disabled: .5;
     appearance: none;
     cursor: pointer;
   }
+
   &__body {
     display: flex;
     align-items: center;
@@ -62,7 +65,7 @@ $opacity-disabled: .5;
       width: $size-icon-normal;
       height: $size-icon-normal;
       border: $size-icon-border solid $color-border-normal;
-      border-radius: 50%;
+      border-radius: $size-icon-border-outer-radius;
       box-sizing: border-box;
       &:after {
         content: '';
@@ -75,7 +78,7 @@ $opacity-disabled: .5;
         transform: translate(-50%, -50%) scale(0);
         background: $color-icon-inside;
         transition: transform $speed-toggle-checked ease-out;
-        border-radius: 50%;
+        border-radius: $size-icon-border-inner-radius;
       }
     }
     > em {
@@ -104,7 +107,7 @@ $opacity-disabled: .5;
 }
 
 // size
-.form-radio--size {
+.form-checkbox--size {
   &-small {
     height: $size-height-small;
     padding: 0 $size-side-padding-small;
@@ -142,7 +145,7 @@ $opacity-disabled: .5;
 }
 
 // color
-.form-radio--color {
+.form-checkbox--color {
   &-sub {
     > #{$self}__body {
       > i {
@@ -176,7 +179,7 @@ $opacity-disabled: .5;
 }
 
 // disabled
-.form-radio--disabled {
+.form-checkbox--disabled {
   opacity: $opacity-disabled;
   > input {
     cursor: not-allowed;
@@ -184,7 +187,7 @@ $opacity-disabled: .5;
 }
 
 // animation
-.form-radio--animation {
+.form-checkbox--animation {
   &-elastic {
     > #{$self}__body > i:after {
       transition-duration: $speed-toggle-checked;

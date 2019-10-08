@@ -1,25 +1,16 @@
 <template>
 <article class="page">
   <head-title type="h2" title="form / switch"/>
-
   <blockquote>
-    <p>
-      <strong>
-        component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/switch.vue`" target="_blank">switch.vue</a>
-      </strong><br/>
-      <strong>
-        scss: <a :href="`${$store.state.url.github}blob/master/src/components/forms/switch.scss`" target="_blank">switch.scss</a>
-      </strong>
-    </p>
+    <strong>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/switch`" target="_blank">switch</a>
+    </strong>
   </blockquote>
-
   <p>
     <code>Switch</code> 컴포넌트는 상태를 <code>on/off</code> 형식으로 조작하는 ui 컴포넌트입니다.<br/>
     한번 누를때마다 `ON`과 `OFF`의 상태가 토글링되는 특징을 가지고 있습니다.
   </p>
-  <p>
-    이 컴포넌트는 한번 정해지면 그대로 사용될거 같아서 단순하게 만들어졌습니다. 그래서 스타일 변경은 컴포넌트 스타일시트에서 변경하는것을 권장드립니다.<br/>
-  </p>
+  <p>이 컴포넌트는 한번 정해지면 그대로 사용될거 같아서 단순하게 만들어졌습니다. 그래서 스타일 변경은 컴포넌트 스타일시트에서 변경하는것을 권장드립니다.</p>
 
   <section>
     <head-title type="h3" title="basic"/>

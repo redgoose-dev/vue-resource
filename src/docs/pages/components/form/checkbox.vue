@@ -2,12 +2,9 @@
 <article class="page">
   <head-title type="h2" title="form / checkbox"/>
   <blockquote>
-    <p>
-      <strong>
-        component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/checkbox.vue`" target="_blank">checkbox.vue</a><br/>
-        scss: <a :href="`${$store.state.url.github}blob/master/src/components/forms/checkbox.scss`" target="_blank">checkbox.scss</a>
-      </strong>
-    </p>
+    <strong>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/checkbox`" target="_blank">checkbox</a>
+    </strong>
   </blockquote>
   <p>여러 항목들을 선택하는 컴포넌트 입니다.</p>
 
