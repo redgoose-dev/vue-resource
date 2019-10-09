@@ -52,7 +52,6 @@ const contentMap = function(src) {
 	return map;
 }(map);
 
-
 // set router
 const router = new Router({
 	mode: 'hash',
@@ -86,6 +85,5 @@ const router = new Router({
 // router.onError(() => {
 // 	alert('Unavailable page.');
 // });
-
 
 export default router;

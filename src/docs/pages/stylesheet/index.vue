@@ -2,7 +2,7 @@
 <article class="page">
   <head-title type="h2" title="introduce"/>
   <blockquote>
-    <strong>Source: <a :href="`${$store.state.url.github}tree/master/src/css`" target="_blank">css</a></strong>
+    <strong>Source: <a :href="`${$store.state.url.github}tree/master/src/css`" target="_blank">Stylesheet</a></strong>
   </blockquote>
   <p>
     공통적으로 사용하는 css library 영역에서 사용하는 리소스들입니다.<br/>

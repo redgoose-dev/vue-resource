@@ -103,7 +103,6 @@ window.on('click.bar');
 // scroll
 window.on('scroll.foo');</code></pre>
   </section>
-
 </article>
 </template>
 

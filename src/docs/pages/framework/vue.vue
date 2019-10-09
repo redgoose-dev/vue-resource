@@ -1,9 +1,8 @@
 <template>
 <article class="page">
-  <head-title type="h2" title="Vue.js notes"/>
-
+  <head-title type="h2" title="Vue CLI"/>
   <p>
-    vue.js notes
+    <code>vue-cli</code> 프로젝트에 관련된 노트입니다.
   </p>
 </article>
 </template>
