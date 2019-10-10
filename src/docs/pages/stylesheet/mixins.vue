@@ -257,6 +257,21 @@
   }
 }</code></pre>
   </section>
+
+  <section>
+    <head-title type="h3" title="background blur"/>
+    <p>엘리먼트 영역의 배경을 흐리게 합니다.</p>
+    <div class="example">
+      <div class="background-blur-example">
+        <p>blur area</p>
+      </div>
+    </div>
+    <pre class="example-code"><code>// scss
+@include background-blur(8px) {
+  // 배경흐림 속성이 지원할때의 영역
+  background: rgba(#000, .5);
+};</code></pre>
+  </section>
 </article>
 </template>
 
@@ -307,5 +322,25 @@ export default {
 }
 ul.horizontal-scroll-demo {
   padding-left: 0;
+}
+
+.background-blur-example {
+  padding: 50px;
+  box-sizing: border-box;
+  background: #fff url('https://images.unsplash.com/photo-1570644276765-6ac0998b082a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60') 50% 50% no-repeat;
+  background-size: cover;
+  p {
+    margin: 0;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: $font-eng;
+    background: rgba(blue, .4);
+    @include background-blur(8px) {
+      background: rgba(red, .4);
+    };
+  }
 }
 </style>

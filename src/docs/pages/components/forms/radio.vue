@@ -1,9 +1,9 @@
 <template>
 <article class="page">
-  <head-title type="h2" title="form / radio"/>
+  <head-title type="h2" title="forms / radio"/>
   <blockquote>
     <strong>
-      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/radio`" target="_blank">radio</a>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/radio`" target="_blank">forms.radio</a>
     </strong>
   </blockquote>
   <p>여러 항목들 중에 하나를 선택하는 컴포넌트 입니다.</p>

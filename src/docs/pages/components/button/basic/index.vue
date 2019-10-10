@@ -1,9 +1,9 @@
 <template>
 <article class="page">
-  <head-title type="h2" title="button - basic"/>
+  <head-title type="h2" title="button / basic"/>
   <blockquote>
     <p>
-      <strong>source: <a :href="`${$store.state.url.github}tree/master/src/components/button/basic`" target="_blank">button/basic</a></strong>
+      <strong>source: <a :href="`${$store.state.url.github}tree/master/src/components/button/basic`" target="_blank">button.basic</a></strong>
     </p>
   </blockquote>
   <p>버튼으로 사용되는 컴포넌트입니다.</p>

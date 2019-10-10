@@ -5,13 +5,6 @@
 export default [
   { link: '/', title: 'Introduce' },
   {
-    title: 'Framework',
-    items: [
-      { link: '/framework/vue', title: 'Vue.js notes' },
-      { link: '/framework/nuxt', title: 'Nuxt.js notes' },
-    ],
-  },
-  {
     title: 'Stylesheet',
     items: [
       { link: '/stylesheet', title: 'introduce' },
@@ -39,14 +32,14 @@ export default [
         ],
       },
       {
-        title: 'Form',
+        title: 'Forms',
         items: [
-          { link: '/components/form/text', title: 'text' },
-          { link: '/components/form/select', title: 'select' },
-          { link: '/components/form/select-wrapper', title: 'select-wrapper' },
-          { link: '/components/form/radio', title: 'radio' },
-          { link: '/components/form/checkbox', title: 'checkbox' },
-          { link: '/components/form/switch', title: 'switch' },
+          { link: '/components/forms/text', title: 'text' },
+          { link: '/components/forms/select', title: 'select' },
+          { link: '/components/forms/select-wrapper', title: 'select-wrapper' },
+          { link: '/components/forms/radio', title: 'radio' },
+          { link: '/components/forms/checkbox', title: 'checkbox' },
+          { link: '/components/forms/switch', title: 'switch' },
         ],
       },
       {

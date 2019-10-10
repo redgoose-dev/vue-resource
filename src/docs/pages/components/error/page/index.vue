@@ -4,7 +4,7 @@
   <blockquote>
     <p>
       <strong>
-        component: <a :href="`${$store.state.url.github}tree/master/src/components/error/page`" target="_blank">error-page</a>
+        component: <a :href="`${$store.state.url.github}tree/master/src/components/error/page`" target="_blank">error.page</a>
       </strong>
     </p>
   </blockquote>

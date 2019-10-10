@@ -1,9 +1,9 @@
 <template>
 <article class="page">
-	<head-title type="h2" title="loading - progress"/>
+	<head-title type="h2" title="loading / progress"/>
   <blockquote>
     <p>
-      <strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/loading/progress`" target="_blank">progress</a></strong>
+      <strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/loading/progress`" target="_blank">loading.progress</a></strong>
     </p>
   </blockquote>
 	<p>

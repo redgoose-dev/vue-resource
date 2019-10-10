@@ -3,7 +3,7 @@
   <head-title type="h2" title="navigation / paginate"/>
   <blockquote>
     <p>
-      <strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/navigation/paginate`" target="_blank">navigation-paginate</a></strong>
+      <strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/navigation/paginate`" target="_blank">navigation.paginate</a></strong>
     </p>
   </blockquote>
   <p>목록 네비게이션 컴포넌트입니다.</p>

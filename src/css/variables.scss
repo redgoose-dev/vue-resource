@@ -4,18 +4,18 @@
 // === color
 
 // theme set
-$color-theme-set-1: #393E46;
-$color-theme-set-2: #00ADB5;
-$color-theme-set-3: #FFF4E0;
-$color-theme-set-4: #F8B500;
-$color-theme-set-5: #FC3C3C;
+$color-theme-set-1: #1B8C81;
+$color-theme-set-2: #0e4869;
+$color-theme-set-3: #F28705;
+$color-theme-set-4: #12A628;
+$color-theme-set-5: #f2230e;
 
 // base
 $color-base: #2a2a2a;
-$color-key: $color-theme-set-5;
+$color-key: $color-theme-set-1;
 $color-sub: $color-theme-set-2;
-$color-success: #1acd3d;
-$color-error: #ff0000;
+$color-success: $color-theme-set-4;
+$color-error: $color-theme-set-5;
 $color-bg: #fafafa;
 
 // gray

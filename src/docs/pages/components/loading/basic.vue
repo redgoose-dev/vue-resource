@@ -1,9 +1,9 @@
 <template>
 <article class="page">
-  <head-title type="h2" title="loading - basic"/>
+  <head-title type="h2" title="loading / basic"/>
   <blockquote>
     <p>
-      <strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/loading/basic`" target="_blank">basic</a></strong>
+      <strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/loading/basic`" target="_blank">loading.basic</a></strong>
     </p>
   </blockquote>
   <p>

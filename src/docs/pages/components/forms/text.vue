@@ -1,9 +1,9 @@
 <template>
 <article class="page">
-  <head-title type="h2" title="form / text"/>
+  <head-title type="h2" title="forms / text"/>
   <blockquote>
     <strong>
-      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/text`" target="_blank">text</a>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/text`" target="_blank">forms.text</a>
     </strong>
   </blockquote>
   <p>

@@ -1,9 +1,9 @@
 <template>
 <article class="page">
-  <head-title type="h2" title="form / checkbox"/>
+  <head-title type="h2" title="forms / checkbox"/>
   <blockquote>
     <strong>
-      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/checkbox`" target="_blank">checkbox</a>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/checkbox`" target="_blank">forms.checkbox</a>
     </strong>
   </blockquote>
   <p>여러 항목들을 선택하는 컴포넌트 입니다.</p>

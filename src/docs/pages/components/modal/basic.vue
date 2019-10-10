@@ -1,6 +1,6 @@
 <template>
 <article class="page">
-  <head-title type="h2" title="modal - basic"/>
+  <head-title type="h2" title="modal / basic"/>
   <blockquote>
     <p>
       <strong>

@@ -3,7 +3,7 @@
 	<head-title type="h2" title="navigation - tab"/>
   <blockquote>
     <p>
-      <strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/navigation/tab`" target="_blank">navigation-tab</a></strong>
+      <strong>component: <a :href="`${$store.state.url.github}tree/master/src/components/navigation/tab`" target="_blank">navigation.tab</a></strong>
     </p>
   </blockquote>
   <p>탭 형태의 네비게이션 컴포넌트입니다.</p>

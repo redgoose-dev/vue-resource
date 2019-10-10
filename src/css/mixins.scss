@@ -173,3 +173,12 @@
     margin-right: $padding-side-outer;
   }
 }
+
+// background blur
+@mixin background-blur($size)
+{
+  @supports (backdrop-filter: blur($size)) {
+    backdrop-filter: blur($size);
+    @content;
+  }
+}

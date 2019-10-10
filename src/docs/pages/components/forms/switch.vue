@@ -1,9 +1,9 @@
 <template>
 <article class="page">
-  <head-title type="h2" title="form / switch"/>
+  <head-title type="h2" title="forms / switch"/>
   <blockquote>
     <strong>
-      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/switch`" target="_blank">switch</a>
+      component: <a :href="`${$store.state.url.github}blob/master/src/components/forms/switch`" target="_blank">forms.switch</a>
     </strong>
   </blockquote>
   <p>
