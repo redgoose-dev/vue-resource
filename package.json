@@ -1,6 +1,6 @@
 {
   "name": "vue-redgoose-source",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "vue.js resource",
   "private": false,
   "author": {
@@ -11,21 +11,21 @@
   "homepage": "https://github.com/redgoose-dev/vue-resource",
   "license": "MIT",
   "scripts": {
-    "dev": "HOST=0.0.0.0 PORT=3000 vue-cli-service serve",
+    "dev": "HOST=0.0.0.0 PORT=4000 vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "main": "./src/index.js",
   "dependencies": {
-    "axios": "^0.19.0",
-    "vue": "^2.6.10",
+    "axios": "^0.19.1",
+    "vue": "^2.6.11",
     "vue-router": "^3.1.3",
-    "vuex": "^3.1.1"
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "@vue/cli-plugin-babel": "^4.1.2",
+    "@vue/cli-service": "^4.1.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.1",
+    "vue-template-compiler": "^2.6.11"
   }
 }
