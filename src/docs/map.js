@@ -64,6 +64,12 @@ export default [
         ],
       },
       {
+        title: 'Text',
+        items: [
+          { link: '/components/text/change-number', title: 'change-number' },
+        ],
+      },
+      {
         title: 'Error',
         items: [
           { link: '/components/error/content', title: 'content' },
